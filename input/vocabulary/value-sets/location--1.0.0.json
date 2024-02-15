@@ -1,0 +1,54 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "location--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/location"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/location",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "Location",
+  "title" : "Location",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Asukoht"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-11T14:45:18.272248Z",
+  "publisher" : "kts",
+  "description" : "Location of the procedure",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Protseduuri asukoht"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-12-11T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "225739005"
+      } ]
+    } ]
+  }
+}

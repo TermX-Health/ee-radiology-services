@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-person--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-person"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-person",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-person",
+  "title" : "rad-person",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Inimene"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-11T14:14:29.466983Z",
+  "publisher" : "kts",
+  "description" : "Specification of person being imaged",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Protseduuril osaleva inimese täpsustus"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-08-17T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "133933007"
+      }, {
+        "code" : "133936004"
+      }, {
+        "code" : "67822003"
+      }, {
+        "code" : "339947000"
+      }, {
+        "code" : "224526002"
+      }, {
+        "code" : "255409004"
+      } ]
+    } ]
+  }
+}

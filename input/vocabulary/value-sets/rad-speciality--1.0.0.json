@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-speciality--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-speciality"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-speciality",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "Specialty",
+  "title" : "rad-speciality",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Eriala"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-11-24T10:08:48.973929Z",
+  "publisher" : "kts",
+  "description" : "Speciality of doctor performing procedure",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Protseduuri teostava arsti eriala"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-08-18T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "159017007"
+      }, {
+        "code" : "66862007"
+      }, {
+        "code" : "106289002"
+      }, {
+        "code" : "4162009"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "body-region--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/body-region"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/body-region",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-body-region",
+  "title" : "Body region",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-11-07T12:20:50.508951Z",
+  "publisher" : "kts",
+  "effectivePeriod" : {
+    "start" : "2023-06-29T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "818983003"
+      }, {
+        "code" : "51185008"
+      }, {
+        "code" : "69536005"
+      }, {
+        "code" : "61685007"
+      }, {
+        "code" : "45048000"
+      }, {
+        "code" : "421060004"
+      }, {
+        "code" : "53120007"
+      }, {
+        "code" : "278001007"
+      }, {
+        "code" : "116007004"
+      }, {
+        "code" : "774007"
+      }, {
+        "code" : "737561001"
+      } ]
+    }, {
+      "system" : "http://loinc.org",
+      "version" : "1.1",
+      "concept" : [ {
+        "code" : "101004-0"
+      } ]
+    } ],
+    "property" : [ "SYSTEM" ]
+  }
+}

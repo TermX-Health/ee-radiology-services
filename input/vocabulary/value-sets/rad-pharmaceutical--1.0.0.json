@@ -1,0 +1,105 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-pharmaceutical--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-pharmaceutical"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-pharmaceutical",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-pharm",
+  "title" : "Pharmaceutical",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-12T12:04:00.94855Z",
+  "publisher" : "kts",
+  "effectivePeriod" : {
+    "start" : "2023-07-10T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "771384007"
+      }, {
+        "code" : "373293005"
+      }, {
+        "code" : "109207004"
+      }, {
+        "code" : "39290007"
+      }, {
+        "code" : "385420005"
+      }, {
+        "code" : "67246004"
+      }, {
+        "code" : "372695000"
+      }, {
+        "code" : "387145002"
+      }, {
+        "code" : "429461005"
+      }, {
+        "code" : "70800008"
+      }, {
+        "code" : "765766004"
+      }, {
+        "code" : "62543003"
+      }, {
+        "code" : "45849009"
+      }, {
+        "code" : "21572004"
+      }, {
+        "code" : "395787009"
+      }, {
+        "code" : "1368003"
+      }, {
+        "code" : "404835009"
+      }, {
+        "code" : "56609000"
+      }, {
+        "code" : "446871009"
+      }, {
+        "code" : "446800006"
+      }, {
+        "code" : "446536001"
+      }, {
+        "code" : "373529000"
+      }, {
+        "code" : "387371005"
+      }, {
+        "code" : "312278002"
+      }, {
+        "code" : "73469000"
+      }, {
+        "code" : "419804008"
+      }, {
+        "code" : "424299003"
+      }, {
+        "code" : "25818006"
+      }, {
+        "code" : "77313009"
+      }, {
+        "code" : "71789007"
+      }, {
+        "code" : "71763007"
+      }, {
+        "code" : "372742009"
+      }, {
+        "code" : "261393001"
+      }, {
+        "code" : "83598005"
+      }, {
+        "code" : "385548008"
+      }, {
+        "code" : "349359008"
+      }, {
+        "code" : "396014007"
+      }, {
+        "code" : "1144611009"
+      }, {
+        "code" : "768697005 "
+      } ]
+    } ]
+  }
+}

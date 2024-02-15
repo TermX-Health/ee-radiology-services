@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-modality--0.0.1",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-modality"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-modality",
+  "version" : "0.0.1",
+  "name" : "Modality",
+  "title" : "Modality",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Modaalsus"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-08-17T07:41:36.618367Z",
+  "publisher" : "kts",
+  "description" : "Form of radiological imaging",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Radioloogilise pildikujutise saamise viis"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-06-28T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "77343006"
+      }, {
+        "code" : "363680008"
+      } ]
+    } ]
+  }
+}

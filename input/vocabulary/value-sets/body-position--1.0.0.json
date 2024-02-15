@@ -1,0 +1,90 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "body-position--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/body-position"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-body-position",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-Body-position",
+  "title" : "Body position",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Keha asend"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-09T07:37:45.599951Z",
+  "publisher" : "kts",
+  "approvalDate" : "2023-10-09",
+  "effectivePeriod" : {
+    "start" : "2023-09-09T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "10904000"
+      }, {
+        "code" : "51845000"
+      }, {
+        "code" : "24154002"
+      }, {
+        "code" : "9964006"
+      }, {
+        "code" : "12852001"
+      }, {
+        "code" : "52019005"
+      }, {
+        "code" : "261081002"
+      }, {
+        "code" : "262016004"
+      }, {
+        "code" : "33586001"
+      }, {
+        "code" : "40199007"
+      }, {
+        "code" : "102535000"
+      }, {
+        "code" : "102536004"
+      }, {
+        "code" : "399284007"
+      }, {
+        "code" : "264748007"
+      }, {
+        "code" : "424811006"
+      }, {
+        "code" : "399146005"
+      }, {
+        "code" : "113349007"
+      }, {
+        "code" : "46717007"
+      }, {
+        "code" : "260441006"
+      }, {
+        "code" : "399243009"
+      }, {
+        "code" : "399270002"
+      }, {
+        "code" : "260496000"
+      }, {
+        "code" : "255536004"
+      }, {
+        "code" : "399169008"
+      }, {
+        "code" : "399263002"
+      } ]
+    } ]
+  }
+}

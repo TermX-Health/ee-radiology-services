@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-reason-for-exam--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-reason-for-exam"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-reason-for-exam",
+  "version" : "1.0.0",
+  "name" : "rad-reason-for-exam",
+  "title" : "Reason for exam ",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Reason for exam "
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2024-01-16T10:23:12.165493Z",
+  "publisher" : "kts",
+  "effectivePeriod" : {
+    "start" : "2024-01-16T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "11433004"
+      }, {
+        "code" : "125670008"
+      }, {
+        "code" : "128053003"
+      }, {
+        "code" : "27550009"
+      }, {
+        "code" : "66862007"
+      }, {
+        "code" : "405539004"
+      }, {
+        "code" : "443089001"
+      }, {
+        "code" : "698247007"
+      }, {
+        "code" : "83330001"
+      } ]
+    } ]
+  }
+}

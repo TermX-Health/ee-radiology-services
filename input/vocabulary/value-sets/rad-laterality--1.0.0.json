@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-laterality--1.0.0",
+  "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-laterality"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-laterality",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "Laterality",
+  "title" : "Lateraalsus",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Laterality"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-07T14:07:26.852672Z",
+  "publisher" : "kts",
+  "description" : "Kirjeldav väärtus pildistava anatoomilisele poolsusele",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "en"
+      }, {
+        "url" : "content",
+        "valueString" : "Descriptive value for the side being imaged"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-06-23T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530",
+      "version" : "20230530",
+      "concept" : [ {
+        "code" : "7771000"
+      }, {
+        "code" : "24028007"
+      }, {
+        "code" : "51440002"
+      } ]
+    } ]
+  }
+}

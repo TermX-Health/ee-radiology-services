@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medical-device--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/medical-device"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-device",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "title" : "Medical device",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Meditsiini seade"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-11T14:59:13.81816Z",
+  "publisher" : "kts",
+  "description" : "Medical device ",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Meditsiini seade "
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-12-11T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "67270000",
+        "display" : " "
+      }, {
+        "code" : "468542000",
+        "display" : " "
+      }, {
+        "code" : "109228008",
+        "display" : " "
+      }, {
+        "code" : "303726000"
+      } ]
+    } ]
+  }
+}

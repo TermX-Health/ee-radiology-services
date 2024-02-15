@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-projection--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-projection"
+  } ],
+  "url" : "http://kodality.org/ValueSet/rad-projection",
+  "version" : "1.0.0",
+  "title" : "Projection of the radiology services",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-09-09T16:08:11.709017Z",
+  "publisher" : "Kodality",
+  "effectivePeriod" : {
+    "start" : "2023-05-27T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "399348003"
+      }, {
+        "code" : "399067008"
+      }, {
+        "code" : "260497009"
+      }, {
+        "code" : "399182000"
+      }, {
+        "code" : "272479007"
+      }, {
+        "code" : "399110001"
+      }, {
+        "code" : "399061009"
+      }, {
+        "code" : "260419006"
+      }, {
+        "code" : "399312000"
+      }, {
+        "code" : "399059000"
+      } ]
+    } ]
+  }
+}

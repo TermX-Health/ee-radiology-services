@@ -1,0 +1,53 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "rad-view--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-view"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-view",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-views",
+  "title" : "Radiology views",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-12T08:13:58.331439Z",
+  "publisher" : "kts",
+  "effectivePeriod" : {
+    "start" : "2023-07-10T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "255549009"
+      }, {
+        "code" : "255554000"
+      }, {
+        "code" : "264748007"
+      }, {
+        "code" : "272476000"
+      }, {
+        "code" : "399061009"
+      }, {
+        "code" : "260441006"
+      }, {
+        "code" : "260496000"
+      }, {
+        "code" : "399146005"
+      }, {
+        "code" : "399169008"
+      }, {
+        "code" : "399243009"
+      }, {
+        "code" : "399263002"
+      }, {
+        "code" : "399270002"
+      }, {
+        "code" : "424811006"
+      } ]
+    } ]
+  }
+}

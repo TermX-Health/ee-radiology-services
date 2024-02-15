@@ -1,0 +1,196 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "radiology-associated-procedures--1.0.0",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/radiology-associated-procedures"
+  } ],
+  "url" : "https://kodality.org/fhir/ValueSet/rad-associate-proc",
+  "version" : "1.0.0",
+  "versionAlgorithmString" : "semver",
+  "name" : "rad-associate-proc",
+  "title" : "Radiology associated procedures",
+  "_title" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Radioloogiaga seotud protseduurid"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-11T19:42:00.174357Z",
+  "publisher" : "kts",
+  "description" : "Procedures associated with radiology imaging but are not classified as radiological procedures",
+  "_description" : {
+    "extension" : [ {
+      "extension" : [ {
+        "url" : "lang",
+        "valueCode" : "et"
+      }, {
+        "url" : "content",
+        "valueString" : "Protseduurid, mis on seotud radioloogiaga kuid pole klassifitseeritud kui radioloogia protseduur"
+      } ],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    } ]
+  },
+  "effectivePeriod" : {
+    "start" : "2023-07-17T00:00:00Z"
+  },
+  "compose" : {
+    "include" : [ {
+      "system" : "http://snomed.info/sct",
+      "version" : "11000181102",
+      "concept" : [ {
+        "code" : "9810007"
+      }, {
+        "code" : "10849003"
+      }, {
+        "code" : "11148001"
+      }, {
+        "code" : "21032000"
+      }, {
+        "code" : "21710002"
+      }, {
+        "code" : "35807001"
+      }, {
+        "code" : "41339005"
+      }, {
+        "code" : "41976001"
+      }, {
+        "code" : "45921003"
+      }, {
+        "code" : "51241000"
+      }, {
+        "code" : "57238002"
+      }, {
+        "code" : "58863009"
+      }, {
+        "code" : "66974007"
+      }, {
+        "code" : "103716009"
+      }, {
+        "code" : "112695004"
+      }, {
+        "code" : "112811009"
+      }, {
+        "code" : "175947004"
+      }, {
+        "code" : "230922007"
+      }, {
+        "code" : "230934004"
+      }, {
+        "code" : "233114002"
+      }, {
+        "code" : "233163003"
+      }, {
+        "code" : "233184008"
+      }, {
+        "code" : "233258006"
+      }, {
+        "code" : "233264004"
+      }, {
+        "code" : "233266002"
+      }, {
+        "code" : "233275000"
+      }, {
+        "code" : "233330000"
+      }, {
+        "code" : "233404000"
+      }, {
+        "code" : "233406003"
+      }, {
+        "code" : "233428003"
+      }, {
+        "code" : "233477006"
+      }, {
+        "code" : "239611000"
+      }, {
+        "code" : "243764001"
+      }, {
+        "code" : "344990004"
+      }, {
+        "code" : "359551000"
+      }, {
+        "code" : "397046001"
+      }, {
+        "code" : "405348005"
+      }, {
+        "code" : "428280004"
+      }, {
+        "code" : "428423001"
+      }, {
+        "code" : "429064006"
+      }, {
+        "code" : "443753002"
+      }, {
+        "code" : "443829004"
+      }, {
+        "code" : "448862005"
+      }, {
+        "code" : "609234009"
+      }, {
+        "code" : "773996000"
+      }, {
+        "code" : "265859004"
+      }, {
+        "code" : "233170003"
+      }, {
+        "code" : "233335005"
+      }, {
+        "code" : "233476002"
+      }, {
+        "code" : "441598001"
+      }, {
+        "code" : "312138002"
+      }, {
+        "code" : "314617008"
+      }, {
+        "code" : "103715008"
+      }, {
+        "code" : "15101009"
+      }, {
+        "code" : "398182006"
+      }, {
+        "code" : "233439000"
+      }, {
+        "code" : "2977001"
+      }, {
+        "code" : "119818004"
+      }, {
+        "code" : "442880006"
+      }, {
+        "code" : "373363002"
+      }, {
+        "code" : "830041003"
+      }, {
+        "code" : "405345008"
+      }, {
+        "code" : "67358002"
+      }, {
+        "code" : "233434005"
+      }, {
+        "code" : "274024009"
+      }, {
+        "code" : "708874001"
+      }, {
+        "code" : "708873007"
+      }, {
+        "code" : "240919008"
+      }, {
+        "code" : "398220006"
+      }, {
+        "code" : "45211000"
+      }, {
+        "code" : "36771004"
+      }, {
+        "code" : "103713001"
+      } ]
+    } ]
+  }
+}
