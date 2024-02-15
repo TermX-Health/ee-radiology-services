@@ -1,1 +1,3 @@
 # ee-radiology-services
+
+The repository contains terminology artifacts in the form of FHIR resources, developed as part of the study by Merit Marquis, Igor Bossenko, and Peter Ross titled "Advancing Radiology Interoperability: TermX validation in Estonia." This research emphasizes the crucial need for precise categorization of radiology procedures, particularly angiography, to ensure the accuracy and reliability of data. The exclusive classification system created with TermX signifies a significant advancement, specifically enhancing data integrity and efficiency in the analysis of angiography and X-ray procedures.
