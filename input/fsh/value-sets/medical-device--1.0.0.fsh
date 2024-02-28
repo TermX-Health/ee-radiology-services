@@ -2,8 +2,10 @@ ValueSet: MedicalDevice100
 Id: medical-device--1.0.0
 Title: "Medical device"
 Description: "Medical device "
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/medical-device"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/medical-device"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
 * ^url = "https://kodality.org/fhir/ValueSet/rad-device"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"

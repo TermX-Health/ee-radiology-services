@@ -2,8 +2,10 @@ ValueSet: Specialty
 Id: rad-speciality--1.0.0
 Title: "rad-speciality"
 Description: "Speciality of doctor performing procedure"
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-speciality"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-speciality"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
 * ^url = "https://kodality.org/fhir/ValueSet/rad-speciality"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"

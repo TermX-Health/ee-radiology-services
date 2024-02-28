@@ -1,8 +1,12 @@
 ValueSet: rad-body-region
 Id: body-region--1.0.0
 Title: "Body region"
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/body-region"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/body-region"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://loinc.org"
 * ^url = "https://kodality.org/fhir/ValueSet/body-region"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"

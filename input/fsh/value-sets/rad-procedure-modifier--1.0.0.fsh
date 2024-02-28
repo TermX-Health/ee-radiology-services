@@ -1,8 +1,10 @@
 ValueSet: rad-procedure-modifier
 Id: rad-procedure-modifier--1.0.0
 Title: "Procedure modifier"
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-procedure-modifier"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-procedure-modifier"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530"
 * ^url = "https://kodality.org/fhir/ValueSet/rad-procedure-modifier"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"

@@ -2,8 +2,10 @@ ValueSet: Modality
 Id: rad-modality--0.0.1
 Title: "Modality"
 Description: "Form of radiological imaging"
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-modality"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-modality"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
 * ^url = "https://kodality.org/fhir/ValueSet/rad-modality"
 * ^version = "0.0.1"
 * ^status = #draft

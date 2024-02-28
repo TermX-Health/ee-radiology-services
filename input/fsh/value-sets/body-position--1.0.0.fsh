@@ -1,14 +1,16 @@
 ValueSet: rad-Body-position
 Id: body-position--1.0.0
 Title: "Body position"
-* ^extension.url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension.valueUrl = "https://termx.kodality.dev/fhir/ValueSet/body-position"
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/body-position"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
 * ^url = "https://kodality.org/fhir/ValueSet/rad-body-position"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-09T07:37:45.599951Z"
+* ^date = "2024-02-15T12:21:23.624135Z"
 * ^publisher = "kts"
 * ^approvalDate = "2023-10-09"
 * ^effectivePeriod.start = "2023-09-09T00:00:00Z"

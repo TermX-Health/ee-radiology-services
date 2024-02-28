@@ -4,6 +4,16 @@
   "extension" : [ {
     "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
     "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/body-region"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "resource" : "http://snomed.info/sct"
+    }
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "resource" : "http://loinc.org"
+    }
   } ],
   "url" : "https://kodality.org/fhir/ValueSet/body-region",
   "version" : "1.0.0",

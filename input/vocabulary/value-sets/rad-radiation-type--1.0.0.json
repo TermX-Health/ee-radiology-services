@@ -4,6 +4,11 @@
   "extension" : [ {
     "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
     "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-radiation-type"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "resource" : "http://snomed.info/sct"
+    }
   } ],
   "url" : "https://kodality.org/fhir/ValueSet/rad-radiation-type",
   "version" : "1.0.0",

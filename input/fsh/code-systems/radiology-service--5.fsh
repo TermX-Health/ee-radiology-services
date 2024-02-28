@@ -2,6 +2,12 @@ CodeSystem: RadiologyService
 Id: radiology-service--5
 Title: "Radioloogiline uuring"
 * ^language = #et
+* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
+* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/radiology-service"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"
+* ^extension[=].valueCode = #executable
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
+* ^extension[=].valueRelatedArtifact.resource = "http://fhir.ee/ValueSet/radiology-procedures"
 * ^url = "http://terminology.hl7.ee/CodeSystem/radiology-service"
 * ^version = "5"
 * ^versionAlgorithmString = "semver"

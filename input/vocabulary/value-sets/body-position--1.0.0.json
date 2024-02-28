@@ -4,6 +4,11 @@
   "extension" : [ {
     "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
     "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/body-position"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "resource" : "http://snomed.info/sct"
+    }
   } ],
   "url" : "https://kodality.org/fhir/ValueSet/rad-body-position",
   "version" : "1.0.0",
@@ -24,7 +29,7 @@
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2023-10-09T07:37:45.599951Z",
+  "date" : "2024-02-15T12:21:23.624135Z",
   "publisher" : "kts",
   "approvalDate" : "2023-10-09",
   "effectivePeriod" : {

@@ -2,6 +2,18 @@
   "resourceType" : "CodeSystem",
   "id" : "radiology-service--5",
   "language" : "et",
+  "extension" : [ {
+    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
+    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/radiology-service"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
+    "valueCode" : "executable"
+  }, {
+    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
+    "valueRelatedArtifact" : {
+      "resource" : "http://fhir.ee/ValueSet/radiology-procedures"
+    }
+  } ],
   "url" : "http://terminology.hl7.ee/CodeSystem/radiology-service",
   "version" : "5",
   "versionAlgorithmString" : "semver",
