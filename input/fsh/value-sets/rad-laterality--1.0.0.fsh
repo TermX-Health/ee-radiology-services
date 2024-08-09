@@ -1,20 +1,16 @@
-ValueSet: Laterality
+ValueSet: RadLaterality
 Id: rad-laterality--1.0.0
 Title: "Lateraalsus"
 Description: "Kirjeldav väärtus pildistava anatoomilisele poolsusele"
 * ^language = #et
-* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-laterality"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
-* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530"
-* ^url = "https://kodality.org/fhir/ValueSet/rad-laterality"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-laterality"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-12-07T14:07:26.852672Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-06-23T00:00:00Z"
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#7771000
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#24028007
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#51440002
+* SNOMED_CT#7771000
+* SNOMED_CT#24028007
+* SNOMED_CT#51440002

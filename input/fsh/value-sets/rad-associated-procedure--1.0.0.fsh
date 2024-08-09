@@ -1,18 +1,18 @@
-ValueSet: rad-associate-proc
-Id: radiology-associated-procedures--1.0.0
+ValueSet: RadAssociatedProcedure
+Id: rad-associated-procedure--1.0.0
 Title: "Radiology associated procedures"
 Description: "Procedures associated with radiology imaging but are not classified as radiological procedures"
 * ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
 * ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/radiology-associated-procedures"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
-* ^url = "https://kodality.org/fhir/ValueSet/rad-associate-proc"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-associated-procedure"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-12-11T19:42:00.174357Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-07-17T00:00:00Z"
 * SNOMED_CT#9810007
 * SNOMED_CT#10849003

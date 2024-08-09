@@ -1,30 +1,26 @@
-ValueSet: rad-procedure-modifier
+ValueSet: RadProcedureModifier
 Id: rad-procedure-modifier--1.0.0
 Title: "Procedure modifier"
-* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-procedure-modifier"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
-* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530"
-* ^url = "https://kodality.org/fhir/ValueSet/rad-procedure-modifier"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-procedure-modifier"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-12-12T07:59:37.134952Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-07-04T00:00:00Z"
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#185212007
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#21032000
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#260314002
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#262134003
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#468542000
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#763654002
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#763655001
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#82799009
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#911000119102
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#264748007 " "
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#257913003
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#255536004
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#261081002
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#257914009
-* http://snomed.info/sct|http://snomed.info/sct/11000181102/version/20230530#255540008
+* SNOMED_CT#185212007
+* SNOMED_CT#21032000
+* SNOMED_CT#260314002
+* SNOMED_CT#262134003
+* SNOMED_CT#468542000
+* SNOMED_CT#763654002
+* SNOMED_CT#763655001
+* SNOMED_CT#82799009
+* SNOMED_CT#911000119102
+* SNOMED_CT#264748007
+* SNOMED_CT#257913003
+* SNOMED_CT#255536004
+* SNOMED_CT#261081002
+* SNOMED_CT#257914009
+* SNOMED_CT#255540008

@@ -1,17 +1,13 @@
-ValueSet: rad-pharm
+ValueSet: RadPharmaceutical
 Id: rad-pharmaceutical--1.0.0
 Title: "Pharmaceutical"
-* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-pharmaceutical"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
-* ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
-* ^url = "https://kodality.org/fhir/ValueSet/rad-pharmaceutical"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-pharmaceutical"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-12-12T12:04:00.94855Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-07-10T00:00:00Z"
 * SNOMED_CT#771384007
 * SNOMED_CT#373293005
@@ -51,4 +47,4 @@ Title: "Pharmaceutical"
 * SNOMED_CT#349359008
 * SNOMED_CT#396014007
 * SNOMED_CT#1144611009
-* SNOMED_CT#"768697005 "
+* SNOMED_CT#768697005

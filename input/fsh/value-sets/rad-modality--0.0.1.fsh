@@ -1,4 +1,4 @@
-ValueSet: Modality
+ValueSet: RadModality
 Id: rad-modality--0.0.1
 Title: "Modality"
 Description: "Form of radiological imaging"
@@ -6,12 +6,12 @@ Description: "Form of radiological imaging"
 * ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-modality"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
-* ^url = "https://kodality.org/fhir/ValueSet/rad-modality"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-modality"
 * ^version = "0.0.1"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-08-17T07:41:36.618367Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-06-28T00:00:00Z"
 * SNOMED_CT#77343006
 * SNOMED_CT#363680008

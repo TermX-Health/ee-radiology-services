@@ -1,4 +1,4 @@
-ValueSet: anatomic-focus-2
+ValueSet: RadAnatomicFocus
 Id: rad-anatomic-focus--1.0.0
 Title: "Anatomic focus"
 Description: "Anatomical focus of the image"
@@ -6,13 +6,13 @@ Description: "Anatomical focus of the image"
 * ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-anatomic-focus"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
-* ^url = "https://kodality.org/fhir/ValueSet/anatomic-focus"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-anatomic-focus"
 * ^version = "1.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-12-11T20:37:53.976603Z"
-* ^publisher = "kts"
+* ^publisher = "taltech"
 * ^effectivePeriod.start = "2023-07-04T00:00:00Z"
 * SNOMED_CT#85856004
 * SNOMED_CT#344001

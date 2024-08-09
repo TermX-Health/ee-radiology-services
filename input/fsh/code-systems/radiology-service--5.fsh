@@ -2,19 +2,17 @@ CodeSystem: RadiologyService
 Id: radiology-service--5
 Title: "Radioloogiline uuring"
 * ^language = #et
-* ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
-* ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/radiology-service"
-* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"
+* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"
 * ^extension[=].valueCode = #executable
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://fhir.ee/ValueSet/radiology-procedures"
-* ^url = "http://terminology.hl7.ee/CodeSystem/radiology-service"
+* ^url = "https://taltech.ee/fhir/CodeSystem/radiology-service"
 * ^version = "5"
 * ^versionAlgorithmString = "semver"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-15T07:53:21.783442Z"
-* ^publisher = "hl7-ee"
+* ^publisher = "taltech"
 * ^approvalDate = "2023-12-29"
 * ^lastReviewDate = "2023-12-29"
 * ^effectivePeriod.start = "2022-09-29T00:00:00Z"
