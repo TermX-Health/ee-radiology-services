@@ -1,19 +1,10 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "rad-image-procedure--0.0.2",
-  "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-image-procedure"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://snomed.info/sct"
-    }
-  } ],
-  "url" : "https://kodality.org/fhir/ValueSet/rad-image-procedure",
+  "id" : "rad-imaging-procedure--0.0.2",
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-imaging-procedure",
   "version" : "0.0.2",
-  "name" : "rad-image-procedure",
-  "title" : "Radiology image procedure",
+  "name" : "RadImagingProcedure",
+  "title" : "Radiology imaging procedure",
   "_title" : {
     "extension" : [ {
       "extension" : [ {
@@ -29,7 +20,7 @@
   "status" : "draft",
   "experimental" : false,
   "date" : "2023-12-11T15:14:29.812205Z",
-  "publisher" : "kts",
+  "publisher" : "taltech",
   "description" : "Radiological imaging procedures",
   "_description" : {
     "extension" : [ {

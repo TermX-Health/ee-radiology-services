@@ -2,18 +2,9 @@
   "resourceType" : "ValueSet",
   "id" : "rad-reason-for-exam--1.0.0",
   "language" : "et",
-  "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-reason-for-exam"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://snomed.info/sct"
-    }
-  } ],
-  "url" : "https://kodality.org/fhir/ValueSet/rad-reason-for-exam",
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-reason-for-exam",
   "version" : "1.0.0",
-  "name" : "rad-reason-for-exam",
+  "name" : "RadReasonForExam",
   "title" : "Reason for exam ",
   "_title" : {
     "extension" : [ {
@@ -30,7 +21,7 @@
   "status" : "draft",
   "experimental" : false,
   "date" : "2024-01-16T10:23:12.165493Z",
-  "publisher" : "kts",
+  "publisher" : "taltech",
   "effectivePeriod" : {
     "start" : "2024-01-16T00:00:00Z"
   },

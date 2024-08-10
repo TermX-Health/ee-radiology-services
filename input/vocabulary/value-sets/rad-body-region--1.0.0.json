@@ -1,29 +1,15 @@
 {
   "resourceType" : "ValueSet",
-  "id" : "body-region--1.0.0",
-  "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/body-region"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://snomed.info/sct"
-    }
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://loinc.org"
-    }
-  } ],
-  "url" : "https://kodality.org/fhir/ValueSet/body-region",
+  "id" : "rad-body-region--1.0.0",
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-body-region",
   "version" : "1.0.0",
   "versionAlgorithmString" : "semver",
-  "name" : "rad-body-region",
+  "name" : "RadBodyRegion",
   "title" : "Body region",
   "status" : "draft",
   "experimental" : false,
   "date" : "2023-11-07T12:20:50.508951Z",
-  "publisher" : "kts",
+  "publisher" : "taltech",
   "effectivePeriod" : {
     "start" : "2023-06-29T00:00:00Z"
   },

@@ -1,18 +1,9 @@
 {
   "resourceType" : "ValueSet",
   "id" : "rad-modality--0.0.1",
-  "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-modality"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://snomed.info/sct"
-    }
-  } ],
-  "url" : "https://kodality.org/fhir/ValueSet/rad-modality",
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-modality",
   "version" : "0.0.1",
-  "name" : "Modality",
+  "name" : "RadModality",
   "title" : "Modality",
   "_title" : {
     "extension" : [ {
@@ -29,7 +20,7 @@
   "status" : "draft",
   "experimental" : false,
   "date" : "2023-08-17T07:41:36.618367Z",
-  "publisher" : "kts",
+  "publisher" : "taltech",
   "description" : "Form of radiological imaging",
   "_description" : {
     "extension" : [ {

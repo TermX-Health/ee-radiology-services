@@ -1,24 +1,15 @@
 {
   "resourceType" : "ValueSet",
   "id" : "rad-view--1.0.0",
-  "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/rad-view"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://snomed.info/sct"
-    }
-  } ],
-  "url" : "https://kodality.org/fhir/ValueSet/rad-view",
+  "url" : "https://taltech.ee/fhir/ValueSet/rad-view",
   "version" : "1.0.0",
   "versionAlgorithmString" : "semver",
-  "name" : "rad-views",
-  "title" : "Radiology views",
+  "name" : "RadView",
+  "title" : "Radiology view",
   "status" : "draft",
   "experimental" : false,
   "date" : "2023-12-12T08:13:58.331439Z",
-  "publisher" : "kts",
+  "publisher" : "taltech.ee",
   "effectivePeriod" : {
     "start" : "2023-07-10T00:00:00Z"
   },

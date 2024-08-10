@@ -1,12 +1,12 @@
-ValueSet: RadImageProcedure
-Id: rad-image-procedure--0.0.2
-Title: "Radiology image procedure"
+ValueSet: RadImagingProcedure
+Id: rad-imaging-procedure--0.0.2
+Title: "Radiology imaging procedure"
 Description: "Radiological imaging procedures"
 * ^extension[0].url = "http://hl7.org/fhir/tools/StructureDefinition/web-source"
 * ^extension[=].valueUrl = "https://termx.kodality.dev/fhir/ValueSet/rad-image-procedure"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://snomed.info/sct"
-* ^url = "https://taltech.ee/fhir/ValueSet/rad-image-procedure"
+* ^url = "https://taltech.ee/fhir/ValueSet/rad-imaging-procedure"
 * ^version = "0.0.2"
 * ^status = #draft
 * ^experimental = false

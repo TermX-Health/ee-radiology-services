@@ -1,23 +1,15 @@
 {
   "resourceType" : "CodeSystem",
-  "id" : "radiology-service--5",
+  "id" : "rad-service--5",
   "language" : "et",
   "extension" : [ {
-    "url" : "http://hl7.org/fhir/tools/StructureDefinition/web-source",
-    "valueUrl" : "https://termx.kodality.dev/fhir/ValueSet/radiology-service"
-  }, {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel",
     "valueCode" : "executable"
-  }, {
-    "url" : "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact",
-    "valueRelatedArtifact" : {
-      "resource" : "http://fhir.ee/ValueSet/radiology-procedures"
-    }
-  } ],
-  "url" : "http://terminology.hl7.ee/CodeSystem/radiology-service",
-  "version" : "5",
+  }],
+  "url" : "https://taltech.ee/fhir/CodeSystem/rad-service",
+  "version" : "5.0.0",
   "versionAlgorithmString" : "semver",
-  "name" : "RadiologyService",
+  "name" : "RadService",
   "title" : "Radioloogiline uuring",
   "_title" : {
     "extension" : [ {
@@ -34,7 +26,7 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2024-02-15T07:53:21.783442Z",
-  "publisher" : "hl7-ee",
+  "publisher" : "taltech",
   "approvalDate" : "2023-12-29",
   "lastReviewDate" : "2023-12-29",
   "effectivePeriod" : {
@@ -44,12 +36,12 @@
   "hierarchyMeaning" : "is-a",
   "content" : "complete",
   "property" : [ {
-    "code" : "Contrast",
+    "code" : "contrast",
     "uri" : "https://fhir.ee/CodeSystem/rad-properties#contrast",
     "description" : "Kontrastaine",
     "type" : "Coding"
   }, {
-    "code" : "Interpreter",
+    "code" : "evaluator",
     "uri" : "https://fhir.ee/CodeSystem/rad-properties#evaluator",
     "description" : "Pildi hindaja",
     "type" : "Coding"
@@ -187,7 +179,7 @@
           "value" : "Alajäseme arterid parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -240,7 +232,7 @@
           "value" : "Alajäseme arterid vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -293,7 +285,7 @@
           "value" : "Alajäseme arteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -346,7 +338,7 @@
           "value" : "Alajäseme arteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -405,7 +397,7 @@
           "value" : "Alajäseme arteri trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -458,7 +450,7 @@
           "value" : "Alajäseme arteri trombektoomia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -517,7 +509,7 @@
           "value" : "Alajäseme süvaveenide balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -570,7 +562,7 @@
           "value" : "Alajäseme süvaveenide stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -629,7 +621,7 @@
           "value" : "Alajäseme süvaveenide trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -688,7 +680,7 @@
           "value" : "Alajäseme arteri sulgemine (verdumine)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -747,7 +739,7 @@
           "value" : "Alajäseme AVM sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -806,7 +798,7 @@
           "value" : "Ühisreiearteri pseudoaneurüsmi sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -865,7 +857,7 @@
           "value" : "Alajäseme flebograafia parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -924,7 +916,7 @@
           "value" : "Alajäseme flebograafia vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -994,7 +986,7 @@
           "value" : "Kaelaarterid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1041,7 +1033,7 @@
           "value" : "Kaelaarteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1100,7 +1092,7 @@
           "value" : "Kaelaarteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1153,7 +1145,7 @@
           "value" : "Kaelaveenid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1209,7 +1201,7 @@
           "value" : "Kaelaarteri sulgemine (kasvaja)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1268,7 +1260,7 @@
           "value" : "Kaelaarteri sulgemine (verdumine)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1338,7 +1330,7 @@
           "value" : "Selektiivne vistseraalne angiograafia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1391,7 +1383,7 @@
           "value" : "Kõhuaort"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1444,7 +1436,7 @@
           "value" : "Kõhuaordi balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1497,7 +1489,7 @@
           "value" : "Kõhuaordi stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1556,7 +1548,7 @@
           "value" : "Kõhuaordi stentgrafti paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1609,7 +1601,7 @@
           "value" : "Aordiharude AVM-i sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1668,7 +1660,7 @@
           "value" : "Niudearteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1727,7 +1719,7 @@
           "value" : "Niudearteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1786,7 +1778,7 @@
           "value" : "Niudearteri verejooksu sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1851,7 +1843,7 @@
           "value" : "Niudearteri sulgemine (kasvaja)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1910,7 +1902,7 @@
           "value" : "Niudearteri AVM-i sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -1969,7 +1961,7 @@
           "value" : "Neeruarteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2028,7 +2020,7 @@
           "value" : "Neeruarteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2087,7 +2079,7 @@
           "value" : "Neeruarteri sulgemine (verejooks)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2146,7 +2138,7 @@
           "value" : "Neeruarteri sulgemine (kasvaja)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2205,7 +2197,7 @@
           "value" : "Neerude sümpaatiline denervatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2258,7 +2250,7 @@
           "value" : "Emakaarterite emboliseerimine (müoom)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2323,7 +2315,7 @@
           "value" : "Maksa kemoembolisatsioon (kasvaja)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2382,7 +2374,7 @@
           "value" : "Dialüüsi püsikateetri paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2441,7 +2433,7 @@
           "value" : "Dialüüsi püsikateetri vahetamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2494,7 +2486,7 @@
           "value" : "Dialüüsi püsikateetri eemaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2547,7 +2539,7 @@
           "value" : "Muu vistseraalarteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2606,7 +2598,7 @@
           "value" : "Muu vistseraalarteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2665,7 +2657,7 @@
           "value" : "Muu vistseraalarteri sulgemine (verejooks)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2724,7 +2716,7 @@
           "value" : "Muu vistseraalarteri sulgemine (kasvaja)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2783,7 +2775,7 @@
           "value" : "Kavograafia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2836,7 +2828,7 @@
           "value" : "Portograafia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2889,7 +2881,7 @@
           "value" : "Alumise õõnesveeni filtri paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2942,7 +2934,7 @@
           "value" : "Alumise õõnesveeni filtri eemaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -2995,7 +2987,7 @@
           "value" : "Niudeveeni trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3054,7 +3046,7 @@
           "value" : "Niudeveeni trombektoomia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3113,7 +3105,7 @@
           "value" : "Testikulaar- või ovariaalveenide sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3172,7 +3164,7 @@
           "value" : "Neerupealise veenide selektiivne kateteriseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3236,7 +3228,7 @@
           "value" : "Muu flebograafia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3294,7 +3286,7 @@
           "value" : "Peaajuarterid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3347,7 +3339,7 @@
           "value" : "Peaajuarteri trombektoomia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3406,7 +3398,7 @@
           "value" : "Peaajuarteri trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3459,7 +3451,7 @@
           "value" : "Peaajuarteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3518,7 +3510,7 @@
           "value" : "Peaajuarteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3571,7 +3563,7 @@
           "value" : "Peaajuarteri sulgemine (aneurüsm, AVM)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3630,7 +3622,7 @@
           "value" : "Peapiirkonna veenid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3683,7 +3675,7 @@
           "value" : "Karotiid-kavernoosse fistuli sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3736,7 +3728,7 @@
           "value" : "Pea- ja kaelaarteri sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3795,7 +3787,7 @@
           "value" : "Peapiirkonna arteri sulgemine (verdumine)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3854,7 +3846,7 @@
           "value" : "Ninaverejooksu sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3913,7 +3905,7 @@
           "value" : "Sinus petrosus'e kateteriseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -3977,7 +3969,7 @@
           "value" : "Koronarograafia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4030,7 +4022,7 @@
           "value" : "Koronaarangioplastika (PTKA)"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4095,7 +4087,7 @@
           "value" : "Koronaarangioplastika"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4166,7 +4158,7 @@
           "value" : "Koronaararteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4225,7 +4217,7 @@
           "value" : "Valvuloplastika"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4284,7 +4276,7 @@
           "value" : "TAVI, TPVI - aordi- või pulmonaalklapi implanteerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4337,7 +4329,7 @@
           "value" : "Avatud arteriaalse juha sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4396,7 +4388,7 @@
           "value" : "Avatud arteriaalse juha stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4461,7 +4453,7 @@
           "value" : "Vatsakesete vaheseina defekti sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4514,7 +4506,7 @@
           "value" : "Kodade vaheseina või foramen ovale sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4567,7 +4559,7 @@
           "value" : "Aortopulmonaalsete kollateraalide sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4620,7 +4612,7 @@
           "value" : "Aordiistmuse dilatatsioon ja stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4673,7 +4665,7 @@
           "value" : "Kaasasündinud koronaarfistuli okluseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4732,7 +4724,7 @@
           "value" : "Endokardiaalne kaardistamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4791,7 +4783,7 @@
           "value" : "Arteriovenoosse malformatsiooni ravi"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4903,7 +4895,7 @@
           "value" : "Südameõõnte kateteriseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -4962,7 +4954,7 @@
           "value" : "Südameõõnte kateteriseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5021,7 +5013,7 @@
           "value" : "Südameõõnte kateteriseerimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5086,7 +5078,7 @@
           "value" : "Südamestimulaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5151,7 +5143,7 @@
           "value" : "Südamestimulaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5216,7 +5208,7 @@
           "value" : "Kardioverter-defibrillaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5275,7 +5267,7 @@
           "value" : "Kardioverter-defibrillaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5340,7 +5332,7 @@
           "value" : "Kardioverter-defibrillaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5399,7 +5391,7 @@
           "value" : "Biventrikulaarse kardiostimulaatori paigaldamine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5470,7 +5462,7 @@
           "value" : "Pacemaker follow-up and programming"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5529,7 +5521,7 @@
           "value" : "Südamestimulaatori elektroodi vahetus"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5588,7 +5580,7 @@
           "value" : "Rinnaaort"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5641,7 +5633,7 @@
           "value" : "Rinnaaordi balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5694,7 +5686,7 @@
           "value" : "Rinnaaordi balloondilatatsioon stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5753,7 +5745,7 @@
           "value" : "Rinnaaorti stentgrafti paigaldus"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -5853,7 +5845,7 @@
           "value" : "Kopsuarterid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6059,7 +6051,7 @@
           "value" : "Kopsuarteri trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6247,7 +6239,7 @@
           "value" : "Ülajäseme arterid parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6306,7 +6298,7 @@
           "value" : "Ülajäseme arterid vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6365,7 +6357,7 @@
           "value" : "Üjajäseme arteri balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6418,7 +6410,7 @@
           "value" : "Ülajäseme arteri stentimine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6477,7 +6469,7 @@
           "value" : "Ülajäseme arteri trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6530,7 +6522,7 @@
           "value" : "Ülajäseme arteri trombektoomia"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6589,7 +6581,7 @@
           "value" : "Ülajäseme veenide balloondilatatsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6642,7 +6634,7 @@
           "value" : "Ülajäseme veenide trombolüüs"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6695,7 +6687,7 @@
           "value" : "Dialüüsifistli balloondilatasioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6848,7 +6840,7 @@
           "value" : "Ülajäseme AVM sulgemine"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6907,7 +6899,7 @@
           "value" : "Ülajäseme flebograafia parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -6960,7 +6952,7 @@
           "value" : "Ülajäseme flebograafia vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -20871,7 +20863,7 @@
             "value" : "Hammas 11"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -20936,7 +20928,7 @@
             "value" : "Hammas 12"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21007,7 +20999,7 @@
             "value" : "Hammas 13"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21078,7 +21070,7 @@
             "value" : "Hammas 14"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21149,7 +21141,7 @@
             "value" : "Hammas 15"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21220,7 +21212,7 @@
             "value" : "Hammas 16"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21291,7 +21283,7 @@
             "value" : "Hammas 17"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21362,7 +21354,7 @@
             "value" : "Hammas 18"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21433,7 +21425,7 @@
             "value" : "Hammas 21"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21504,7 +21496,7 @@
             "value" : "Hammas 22"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21575,7 +21567,7 @@
             "value" : "Hammas 23"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21646,7 +21638,7 @@
             "value" : "Hammas 24"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21717,7 +21709,7 @@
             "value" : "Hammas 25"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21788,7 +21780,7 @@
             "value" : "Hammas 26"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21859,7 +21851,7 @@
             "value" : "Hammas 27"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -21930,7 +21922,7 @@
             "value" : "Hammas 28"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22001,7 +21993,7 @@
             "value" : "Hammas 31"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22072,7 +22064,7 @@
             "value" : "Hammas 32"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22143,7 +22135,7 @@
             "value" : "Hammas 33"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22214,7 +22206,7 @@
             "value" : "Hammas 34"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22285,7 +22277,7 @@
             "value" : "Hammas 35"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22356,7 +22348,7 @@
             "value" : "Hammas 36"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22427,7 +22419,7 @@
             "value" : "Hammas 37"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22498,7 +22490,7 @@
             "value" : "Hammas 38"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22569,7 +22561,7 @@
             "value" : "Hammas 41"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22640,7 +22632,7 @@
             "value" : "Hammas 42"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22711,7 +22703,7 @@
             "value" : "Hammas 43"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22782,7 +22774,7 @@
             "value" : "Hammas 44"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22853,7 +22845,7 @@
             "value" : "Hammas 45"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22924,7 +22916,7 @@
             "value" : "Hammas 46"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -22995,7 +22987,7 @@
             "value" : "Hammas 47"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23066,7 +23058,7 @@
             "value" : "Hammas 48"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23137,7 +23129,7 @@
             "value" : "Hammas 51"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23208,7 +23200,7 @@
             "value" : "Hammas 52"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23279,7 +23271,7 @@
             "value" : "Hammas 53"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23350,7 +23342,7 @@
             "value" : "Hammas 54"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23421,7 +23413,7 @@
             "value" : "Hammas 55"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23492,7 +23484,7 @@
             "value" : "Hammas 61"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23563,7 +23555,7 @@
             "value" : "Hammas 62"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23634,7 +23626,7 @@
             "value" : "Hammas 63"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23705,7 +23697,7 @@
             "value" : "Hammas 64"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23776,7 +23768,7 @@
             "value" : "Hammas 65"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23847,7 +23839,7 @@
             "value" : "Hammas 71"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23918,7 +23910,7 @@
             "value" : "Hammas 72"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -23989,7 +23981,7 @@
             "value" : "Hammas 73"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24060,7 +24052,7 @@
             "value" : "Hammas 74"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24131,7 +24123,7 @@
             "value" : "Hammas 75"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24202,7 +24194,7 @@
             "value" : "Hammas 81"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24273,7 +24265,7 @@
             "value" : "Hammas 82"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24344,7 +24336,7 @@
             "value" : "Hammas 83"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24415,7 +24407,7 @@
             "value" : "Hammas 84"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24486,7 +24478,7 @@
             "value" : "Hammas 85"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "106289002"
@@ -24579,7 +24571,7 @@
             "value" : "Puus AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -24650,7 +24642,7 @@
             "value" : "Puus AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -24721,7 +24713,7 @@
             "value" : "Puus Lauenstein parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -24804,7 +24796,7 @@
             "value" : "Puus Lauenstein vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -24887,7 +24879,7 @@
             "value" : "Reieluu põlvega AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -24964,7 +24956,7 @@
             "value" : "Reieluu põlvega AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25041,7 +25033,7 @@
             "value" : "Reieluu põlvega LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25118,7 +25110,7 @@
             "value" : "Reieluu põlvega LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25195,7 +25187,7 @@
             "value" : "Reieluu puusaga AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25272,7 +25264,7 @@
             "value" : "Reieluu puusaga AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25349,7 +25341,7 @@
             "value" : "Reieluu puusaga LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25426,7 +25418,7 @@
             "value" : "Reieluu puusaga LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25503,7 +25495,7 @@
             "value" : "Põlv AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25574,7 +25566,7 @@
             "value" : "Põlv AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25645,7 +25637,7 @@
             "value" : "Põlv LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25716,7 +25708,7 @@
             "value" : "Põlv LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25787,7 +25779,7 @@
             "value" : "Säär AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25858,7 +25850,7 @@
             "value" : "Säär AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -25935,7 +25927,7 @@
             "value" : "Säär LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26012,7 +26004,7 @@
             "value" : "Säär LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26089,7 +26081,7 @@
             "value" : "Hüppeliiges LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26166,7 +26158,7 @@
             "value" : "Hüppeliiges LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26243,7 +26235,7 @@
             "value" : "Hüppeliiges  Mortise parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26326,7 +26318,7 @@
             "value" : "Hüppeliiges  Mortise vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26409,7 +26401,7 @@
             "value" : "Labajalg poolpõiki parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26486,7 +26478,7 @@
             "value" : "Labajalg poolpõiki vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26563,7 +26555,7 @@
             "value" : "Labajalg AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26640,7 +26632,7 @@
             "value" : "Labajalg AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26717,7 +26709,7 @@
             "value" : "Kandluu aksiaalne parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26794,7 +26786,7 @@
             "value" : "Kandluu aksiaalne vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26871,7 +26863,7 @@
             "value" : "Kandluu LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -26948,7 +26940,7 @@
             "value" : "Kandluu LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27036,7 +27028,7 @@
             "value" : "Kõht AP lamades palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27113,7 +27105,7 @@
             "value" : "Kõht laterogramm palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27190,7 +27182,7 @@
             "value" : "Kõht laterogramm palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27267,7 +27259,7 @@
             "value" : "Kõht laterogramm palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27344,13 +27336,13 @@
             "value" : "Seedetrakti passaaž kontrastainega palatis"
           } ],
           "property" : [ {
-            "code" : "Contrast",
+            "code" : "contrast",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "349359008"
             }
           }, {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27415,13 +27407,13 @@
             "value" : "Jämesoole passaaž kontrastainega palatis"
           } ],
           "property" : [ {
-            "code" : "Contrast",
+            "code" : "contrast",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "349359008"
             }
           }, {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27486,7 +27478,7 @@
             "value" : "Tsüstograafia palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27551,7 +27543,7 @@
             "value" : "Vaagen AP palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27633,7 +27625,7 @@
             "value" : "Muu eriprojektsioon palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27715,7 +27707,7 @@
             "value" : "Rindkere AP lamades palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27792,7 +27784,7 @@
             "value" : "Rindkere PA istudes palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27869,7 +27861,7 @@
             "value" : "Rindkere AP istudes palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -27946,7 +27938,7 @@
             "value" : "Rangluu AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28023,7 +28015,7 @@
             "value" : "Rangluu AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28100,7 +28092,7 @@
             "value" : "Rangluu aksiaalne parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28177,7 +28169,7 @@
             "value" : "Rindkere AP vastsündinu lamades palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28260,7 +28252,7 @@
             "value" : "Rindkere kõht vaagen AP vastsündinu lamades palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28349,7 +28341,7 @@
             "value" : "Rangluu aksiaalne vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28437,7 +28429,7 @@
             "value" : "Õlg AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28514,7 +28506,7 @@
             "value" : "Õlg AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28591,7 +28583,7 @@
             "value" : "Õlavarreluu AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28668,7 +28660,7 @@
             "value" : "Õlavarreluu AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28745,7 +28737,7 @@
             "value" : "Õlavarreluu LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28822,7 +28814,7 @@
             "value" : "Õlavarreluu LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28899,7 +28891,7 @@
             "value" : "Küünarliiges AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -28976,7 +28968,7 @@
             "value" : "Küünarliiges AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29053,7 +29045,7 @@
             "value" : "Küünarliiges LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29130,7 +29122,7 @@
             "value" : "Küünarliiges LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29207,7 +29199,7 @@
             "value" : "Küünarvarreluud AP parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29284,7 +29276,7 @@
             "value" : "Küünarvarreluud AP vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29361,7 +29353,7 @@
             "value" : "Küünarvarreluud LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29438,7 +29430,7 @@
             "value" : "Küünarvarreluud LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29515,7 +29507,7 @@
             "value" : "Ranne PA parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29592,7 +29584,7 @@
             "value" : "Ranne PA vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29669,7 +29661,7 @@
             "value" : "Ranne LAT parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29746,7 +29738,7 @@
             "value" : "Ranne LAT vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29823,7 +29815,7 @@
             "value" : "Labakäsi PA parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29900,7 +29892,7 @@
             "value" : "Labakäsi PA vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -29977,7 +29969,7 @@
             "value" : "Labakäsi poolpõiki parem palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -30054,7 +30046,7 @@
             "value" : "Labakäsi poolpõiki vasak palatis"
           } ],
           "property" : [ {
-            "code" : "Interpreter",
+            "code" : "evaluator",
             "valueCoding" : {
               "system" : "snomed-ct",
               "code" : "66862007"
@@ -30143,7 +30135,7 @@
           "value" : "Puus AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30208,7 +30200,7 @@
           "value" : "Puus AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30273,7 +30265,7 @@
           "value" : "Puus Lauenstein parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30350,7 +30342,7 @@
           "value" : "Puus Lauenstein vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30427,7 +30419,7 @@
           "value" : "Puus LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30492,7 +30484,7 @@
           "value" : "Puus LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30557,7 +30549,7 @@
           "value" : "Puus Danelius-Miller parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30634,7 +30626,7 @@
           "value" : "Puus Danelius-Miller vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30711,7 +30703,7 @@
           "value" : "Puus AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30782,7 +30774,7 @@
           "value" : "Puus AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30853,7 +30845,7 @@
           "value" : "Puus eriprojektsioon parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30918,7 +30910,7 @@
           "value" : "Puus eriprojektsioon vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -30983,7 +30975,7 @@
           "value" : "Puusad AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31048,7 +31040,7 @@
           "value" : "Puusad AP Frog Leg"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31125,7 +31117,7 @@
           "value" : "Puusad AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31196,7 +31188,7 @@
           "value" : "Puusad AP Lauenstein"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31279,7 +31271,7 @@
           "value" : "Puus AP protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31356,7 +31348,7 @@
           "value" : "Puus AP protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31433,7 +31425,7 @@
           "value" : "Puus Lauenstein protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31516,7 +31508,7 @@
           "value" : "Puus Lauenstein protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31599,7 +31591,7 @@
           "value" : "Puusad AP proteesid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31676,7 +31668,7 @@
           "value" : "Puus Danelius-Miller protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31759,7 +31751,7 @@
           "value" : "Puus Danelius-Miller protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31842,7 +31834,7 @@
           "value" : "Puus eriprojektsioon protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31919,7 +31911,7 @@
           "value" : "Puus eriprojektsioon protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -31996,7 +31988,7 @@
           "value" : "Reieluu põlvega AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32067,7 +32059,7 @@
           "value" : "Reieluu põlvega AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32138,7 +32130,7 @@
           "value" : "Reieluu põlvega LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32209,7 +32201,7 @@
           "value" : "Reieluu põlvega LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32280,7 +32272,7 @@
           "value" : "Reieluu põlvega AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32351,7 +32343,7 @@
           "value" : "Reieluu põlvega AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32428,7 +32420,7 @@
           "value" : "Reieluu puusaga AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32499,7 +32491,7 @@
           "value" : "Reieluu puusaga AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32570,7 +32562,7 @@
           "value" : "Reieluu puusaga LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32641,7 +32633,7 @@
           "value" : "Reieluu puusaga LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32712,7 +32704,7 @@
           "value" : "Reieluu puusaga AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32789,7 +32781,7 @@
           "value" : "Reieluu puusaga AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32866,7 +32858,7 @@
           "value" : "Reieluu puusaga põlvega AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -32943,7 +32935,7 @@
           "value" : "Reieluu puusaga põlvega AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33020,7 +33012,7 @@
           "value" : "Reieluu puusaga põlvega LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33097,7 +33089,7 @@
           "value" : "Reieluu puusaga põlvega LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33174,7 +33166,7 @@
           "value" : "Reieluu puusaga põlvega AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33251,7 +33243,7 @@
           "value" : "Reieluu puusaga põlvega AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33334,7 +33326,7 @@
           "value" : "Põlv AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33399,7 +33391,7 @@
           "value" : "Põlv AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33464,7 +33456,7 @@
           "value" : "Põlv LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33529,7 +33521,7 @@
           "value" : "Põlv LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33594,7 +33586,7 @@
           "value" : "Põlv LAT seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33665,7 +33657,7 @@
           "value" : "Põlv LAT seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33736,7 +33728,7 @@
           "value" : "Põlv AP seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33807,7 +33799,7 @@
           "value" : "Põlv AP seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33878,7 +33870,7 @@
           "value" : "Põlv Bėclėre parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -33955,7 +33947,7 @@
           "value" : "Põlv Bėclėre vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34032,7 +34024,7 @@
           "value" : "Põlv AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34097,7 +34089,7 @@
           "value" : "Põlv AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34168,7 +34160,7 @@
           "value" : "Põlv AP LAT seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34239,7 +34231,7 @@
           "value" : "Põlv AP LAT seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34316,7 +34308,7 @@
           "value" : "Põlved AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34387,7 +34379,7 @@
           "value" : "Põlved LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34458,7 +34450,7 @@
           "value" : "Põlv AP protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34535,7 +34527,7 @@
           "value" : "Põlv AP protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34612,7 +34604,7 @@
           "value" : "Põlv LAT protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34689,7 +34681,7 @@
           "value" : "Põlv LAT protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34766,7 +34758,7 @@
           "value" : "Põlv AP seistes protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34849,7 +34841,7 @@
           "value" : "Põlv AP seistes protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -34932,7 +34924,7 @@
           "value" : "Põlv LAT seistes protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35015,7 +35007,7 @@
           "value" : "Põlv LAT seistes protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35098,7 +35090,7 @@
           "value" : "Põlved AP proteesid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35175,7 +35167,7 @@
           "value" : "Põlved AP seistes proteesid"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35258,7 +35250,7 @@
           "value" : "Patella aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35323,7 +35315,7 @@
           "value" : "Patella aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35388,7 +35380,7 @@
           "value" : "Patella AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35453,7 +35445,7 @@
           "value" : "Patella AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35518,7 +35510,7 @@
           "value" : "Patella PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35583,7 +35575,7 @@
           "value" : "Patella PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35648,7 +35640,7 @@
           "value" : "Patella LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35713,7 +35705,7 @@
           "value" : "Patella LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35778,7 +35770,7 @@
           "value" : "Patella Settegast parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35855,7 +35847,7 @@
           "value" : "Patella Settegast vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35932,7 +35924,7 @@
           "value" : "Säär AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -35997,7 +35989,7 @@
           "value" : "Säär AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36062,7 +36054,7 @@
           "value" : "Säär LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36127,7 +36119,7 @@
           "value" : "Säär LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36192,7 +36184,7 @@
           "value" : "Säär AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36263,7 +36255,7 @@
           "value" : "Säär AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36334,7 +36326,7 @@
           "value" : "Hüppeliiges AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36399,7 +36391,7 @@
           "value" : "Hüppeliiges AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36464,7 +36456,7 @@
           "value" : "Hüppeliiges LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36529,7 +36521,7 @@
           "value" : "Hüppeliiges LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36594,7 +36586,7 @@
           "value" : "Hüppeliiges  Mortise parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36671,7 +36663,7 @@
           "value" : "Hüppeliiges  Mortise vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36742,7 +36734,7 @@
           "value" : "Hüppeliiges eriprojektsioon parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36807,7 +36799,7 @@
           "value" : "Hüppeliiges eriprojektsioon vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36872,7 +36864,7 @@
           "value" : "Hüppeliiges  LAT Mortise parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -36955,7 +36947,7 @@
           "value" : "Hüppeliiges  LAT Mortise vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37038,7 +37030,7 @@
           "value" : "Labajalg AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37103,7 +37095,7 @@
           "value" : "Labajalg AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37168,7 +37160,7 @@
           "value" : "Labajalg poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37233,7 +37225,7 @@
           "value" : "Labajalg poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37298,7 +37290,7 @@
           "value" : "Labajalg LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37363,7 +37355,7 @@
           "value" : "Labajalg LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37428,7 +37420,7 @@
           "value" : "Labajalg LAT seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37499,7 +37491,7 @@
           "value" : "Labajalg LAT seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37570,7 +37562,7 @@
           "value" : "Labajalg aksiaalne seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37641,7 +37633,7 @@
           "value" : "Labajalg aksiaalne seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37712,7 +37704,7 @@
           "value" : "Labajalg AP poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37783,7 +37775,7 @@
           "value" : "Labajalg AP poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37854,7 +37846,7 @@
           "value" : "Labajalad AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37919,7 +37911,7 @@
           "value" : "Kandluu LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -37984,7 +37976,7 @@
           "value" : "Kandluu LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38049,7 +38041,7 @@
           "value" : "Kandluu aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38114,7 +38106,7 @@
           "value" : "Kandluu aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38179,7 +38171,7 @@
           "value" : "Kandluu aksiaalne seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38250,7 +38242,7 @@
           "value" : "Kandluu aksiaalne seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38321,7 +38313,7 @@
           "value" : "Kandluu LAT aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38392,7 +38384,7 @@
           "value" : "Kandluu LAT aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38463,7 +38455,7 @@
           "value" : "Kandluud  LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38528,7 +38520,7 @@
           "value" : "Kandluud aksiaalne"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38593,7 +38585,7 @@
           "value" : "Varbaluud AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38658,7 +38650,7 @@
           "value" : "Varbaluud AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38723,7 +38715,7 @@
           "value" : "Varbaluud poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38788,7 +38780,7 @@
           "value" : "Varbaluud poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38853,7 +38845,7 @@
           "value" : "Varbaluud AP poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38924,7 +38916,7 @@
           "value" : "Varbaluud AP poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -38995,7 +38987,7 @@
           "value" : "Alajäse eriprojektsioon parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39060,7 +39052,7 @@
           "value" : "Alajäse eriprojektsioon vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39125,7 +39117,7 @@
           "value" : "Pikk jalg AP seistes mõlemad"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39196,7 +39188,7 @@
           "value" : "Pikk jalg AP seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39267,7 +39259,7 @@
           "value" : "Pikk jalg AP seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39338,7 +39330,7 @@
           "value" : "Pikk jalg LAT seistes parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39409,7 +39401,7 @@
           "value" : "Pikk jalg LAT seistes vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39480,7 +39472,7 @@
           "value" : "Pikk jalg parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39545,7 +39537,7 @@
           "value" : "Pikk jalg vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39621,7 +39613,7 @@
           "value" : "Kõht PA seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39686,7 +39678,7 @@
           "value" : "Kõht laterogramm"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39751,7 +39743,7 @@
           "value" : "Kõht laterogramm"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39816,7 +39808,7 @@
           "value" : "Kõht laterogramm"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39881,7 +39873,7 @@
           "value" : "Kõht AP lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -39946,7 +39938,7 @@
           "value" : "Kõht AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40011,7 +40003,7 @@
           "value" : "Kõht vaagen vastsündinu"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40076,7 +40068,7 @@
           "value" : "Vaagen AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40135,7 +40127,7 @@
           "value" : "Vaagen outlet"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40200,7 +40192,7 @@
           "value" : "Vaagen inlet"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40265,7 +40257,7 @@
           "value" : "Vaagen outlet inlet"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40336,7 +40328,7 @@
           "value" : "Niudeluutiib AP eesmine Judet parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40419,7 +40411,7 @@
           "value" : "Niudeluutiib AP eesmine Judet vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40502,7 +40494,7 @@
           "value" : "Niudeluutiib AP tagumine Judet parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40585,7 +40577,7 @@
           "value" : "Niudeluutiib AP tagumine Judet vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40668,7 +40660,7 @@
           "value" : "Sümfüüs AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40727,7 +40719,7 @@
           "value" : "Vaagen eriprojektsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40797,7 +40789,7 @@
           "value" : "Kaelalülid AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40862,7 +40854,7 @@
           "value" : "Kaelalülid LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40927,7 +40919,7 @@
           "value" : "Kaelalülid AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -40992,7 +40984,7 @@
           "value" : "Kaelalülid LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41057,7 +41049,7 @@
           "value" : "Kaelalülid AP LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41128,7 +41120,7 @@
           "value" : "Kaelalülid AP LAT lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41199,7 +41191,7 @@
           "value" : "Kaelalülid ettepainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41270,7 +41262,7 @@
           "value" : "Kaelalülid tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41341,7 +41333,7 @@
           "value" : "Kaelalülid ettepainutus tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41412,7 +41404,7 @@
           "value" : "Kaelalülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41471,7 +41463,7 @@
           "value" : "Kaelalülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41536,7 +41528,7 @@
           "value" : "Kaelalülid C1-C2 AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41607,7 +41599,7 @@
           "value" : "Kaelalülid rinnalülid AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41666,7 +41658,7 @@
           "value" : "Kaelalülid rinnalülid LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41725,7 +41717,7 @@
           "value" : "Rinnalülid AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41790,7 +41782,7 @@
           "value" : "Rinnalülid LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41855,7 +41847,7 @@
           "value" : "Rinnalülid AP lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41920,7 +41912,7 @@
           "value" : "Rinnalülid LAT lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -41985,7 +41977,7 @@
           "value" : "Rinnalülid ettepainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42056,7 +42048,7 @@
           "value" : "Rinnalülid tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42127,7 +42119,7 @@
           "value" : "Rinnalülid ettepainutus tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42198,7 +42190,7 @@
           "value" : "Rinnalülid AP LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42269,7 +42261,7 @@
           "value" : "Rinnalülid AP LAT lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42340,7 +42332,7 @@
           "value" : "Rinnalülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42399,7 +42391,7 @@
           "value" : "Rinnalülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42464,7 +42456,7 @@
           "value" : "Rinnalülid nimmelülid üleminek AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42523,7 +42515,7 @@
           "value" : "Rinnalülid nimmelülid üleminek LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42582,7 +42574,7 @@
           "value" : "Rinnalülid nimmelülid üleminek AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42647,7 +42639,7 @@
           "value" : "Nimmelülid AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42712,7 +42704,7 @@
           "value" : "Nimmelülid LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42777,7 +42769,7 @@
           "value" : "Nimmelülid AP LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42848,7 +42840,7 @@
           "value" : "Nimmelülid AP lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42913,7 +42905,7 @@
           "value" : "Nimmelülid LAT lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -42978,7 +42970,7 @@
           "value" : "Nimmelülid AP LAT lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43049,7 +43041,7 @@
           "value" : "Nimmelülid ettepainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43120,7 +43112,7 @@
           "value" : "Nimmelülid tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43191,7 +43183,7 @@
           "value" : "Nimmelülid ettepainutus tahapainutus LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43262,7 +43254,7 @@
           "value" : "Nimmelülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43321,7 +43313,7 @@
           "value" : "Nimmelülid poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43386,7 +43378,7 @@
           "value" : "Nimmelülid puusaliigesed seistes AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43457,7 +43449,7 @@
           "value" : "Sakroiliakaalliigesed AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43516,7 +43508,7 @@
           "value" : "Sakroiliakaalliigesed poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43581,7 +43573,7 @@
           "value" : "Sakroiliakaalliigesed poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43646,7 +43638,7 @@
           "value" : "Sakroiliakaalliigesed poolpõiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43711,7 +43703,7 @@
           "value" : "Sakroiliakaalliigesed aksiaalne"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43770,7 +43762,7 @@
           "value" : "Nimme-ristluu üleminek AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43829,7 +43821,7 @@
           "value" : "Nimme-ristluu üleminek LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43888,7 +43880,7 @@
           "value" : "Nimme-ristluu üleminek AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -43953,7 +43945,7 @@
           "value" : "Nimme-ristluu üleminek ja sakroiliakaalliigesed AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44018,7 +44010,7 @@
           "value" : "Nimme-ristluu üleminek ja sakroiliakaalliigesed PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44083,7 +44075,7 @@
           "value" : "Ristluu AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44142,7 +44134,7 @@
           "value" : "Ristluu LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44201,7 +44193,7 @@
           "value" : "Ristluu AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44266,7 +44258,7 @@
           "value" : "Õndralülid AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44325,7 +44317,7 @@
           "value" : "Õndralülid LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44384,7 +44376,7 @@
           "value" : "Õndralülid LAT istudes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44449,7 +44441,7 @@
           "value" : "Õndralülid AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44514,7 +44506,7 @@
           "value" : "Ristluu õndralülid AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44579,7 +44571,7 @@
           "value" : "Ristluu õndralülid LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44644,7 +44636,7 @@
           "value" : "Ristluu õndralülid AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44715,7 +44707,7 @@
           "value" : "Kogu lülisammas AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44780,7 +44772,7 @@
           "value" : "Kogu lülisammas LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44845,7 +44837,7 @@
           "value" : "Kogu lülisammas AP LAT seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44927,7 +44919,7 @@
           "value" : "Muu piirkond"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -44985,7 +44977,7 @@
           "value" : "Ninakõrvalkoopad PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45062,7 +45054,7 @@
           "value" : "Ninaluud LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45133,7 +45125,7 @@
           "value" : "Kolju PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45204,7 +45196,7 @@
           "value" : "Kolju LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45275,7 +45267,7 @@
           "value" : "Kolju aksiaalne"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45352,7 +45344,7 @@
           "value" : "Kolju AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45423,7 +45415,7 @@
           "value" : "Kolju AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45488,7 +45480,7 @@
           "value" : "Kolju eriprojektsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45559,7 +45551,7 @@
           "value" : "Sarnaluud"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45630,7 +45622,7 @@
           "value" : "Silmakoopad"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45695,7 +45687,7 @@
           "value" : "Ninakõrvalkoopad LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45766,7 +45758,7 @@
           "value" : "Alalõualuu PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45825,7 +45817,7 @@
           "value" : "Alalõualuu põiki"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45884,7 +45876,7 @@
           "value" : "Alalõualuu aksiaalne"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -45949,7 +45941,7 @@
           "value" : "Ninaneel LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46019,7 +46011,7 @@
           "value" : "Rindkere PA seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46084,7 +46076,7 @@
           "value" : "Rindkere AP lamades"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46149,7 +46141,7 @@
           "value" : "Rindkere PA istudes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46214,7 +46206,7 @@
           "value" : "Rindkere LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46279,7 +46271,7 @@
           "value" : "Rindkere AP seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46344,7 +46336,7 @@
           "value" : "Rindkere AP istudes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46415,7 +46407,7 @@
           "value" : "Chest X-Ray (lateral), right"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46486,7 +46478,7 @@
           "value" : "Rindkere PA LAT vasak seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46563,7 +46555,7 @@
           "value" : "Rindkere PA LAT parem seistes"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46640,7 +46632,7 @@
           "value" : "Rindkere eriprojektsioon"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46699,7 +46691,7 @@
           "value" : "Rindkere vastsündinu"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46758,7 +46750,7 @@
           "value" : "Rindkere kõht vaagen vastsündinu"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46829,7 +46821,7 @@
           "value" : "Roided AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46894,7 +46886,7 @@
           "value" : "Roided AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -46959,7 +46951,7 @@
           "value" : "Roided AP parem vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47024,7 +47016,7 @@
           "value" : "Roided PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47089,7 +47081,7 @@
           "value" : "Roided PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47154,7 +47146,7 @@
           "value" : "Roided PA parem vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47219,7 +47211,7 @@
           "value" : "Roided poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47284,7 +47276,7 @@
           "value" : "Roided poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47349,7 +47341,7 @@
           "value" : "Roided poolpõiki parem vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47414,7 +47406,7 @@
           "value" : "Rinnak PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47473,7 +47465,7 @@
           "value" : "Rinnak LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47532,7 +47524,7 @@
           "value" : "Rangluu AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47597,7 +47589,7 @@
           "value" : "Rangluu AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47662,7 +47654,7 @@
           "value" : "Rangluu aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47727,7 +47719,7 @@
           "value" : "Rangluu aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47792,7 +47784,7 @@
           "value" : "Rangluu AP aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47863,7 +47855,7 @@
           "value" : "Rangluu AP aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47934,7 +47926,7 @@
           "value" : "Rangluud AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -47999,7 +47991,7 @@
           "value" : "Akromioklavikulaarliiges AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48064,7 +48056,7 @@
           "value" : "Akromioklavikulaarliiges AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48129,7 +48121,7 @@
           "value" : "Akromioklavikulaarliiges aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48200,7 +48192,7 @@
           "value" : "Akromioklavikulaarliiges aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48271,7 +48263,7 @@
           "value" : "Abaluu AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48336,7 +48328,7 @@
           "value" : "Abaluu AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48401,7 +48393,7 @@
           "value" : "Abaluu Y parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48466,7 +48458,7 @@
           "value" : "Abaluu Y vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48531,7 +48523,7 @@
           "value" : "Abaluu AP Y parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48602,7 +48594,7 @@
           "value" : "Abaluu AP Y vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48673,7 +48665,7 @@
           "value" : "Sternoklavikulaarliigesed PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48732,13 +48724,13 @@
           "value" : "Söögitoru kontrastainega (jood) AP"
         } ],
         "property" : [ {
-          "code" : "Contrast",
+          "code" : "contrast",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "1144611009"
           }
         }, {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48797,13 +48789,13 @@
           "value" : "Söögitoru kontrastainega (jood) LAT"
         } ],
         "property" : [ {
-          "code" : "Contrast",
+          "code" : "contrast",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "1144611009"
           }
         }, {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48862,13 +48854,13 @@
           "value" : "Söögitoru kontrastainega (jood) AP LAT"
         } ],
         "property" : [ {
-          "code" : "Contrast",
+          "code" : "contrast",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "1144611009"
           }
         }, {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48933,7 +48925,7 @@
           "value" : "Söögitoru kontrastainega (baarium) AP"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -48998,7 +48990,7 @@
           "value" : "Söögitoru kontrastainega (baarium) LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49057,7 +49049,7 @@
           "value" : "Söögitoru kontrastainega (baarium) AP LAT"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49133,7 +49125,7 @@
           "value" : "Õlg AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49204,7 +49196,7 @@
           "value" : "Õlg AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49275,7 +49267,7 @@
           "value" : "Õlg Y parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49340,7 +49332,7 @@
           "value" : "Õlg Y vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49405,7 +49397,7 @@
           "value" : "Õlg aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49470,7 +49462,7 @@
           "value" : "Õlg aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49535,7 +49527,7 @@
           "value" : "Õlg Grashey parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49618,7 +49610,7 @@
           "value" : "Õlg Grashey vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49701,7 +49693,7 @@
           "value" : "Õlg AP siserotatsioonis parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49778,7 +49770,7 @@
           "value" : "Õlg AP siserotatsioonis vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49855,7 +49847,7 @@
           "value" : "Õlg AP välisrotatsioonis parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -49932,7 +49924,7 @@
           "value" : "Õlg AP välisrotatsioonis vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50009,7 +50001,7 @@
           "value" : "Õlg transtorakaalne LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50080,7 +50072,7 @@
           "value" : "Õlg transtorakaalne LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50151,7 +50143,7 @@
           "value" : "Õlg AP Grashey parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50246,7 +50238,7 @@
           "value" : "Õlg AP Grashey vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50341,7 +50333,7 @@
           "value" : "Õlg protees parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50418,7 +50410,7 @@
           "value" : "Õlg protees vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50495,7 +50487,7 @@
           "value" : "Õlavarreluu AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50560,7 +50552,7 @@
           "value" : "Õlavarreluu AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50625,7 +50617,7 @@
           "value" : "Õlavarreluu LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50690,7 +50682,7 @@
           "value" : "Õlavarreluu LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50755,7 +50747,7 @@
           "value" : "Õlavarreluu transtorakaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50826,7 +50818,7 @@
           "value" : "Õlavarreluu transtorakaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50897,7 +50889,7 @@
           "value" : "Õlavarreluu AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -50968,7 +50960,7 @@
           "value" : "Õlavarreluu AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51039,7 +51031,7 @@
           "value" : "Küünarliiges AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51104,7 +51096,7 @@
           "value" : "Küünarliiges AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51169,7 +51161,7 @@
           "value" : "Küünarliiges LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51234,7 +51226,7 @@
           "value" : "Küünarliiges LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51299,7 +51291,7 @@
           "value" : "Küünarliiges AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51370,7 +51362,7 @@
           "value" : "Küünarliiges AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51441,7 +51433,7 @@
           "value" : "Küünarnukk aksiaalne parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51512,7 +51504,7 @@
           "value" : "Küünarnukk aksiaalne vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51583,7 +51575,7 @@
           "value" : "Küünarvarreluud AP parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51648,7 +51640,7 @@
           "value" : "Küünarvarreluud AP vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51713,7 +51705,7 @@
           "value" : "Küünarvarreluud LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51778,7 +51770,7 @@
           "value" : "Küünarvarreluud LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51843,7 +51835,7 @@
           "value" : "Küünarvarreluud AP LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51914,7 +51906,7 @@
           "value" : "Küünarvarreluud AP LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -51985,7 +51977,7 @@
           "value" : "Ranne PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52050,7 +52042,7 @@
           "value" : "Ranne PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52115,7 +52107,7 @@
           "value" : "Ranne LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52180,7 +52172,7 @@
           "value" : "Ranne LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52245,7 +52237,7 @@
           "value" : "Ranne lodiluu poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52316,7 +52308,7 @@
           "value" : "Ranne lodiluu poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52387,7 +52379,7 @@
           "value" : "Ranne lodiluu ulnaardeviatsioonis parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52470,7 +52462,7 @@
           "value" : "Ranne lodiluu ulnaardeviatsioonis vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52553,7 +52545,7 @@
           "value" : "Ranne eriprojektsioon parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52618,7 +52610,7 @@
           "value" : "Ranne eriprojektsioon vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52683,7 +52675,7 @@
           "value" : "Ranne PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52754,7 +52746,7 @@
           "value" : "Ranne PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52825,7 +52817,7 @@
           "value" : "Labakäsi PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52890,7 +52882,7 @@
           "value" : "Labakäsi PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -52955,7 +52947,7 @@
           "value" : "Labakäsi poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53020,7 +53012,7 @@
           "value" : "Labakäsi poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53085,7 +53077,7 @@
           "value" : "Labakäsi LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53150,7 +53142,7 @@
           "value" : "Labakäsi LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53215,7 +53207,7 @@
           "value" : "Labakäsi PA poolpõiki parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53286,7 +53278,7 @@
           "value" : "Labakäsi PA poolpõiki vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53357,7 +53349,7 @@
           "value" : "Labakäed PA"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53422,7 +53414,7 @@
           "value" : "Labakäsi luuline vanus"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53475,7 +53467,7 @@
           "value" : "I sõrm PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53540,7 +53532,7 @@
           "value" : "I sõrm PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53605,7 +53597,7 @@
           "value" : "I sõrm LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53670,7 +53662,7 @@
           "value" : "I sõrm LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53735,7 +53727,7 @@
           "value" : "I sõrm PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53806,7 +53798,7 @@
           "value" : "I sõrm PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53877,7 +53869,7 @@
           "value" : "II sõrm PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -53942,7 +53934,7 @@
           "value" : "II sõrm PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54007,7 +53999,7 @@
           "value" : "II sõrm LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54072,7 +54064,7 @@
           "value" : "II sõrm LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54137,7 +54129,7 @@
           "value" : "II sõrm PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54208,7 +54200,7 @@
           "value" : "II sõrm PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54279,7 +54271,7 @@
           "value" : "III sõrm PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54344,7 +54336,7 @@
           "value" : "III sõrm PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54409,7 +54401,7 @@
           "value" : "III sõrm LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54474,7 +54466,7 @@
           "value" : "III sõrm LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54539,7 +54531,7 @@
           "value" : "III sõrm PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54610,7 +54602,7 @@
           "value" : "III sõrm PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54681,7 +54673,7 @@
           "value" : "IV sõrm PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54746,7 +54738,7 @@
           "value" : "IV sõrm PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54811,7 +54803,7 @@
           "value" : "IV sõrm LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54876,7 +54868,7 @@
           "value" : "IV sõrm LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -54941,7 +54933,7 @@
           "value" : "IV sõrm PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55012,7 +55004,7 @@
           "value" : "IV sõrm PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55083,7 +55075,7 @@
           "value" : "V sõrm PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55148,7 +55140,7 @@
           "value" : "V sõrm PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55213,7 +55205,7 @@
           "value" : "V sõrm LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55278,7 +55270,7 @@
           "value" : "V sõrm LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55343,7 +55335,7 @@
           "value" : "V sõrm PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55414,7 +55406,7 @@
           "value" : "V sõrm PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55485,7 +55477,7 @@
           "value" : "Sõrmed PA parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55556,7 +55548,7 @@
           "value" : "Sõrmed PA vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55627,7 +55619,7 @@
           "value" : "Sõrmed LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55698,7 +55690,7 @@
           "value" : "Sõrmed LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55769,7 +55761,7 @@
           "value" : "Sõrmed PA LAT parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55846,7 +55838,7 @@
           "value" : "Sõrmed PA LAT vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55923,7 +55915,7 @@
           "value" : "Ülajäse parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -55982,7 +55974,7 @@
           "value" : "Ülajäse vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -56041,7 +56033,7 @@
           "value" : "Ülajäsemed"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -56100,7 +56092,7 @@
           "value" : "Ülajäse eriprojektsioon parem"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"
@@ -56165,7 +56157,7 @@
           "value" : "Ülajäse eriprojektsioon vasak"
         } ],
         "property" : [ {
-          "code" : "Interpreter",
+          "code" : "evaluator",
           "valueCoding" : {
             "system" : "snomed-ct",
             "code" : "66862007"

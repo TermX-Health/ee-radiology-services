@@ -1,13 +1,14 @@
-CodeSystem: RadiologyService
-Id: radiology-service--5
+CodeSystem: RadService
+Id: rad-service--5
 Title: "Radioloogiline uuring"
+Description: "Radiology iservices"
 * ^language = #et
 * ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeRepresentationLevel"
 * ^extension[=].valueCode = #executable
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact"
 * ^extension[=].valueRelatedArtifact.resource = "http://fhir.ee/ValueSet/radiology-procedures"
-* ^url = "https://taltech.ee/fhir/CodeSystem/radiology-service"
-* ^version = "5"
+* ^url = "https://taltech.ee/fhir/CodeSystem/rad-service"
+* ^version = "5.0.0"
 * ^versionAlgorithmString = "semver"
 * ^status = #active
 * ^experimental = false
@@ -19,11 +20,11 @@ Title: "Radioloogiline uuring"
 * ^caseSensitive = false
 * ^hierarchyMeaning = #is-a
 * ^content = #complete
-* ^property[0].code = #Contrast
+* ^property[0].code = #contrast
 * ^property[=].uri = "https://fhir.ee/CodeSystem/rad-properties#contrast"
 * ^property[=].description = "Kontrastaine"
 * ^property[=].type = #Coding
-* ^property[+].code = #Interpreter
+* ^property[+].code = #evaluator
 * ^property[=].uri = "https://fhir.ee/CodeSystem/rad-properties#evaluator"
 * ^property[=].description = "Pildi hindaja"
 * ^property[=].type = #Coding
@@ -119,7 +120,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ001 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ001 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ001 ^designation[=].value = "Alajäseme arterid parem"
-* #ANG #ANGAJ #ANGAJ001 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ001 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ001 ^property[+].code = #anatomic-focus
@@ -144,7 +145,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ002 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ002 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ002 ^designation[=].value = "Alajäseme arterid vasak"
-* #ANG #ANGAJ #ANGAJ002 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ002 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ002 ^property[+].code = #anatomic-focus
@@ -169,7 +170,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ003 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ003 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ003 ^designation[=].value = "Alajäseme arteri balloondilatatsioon"
-* #ANG #ANGAJ #ANGAJ003 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ003 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ003 ^property[+].code = #anatomic-focus
@@ -194,7 +195,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ004 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ004 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ004 ^designation[=].value = "Alajäseme arteri stentimine"
-* #ANG #ANGAJ #ANGAJ004 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ004 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ004 ^property[+].code = #anatomic-focus
@@ -222,7 +223,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ005 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ005 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ005 ^designation[=].value = "Alajäseme arteri trombolüüs"
-* #ANG #ANGAJ #ANGAJ005 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ005 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ005 ^property[+].code = #anatomic-focus
@@ -247,7 +248,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ006 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ006 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ006 ^designation[=].value = "Alajäseme arteri trombektoomia"
-* #ANG #ANGAJ #ANGAJ006 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ006 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ006 ^property[+].code = #anatomic-focus
@@ -275,7 +276,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ007 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ007 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ007 ^designation[=].value = "Alajäseme süvaveenide balloondilatatsioon"
-* #ANG #ANGAJ #ANGAJ007 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ007 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ007 ^property[+].code = #anatomic-focus
@@ -300,7 +301,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ008 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ008 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ008 ^designation[=].value = "Alajäseme süvaveenide stentimine"
-* #ANG #ANGAJ #ANGAJ008 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ008 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ008 ^property[+].code = #anatomic-focus
@@ -328,7 +329,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ009 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ009 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ009 ^designation[=].value = "Alajäseme süvaveenide trombolüüs"
-* #ANG #ANGAJ #ANGAJ009 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ009 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ009 ^property[+].code = #anatomic-focus
@@ -356,7 +357,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ010 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ010 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ010 ^designation[=].value = "Alajäseme arteri sulgemine (verdumine)"
-* #ANG #ANGAJ #ANGAJ010 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ010 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ010 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ010 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ010 ^property[+].code = #anatomic-focus
@@ -384,7 +385,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ011 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ011 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ011 ^designation[=].value = "Alajäseme AVM sulgemine"
-* #ANG #ANGAJ #ANGAJ011 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ011 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ011 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ011 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ011 ^property[+].code = #anatomic-focus
@@ -412,7 +413,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ012 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ012 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ012 ^designation[=].value = "Ühisreiearteri pseudoaneurüsmi sulgemine"
-* #ANG #ANGAJ #ANGAJ012 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ012 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ012 ^property[+].code = #anatomic-focus
@@ -440,7 +441,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ013 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ013 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ013 ^designation[=].value = "Alajäseme flebograafia parem"
-* #ANG #ANGAJ #ANGAJ013 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ013 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ013 ^property[+].code = #anatomic-focus
@@ -468,7 +469,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGAJ #ANGAJ014 ^designation[=].language = #et
 * #ANG #ANGAJ #ANGAJ014 ^designation[=].use.code = #alias
 * #ANG #ANGAJ #ANGAJ014 ^designation[=].value = "Alajäseme flebograafia vasak"
-* #ANG #ANGAJ #ANGAJ014 ^property[0].code = #Interpreter
+* #ANG #ANGAJ #ANGAJ014 ^property[0].code = #evaluator
 * #ANG #ANGAJ #ANGAJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGAJ #ANGAJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGAJ #ANGAJ014 ^property[+].code = #anatomic-focus
@@ -500,7 +501,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA001 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA001 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA001 ^designation[=].value = "Kaelaarterid"
-* #ANG #ANGKA #ANGKA001 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA001 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA001 ^property[+].code = #anatomic-focus
@@ -522,7 +523,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA002 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA002 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA002 ^designation[=].value = "Kaelaarteri stentimine"
-* #ANG #ANGKA #ANGKA002 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA002 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA002 ^property[+].code = #anatomic-focus
@@ -550,7 +551,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA003 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA003 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA003 ^designation[=].value = "Kaelaarteri balloondilatatsioon"
-* #ANG #ANGKA #ANGKA003 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA003 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA003 ^property[+].code = #anatomic-focus
@@ -575,7 +576,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA004 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA004 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA004 ^designation[=].value = "Kaelaveenid"
-* #ANG #ANGKA #ANGKA004 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA004 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA004 ^property[+].code = #anatomic-focus
@@ -602,7 +603,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA005 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA005 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA005 ^designation[=].value = "Kaelaarteri sulgemine (kasvaja)"
-* #ANG #ANGKA #ANGKA005 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA005 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA005 ^property[+].code = #anatomic-focus
@@ -630,7 +631,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKA #ANGKA006 ^designation[=].language = #et
 * #ANG #ANGKA #ANGKA006 ^designation[=].use.code = #alias
 * #ANG #ANGKA #ANGKA006 ^designation[=].value = "Kaelaarteri sulgemine (verdumine)"
-* #ANG #ANGKA #ANGKA006 ^property[0].code = #Interpreter
+* #ANG #ANGKA #ANGKA006 ^property[0].code = #evaluator
 * #ANG #ANGKA #ANGKA006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKA #ANGKA006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKA #ANGKA006 ^property[+].code = #anatomic-focus
@@ -662,7 +663,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV001 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV001 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV001 ^designation[=].value = "Selektiivne vistseraalne angiograafia"
-* #ANG #ANGKV #ANGKV001 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV001 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV001 ^property[+].code = #anatomic-focus
@@ -687,7 +688,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV002 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV002 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV002 ^designation[=].value = "Kõhuaort"
-* #ANG #ANGKV #ANGKV002 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV002 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV002 ^property[+].code = #anatomic-focus
@@ -712,7 +713,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV003 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV003 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV003 ^designation[=].value = "Kõhuaordi balloondilatatsioon"
-* #ANG #ANGKV #ANGKV003 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV003 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV003 ^property[+].code = #anatomic-focus
@@ -737,7 +738,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV004 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV004 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV004 ^designation[=].value = "Kõhuaordi stentimine"
-* #ANG #ANGKV #ANGKV004 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV004 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV004 ^property[+].code = #anatomic-focus
@@ -765,7 +766,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV005 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV005 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV005 ^designation[=].value = "Kõhuaordi stentgrafti paigaldamine"
-* #ANG #ANGKV #ANGKV005 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV005 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV005 ^property[+].code = #anatomic-focus
@@ -790,7 +791,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV006 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV006 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV006 ^designation[=].value = "Aordiharude AVM-i sulgemine"
-* #ANG #ANGKV #ANGKV006 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV006 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV006 ^property[+].code = #anatomic-focus
@@ -818,7 +819,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV007 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV007 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV007 ^designation[=].value = "Niudearteri balloondilatatsioon"
-* #ANG #ANGKV #ANGKV007 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV007 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV007 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV007 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV007 ^property[+].code = #anatomic-focus
@@ -846,7 +847,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV008 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV008 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV008 ^designation[=].value = "Niudearteri stentimine"
-* #ANG #ANGKV #ANGKV008 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV008 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV008 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV008 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV008 ^property[+].code = #anatomic-focus
@@ -874,7 +875,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV009 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV009 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV009 ^designation[=].value = "Niudearteri verejooksu sulgemine"
-* #ANG #ANGKV #ANGKV009 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV009 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV009 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV009 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV009 ^property[+].code = #anatomic-focus
@@ -905,7 +906,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV010 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV010 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV010 ^designation[=].value = "Niudearteri sulgemine (kasvaja)"
-* #ANG #ANGKV #ANGKV010 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV010 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV010 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV010 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV010 ^property[+].code = #anatomic-focus
@@ -933,7 +934,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV011 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV011 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV011 ^designation[=].value = "Niudearteri AVM-i sulgemine"
-* #ANG #ANGKV #ANGKV011 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV011 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV011 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV011 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV011 ^property[+].code = #anatomic-focus
@@ -961,7 +962,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV012 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV012 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV012 ^designation[=].value = "Neeruarteri balloondilatatsioon"
-* #ANG #ANGKV #ANGKV012 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV012 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV012 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV012 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV012 ^property[+].code = #anatomic-focus
@@ -989,7 +990,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV013 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV013 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV013 ^designation[=].value = "Neeruarteri stentimine"
-* #ANG #ANGKV #ANGKV013 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV013 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV013 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV013 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV013 ^property[+].code = #anatomic-focus
@@ -1017,7 +1018,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV014 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV014 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV014 ^designation[=].value = "Neeruarteri sulgemine (verejooks)"
-* #ANG #ANGKV #ANGKV014 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV014 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV014 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV014 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV014 ^property[+].code = #anatomic-focus
@@ -1045,7 +1046,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV015 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV015 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV015 ^designation[=].value = "Neeruarteri sulgemine (kasvaja)"
-* #ANG #ANGKV #ANGKV015 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV015 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV015 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV015 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV015 ^property[+].code = #anatomic-focus
@@ -1073,7 +1074,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV016 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV016 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV016 ^designation[=].value = "Neerude sümpaatiline denervatsioon"
-* #ANG #ANGKV #ANGKV016 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV016 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV016 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV016 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV016 ^property[+].code = #anatomic-focus
@@ -1098,7 +1099,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV017 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV017 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV017 ^designation[=].value = "Emakaarterite emboliseerimine (müoom)"
-* #ANG #ANGKV #ANGKV017 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV017 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV017 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV017 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV017 ^property[+].code = #anatomic-focus
@@ -1129,7 +1130,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV018 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV018 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV018 ^designation[=].value = "Maksa kemoembolisatsioon (kasvaja)"
-* #ANG #ANGKV #ANGKV018 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV018 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV018 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV018 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV018 ^property[+].code = #anatomic-focus
@@ -1157,7 +1158,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV019 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV019 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV019 ^designation[=].value = "Dialüüsi püsikateetri paigaldamine"
-* #ANG #ANGKV #ANGKV019 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV019 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV019 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV019 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV019 ^property[+].code = #anatomic-focus
@@ -1185,7 +1186,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV020 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV020 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV020 ^designation[=].value = "Dialüüsi püsikateetri vahetamine"
-* #ANG #ANGKV #ANGKV020 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV020 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV020 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV020 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV020 ^property[+].code = #anatomic-focus
@@ -1210,7 +1211,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV021 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV021 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV021 ^designation[=].value = "Dialüüsi püsikateetri eemaldamine"
-* #ANG #ANGKV #ANGKV021 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV021 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV021 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV021 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV021 ^property[+].code = #anatomic-focus
@@ -1235,7 +1236,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV022 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV022 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV022 ^designation[=].value = "Muu vistseraalarteri balloondilatatsioon"
-* #ANG #ANGKV #ANGKV022 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV022 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV022 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV022 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV022 ^property[+].code = #anatomic-focus
@@ -1263,7 +1264,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV023 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV023 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV023 ^designation[=].value = "Muu vistseraalarteri stentimine"
-* #ANG #ANGKV #ANGKV023 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV023 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV023 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV023 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV023 ^property[+].code = #anatomic-focus
@@ -1291,7 +1292,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV024 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV024 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV024 ^designation[=].value = "Muu vistseraalarteri sulgemine (verejooks)"
-* #ANG #ANGKV #ANGKV024 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV024 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV024 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV024 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV024 ^property[+].code = #anatomic-focus
@@ -1319,7 +1320,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV025 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV025 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV025 ^designation[=].value = "Muu vistseraalarteri sulgemine (kasvaja)"
-* #ANG #ANGKV #ANGKV025 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV025 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV025 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV025 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV025 ^property[+].code = #anatomic-focus
@@ -1347,7 +1348,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV026 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV026 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV026 ^designation[=].value = "Kavograafia"
-* #ANG #ANGKV #ANGKV026 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV026 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV026 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV026 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV026 ^property[+].code = #anatomic-focus
@@ -1372,7 +1373,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV027 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV027 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV027 ^designation[=].value = "Portograafia"
-* #ANG #ANGKV #ANGKV027 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV027 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV027 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV027 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV027 ^property[+].code = #anatomic-focus
@@ -1397,7 +1398,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV028 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV028 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV028 ^designation[=].value = "Alumise õõnesveeni filtri paigaldamine"
-* #ANG #ANGKV #ANGKV028 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV028 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV028 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV028 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV028 ^property[+].code = #anatomic-focus
@@ -1422,7 +1423,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV029 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV029 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV029 ^designation[=].value = "Alumise õõnesveeni filtri eemaldamine"
-* #ANG #ANGKV #ANGKV029 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV029 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV029 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV029 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV029 ^property[+].code = #anatomic-focus
@@ -1447,7 +1448,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV030 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV030 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV030 ^designation[=].value = "Niudeveeni trombolüüs"
-* #ANG #ANGKV #ANGKV030 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV030 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV030 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV030 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV030 ^property[+].code = #anatomic-focus
@@ -1475,7 +1476,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV031 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV031 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV031 ^designation[=].value = "Niudeveeni trombektoomia"
-* #ANG #ANGKV #ANGKV031 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV031 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV031 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV031 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV031 ^property[+].code = #anatomic-focus
@@ -1503,7 +1504,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV032 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV032 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV032 ^designation[=].value = "Testikulaar- või ovariaalveenide sulgemine"
-* #ANG #ANGKV #ANGKV032 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV032 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV032 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV032 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV032 ^property[+].code = #anatomic-focus
@@ -1531,7 +1532,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGKV #ANGKV033 ^designation[=].language = #et
 * #ANG #ANGKV #ANGKV033 ^designation[=].use.code = #alias
 * #ANG #ANGKV #ANGKV033 ^designation[=].value = "Neerupealise veenide selektiivne kateteriseerimine"
-* #ANG #ANGKV #ANGKV033 ^property[0].code = #Interpreter
+* #ANG #ANGKV #ANGKV033 ^property[0].code = #evaluator
 * #ANG #ANGKV #ANGKV033 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGKV #ANGKV033 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGKV #ANGKV033 ^property[+].code = #anatomic-focus
@@ -1560,7 +1561,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGMT #ANGMT001 ^designation[=].language = #et
 * #ANG #ANGMT #ANGMT001 ^designation[=].use.code = #alias
 * #ANG #ANGMT #ANGMT001 ^designation[=].value = "Muu flebograafia"
-* #ANG #ANGMT #ANGMT001 ^property[0].code = #Interpreter
+* #ANG #ANGMT #ANGMT001 ^property[0].code = #evaluator
 * #ANG #ANGMT #ANGMT001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGMT #ANGMT001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGMT #ANGMT001 ^property[+].code = #anatomic-focus
@@ -1586,7 +1587,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE001 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE001 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE001 ^designation[=].value = "Peaajuarterid"
-* #ANG #ANGPE #ANGPE001 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE001 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE001 ^property[+].code = #anatomic-focus
@@ -1611,7 +1612,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE002 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE002 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE002 ^designation[=].value = "Peaajuarteri trombektoomia"
-* #ANG #ANGPE #ANGPE002 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE002 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE002 ^property[+].code = #anatomic-focus
@@ -1639,7 +1640,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE003 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE003 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE003 ^designation[=].value = "Peaajuarteri trombolüüs"
-* #ANG #ANGPE #ANGPE003 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE003 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE003 ^property[+].code = #anatomic-focus
@@ -1664,7 +1665,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE004 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE004 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE004 ^designation[=].value = "Peaajuarteri stentimine"
-* #ANG #ANGPE #ANGPE004 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE004 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE004 ^property[+].code = #anatomic-focus
@@ -1692,7 +1693,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE005 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE005 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE005 ^designation[=].value = "Peaajuarteri balloondilatatsioon"
-* #ANG #ANGPE #ANGPE005 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE005 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE005 ^property[+].code = #anatomic-focus
@@ -1717,7 +1718,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE006 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE006 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE006 ^designation[=].value = "Peaajuarteri sulgemine (aneurüsm, AVM)"
-* #ANG #ANGPE #ANGPE006 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE006 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE006 ^property[+].code = #anatomic-focus
@@ -1745,7 +1746,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE007 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE007 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE007 ^designation[=].value = "Peapiirkonna veenid"
-* #ANG #ANGPE #ANGPE007 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE007 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE007 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE007 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE007 ^property[+].code = #anatomic-focus
@@ -1770,7 +1771,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE008 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE008 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE008 ^designation[=].value = "Karotiid-kavernoosse fistuli sulgemine"
-* #ANG #ANGPE #ANGPE008 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE008 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE008 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE008 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE008 ^property[+].code = #anatomic-focus
@@ -1795,7 +1796,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE009 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE009 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE009 ^designation[=].value = "Pea- ja kaelaarteri sulgemine"
-* #ANG #ANGPE #ANGPE009 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE009 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE009 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE009 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE009 ^property[+].code = #anatomic-focus
@@ -1823,7 +1824,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE010 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE010 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE010 ^designation[=].value = "Peapiirkonna arteri sulgemine (verdumine)"
-* #ANG #ANGPE #ANGPE010 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE010 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE010 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE010 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE010 ^property[+].code = #anatomic-focus
@@ -1851,7 +1852,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE011 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE011 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE011 ^designation[=].value = "Ninaverejooksu sulgemine"
-* #ANG #ANGPE #ANGPE011 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE011 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE011 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE011 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE011 ^property[+].code = #anatomic-focus
@@ -1879,7 +1880,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGPE #ANGPE012 ^designation[=].language = #et
 * #ANG #ANGPE #ANGPE012 ^designation[=].use.code = #alias
 * #ANG #ANGPE #ANGPE012 ^designation[=].value = "Sinus petrosus'e kateteriseerimine"
-* #ANG #ANGPE #ANGPE012 ^property[0].code = #Interpreter
+* #ANG #ANGPE #ANGPE012 ^property[0].code = #evaluator
 * #ANG #ANGPE #ANGPE012 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGPE #ANGPE012 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGPE #ANGPE012 ^property[+].code = #anatomic-focus
@@ -1908,7 +1909,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK001 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK001 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK001 ^designation[=].value = "Koronarograafia"
-* #ANG #ANGRK #ANGRK001 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK001 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK001 ^property[+].code = #anatomic-focus
@@ -1933,7 +1934,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK002 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK002 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK002 ^designation[=].value = "Koronaarangioplastika (PTKA)"
-* #ANG #ANGRK #ANGRK002 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK002 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK002 ^property[+].code = #anatomic-focus
@@ -1964,7 +1965,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK003 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK003 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK003 ^designation[=].value = "Koronaarangioplastika"
-* #ANG #ANGRK #ANGRK003 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK003 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK003 ^property[+].code = #anatomic-focus
@@ -1998,7 +1999,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK004 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK004 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK004 ^designation[=].value = "Koronaararteri stentimine"
-* #ANG #ANGRK #ANGRK004 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK004 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK004 ^property[+].code = #anatomic-focus
@@ -2026,7 +2027,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK005 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK005 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK005 ^designation[=].value = "Valvuloplastika"
-* #ANG #ANGRK #ANGRK005 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK005 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK005 ^property[+].code = #anatomic-focus
@@ -2054,7 +2055,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK006 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK006 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK006 ^designation[=].value = "TAVI, TPVI - aordi- või pulmonaalklapi implanteerimine"
-* #ANG #ANGRK #ANGRK006 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK006 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK006 ^property[+].code = #anatomic-focus
@@ -2079,7 +2080,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK007 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK007 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK007 ^designation[=].value = "Avatud arteriaalse juha sulgemine"
-* #ANG #ANGRK #ANGRK007 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK007 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK007 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK007 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK007 ^property[+].code = #anatomic-focus
@@ -2107,7 +2108,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK008 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK008 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK008 ^designation[=].value = "Avatud arteriaalse juha stentimine"
-* #ANG #ANGRK #ANGRK008 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK008 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK008 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK008 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK008 ^property[+].code = #anatomic-focus
@@ -2138,7 +2139,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK009 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK009 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK009 ^designation[=].value = "Vatsakesete vaheseina defekti sulgemine"
-* #ANG #ANGRK #ANGRK009 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK009 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK009 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK009 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK009 ^property[+].code = #anatomic-focus
@@ -2163,7 +2164,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK010 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK010 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK010 ^designation[=].value = "Kodade vaheseina või foramen ovale sulgemine"
-* #ANG #ANGRK #ANGRK010 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK010 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK010 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK010 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK010 ^property[+].code = #anatomic-focus
@@ -2188,7 +2189,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK011 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK011 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK011 ^designation[=].value = "Aortopulmonaalsete kollateraalide sulgemine"
-* #ANG #ANGRK #ANGRK011 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK011 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK011 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK011 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK011 ^property[+].code = #anatomic-focus
@@ -2213,7 +2214,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK012 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK012 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK012 ^designation[=].value = "Aordiistmuse dilatatsioon ja stentimine"
-* #ANG #ANGRK #ANGRK012 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK012 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK012 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK012 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK012 ^property[+].code = #anatomic-focus
@@ -2238,7 +2239,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK013 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK013 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK013 ^designation[=].value = "Kaasasündinud koronaarfistuli okluseerimine"
-* #ANG #ANGRK #ANGRK013 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK013 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK013 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK013 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK013 ^property[+].code = #anatomic-focus
@@ -2266,7 +2267,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK014 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK014 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK014 ^designation[=].value = "Endokardiaalne kaardistamine"
-* #ANG #ANGRK #ANGRK014 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK014 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK014 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK014 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK014 ^property[+].code = #anatomic-focus
@@ -2294,7 +2295,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK015 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK015 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK015 ^designation[=].value = "Arteriovenoosse malformatsiooni ravi"
-* #ANG #ANGRK #ANGRK015 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK015 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK015 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK015 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK015 ^property[+].code = #anatomic-focus
@@ -2347,7 +2348,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK017 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK017 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK017 ^designation[=].value = "Südameõõnte kateteriseerimine"
-* #ANG #ANGRK #ANGRK017 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK017 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK017 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK017 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK017 ^property[+].code = #anatomic-focus
@@ -2375,7 +2376,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK018 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK018 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK018 ^designation[=].value = "Südameõõnte kateteriseerimine"
-* #ANG #ANGRK #ANGRK018 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK018 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK018 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK018 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK018 ^property[+].code = #anatomic-focus
@@ -2403,7 +2404,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK019 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK019 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK019 ^designation[=].value = "Südameõõnte kateteriseerimine"
-* #ANG #ANGRK #ANGRK019 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK019 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK019 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK019 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK019 ^property[+].code = #anatomic-focus
@@ -2434,7 +2435,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK020 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK020 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK020 ^designation[=].value = "Südamestimulaatori paigaldamine"
-* #ANG #ANGRK #ANGRK020 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK020 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK020 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK020 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK020 ^property[+].code = #anatomic-focus
@@ -2465,7 +2466,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK021 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK021 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK021 ^designation[=].value = "Südamestimulaatori paigaldamine"
-* #ANG #ANGRK #ANGRK021 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK021 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK021 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK021 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK021 ^property[+].code = #anatomic-focus
@@ -2496,7 +2497,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK022 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK022 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK022 ^designation[=].value = "Kardioverter-defibrillaatori paigaldamine"
-* #ANG #ANGRK #ANGRK022 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK022 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK022 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK022 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK022 ^property[+].code = #anatomic-focus
@@ -2524,7 +2525,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK023 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK023 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK023 ^designation[=].value = "Kardioverter-defibrillaatori paigaldamine"
-* #ANG #ANGRK #ANGRK023 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK023 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK023 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK023 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK023 ^property[+].code = #anatomic-focus
@@ -2555,7 +2556,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK024 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK024 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK024 ^designation[=].value = "Kardioverter-defibrillaatori paigaldamine"
-* #ANG #ANGRK #ANGRK024 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK024 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK024 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK024 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK024 ^property[+].code = #anatomic-focus
@@ -2583,7 +2584,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK025 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK025 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK025 ^designation[=].value = "Biventrikulaarse kardiostimulaatori paigaldamine"
-* #ANG #ANGRK #ANGRK025 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK025 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK025 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK025 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK025 ^property[+].code = #anatomic-focus
@@ -2617,7 +2618,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK026 ^designation[+].language = #en
 * #ANG #ANGRK #ANGRK026 ^designation[=].use.code = #display
 * #ANG #ANGRK #ANGRK026 ^designation[=].value = "Pacemaker follow-up and programming"
-* #ANG #ANGRK #ANGRK026 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK026 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK026 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK026 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK026 ^property[+].code = #anatomic-focus
@@ -2645,7 +2646,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK027 ^designation[0].language = #et
 * #ANG #ANGRK #ANGRK027 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK027 ^designation[=].value = "Südamestimulaatori elektroodi vahetus"
-* #ANG #ANGRK #ANGRK027 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK027 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK027 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK027 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK027 ^property[+].code = #anatomic-focus
@@ -2673,7 +2674,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK028 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK028 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK028 ^designation[=].value = "Rinnaaort"
-* #ANG #ANGRK #ANGRK028 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK028 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK028 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK028 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK028 ^property[+].code = #anatomic-focus
@@ -2698,7 +2699,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK029 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK029 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK029 ^designation[=].value = "Rinnaaordi balloondilatatsioon"
-* #ANG #ANGRK #ANGRK029 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK029 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK029 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK029 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK029 ^property[+].code = #anatomic-focus
@@ -2723,7 +2724,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK030 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK030 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK030 ^designation[=].value = "Rinnaaordi balloondilatatsioon stentimine"
-* #ANG #ANGRK #ANGRK030 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK030 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK030 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK030 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK030 ^property[+].code = #anatomic-focus
@@ -2751,7 +2752,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK031 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK031 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK031 ^designation[=].value = "Rinnaaorti stentgrafti paigaldus"
-* #ANG #ANGRK #ANGRK031 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK031 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK031 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK031 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK031 ^property[+].code = #anatomic-focus
@@ -2798,7 +2799,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK033 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK033 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK033 ^designation[=].value = "Kopsuarterid"
-* #ANG #ANGRK #ANGRK033 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK033 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK033 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK033 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK033 ^property[+].code = #anatomic-focus
@@ -2895,7 +2896,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGRK #ANGRK037 ^designation[=].language = #et
 * #ANG #ANGRK #ANGRK037 ^designation[=].use.code = #alias
 * #ANG #ANGRK #ANGRK037 ^designation[=].value = "Kopsuarteri trombolüüs"
-* #ANG #ANGRK #ANGRK037 ^property[0].code = #Interpreter
+* #ANG #ANGRK #ANGRK037 ^property[0].code = #evaluator
 * #ANG #ANGRK #ANGRK037 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGRK #ANGRK037 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGRK #ANGRK037 ^property[+].code = #anatomic-focus
@@ -2983,7 +2984,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ001 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ001 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ001 ^designation[=].value = "Ülajäseme arterid parem"
-* #ANG #ANGUJ #ANGUJ001 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ001 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ001 ^property[+].code = #anatomic-focus
@@ -3011,7 +3012,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ002 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ002 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ002 ^designation[=].value = "Ülajäseme arterid vasak"
-* #ANG #ANGUJ #ANGUJ002 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ002 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ002 ^property[+].code = #anatomic-focus
@@ -3039,7 +3040,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ003 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ003 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ003 ^designation[=].value = "Üjajäseme arteri balloondilatatsioon"
-* #ANG #ANGUJ #ANGUJ003 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ003 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ003 ^property[+].code = #anatomic-focus
@@ -3064,7 +3065,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ004 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ004 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ004 ^designation[=].value = "Ülajäseme arteri stentimine"
-* #ANG #ANGUJ #ANGUJ004 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ004 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ004 ^property[+].code = #anatomic-focus
@@ -3092,7 +3093,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ005 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ005 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ005 ^designation[=].value = "Ülajäseme arteri trombolüüs"
-* #ANG #ANGUJ #ANGUJ005 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ005 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ005 ^property[+].code = #anatomic-focus
@@ -3117,7 +3118,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ006 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ006 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ006 ^designation[=].value = "Ülajäseme arteri trombektoomia"
-* #ANG #ANGUJ #ANGUJ006 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ006 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ006 ^property[+].code = #anatomic-focus
@@ -3145,7 +3146,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ007 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ007 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ007 ^designation[=].value = "Ülajäseme veenide balloondilatatsioon"
-* #ANG #ANGUJ #ANGUJ007 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ007 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ007 ^property[+].code = #anatomic-focus
@@ -3170,7 +3171,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ008 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ008 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ008 ^designation[=].value = "Ülajäseme veenide trombolüüs"
-* #ANG #ANGUJ #ANGUJ008 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ008 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ008 ^property[+].code = #anatomic-focus
@@ -3195,7 +3196,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ009 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ009 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ009 ^designation[=].value = "Dialüüsifistli balloondilatasioon"
-* #ANG #ANGUJ #ANGUJ009 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ009 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ009 ^property[+].code = #anatomic-focus
@@ -3267,7 +3268,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ012 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ012 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ012 ^designation[=].value = "Ülajäseme AVM sulgemine"
-* #ANG #ANGUJ #ANGUJ012 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ012 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ012 ^property[+].code = #anatomic-focus
@@ -3295,7 +3296,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ013 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ013 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ013 ^designation[=].value = "Ülajäseme flebograafia parem"
-* #ANG #ANGUJ #ANGUJ013 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ013 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ013 ^property[+].code = #anatomic-focus
@@ -3320,7 +3321,7 @@ Title: "Radioloogiline uuring"
 * #ANG #ANGUJ #ANGUJ014 ^designation[=].language = #et
 * #ANG #ANGUJ #ANGUJ014 ^designation[=].use.code = #alias
 * #ANG #ANGUJ #ANGUJ014 ^designation[=].value = "Ülajäseme flebograafia vasak"
-* #ANG #ANGUJ #ANGUJ014 ^property[0].code = #Interpreter
+* #ANG #ANGUJ #ANGUJ014 ^property[0].code = #evaluator
 * #ANG #ANGUJ #ANGUJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #ANG #ANGUJ #ANGUJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #ANG #ANGUJ #ANGUJ014 ^property[+].code = #anatomic-focus
@@ -8865,7 +8866,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE001 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE001 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE001 ^designation[=].value = "Hammas 11"
-* #RGU #RGI #RGIPE #RGIPE001 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE001 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE001 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE001 ^property[+].code = #anatomic-focus
@@ -8897,7 +8898,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE002 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE002 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE002 ^designation[=].value = "Hammas 12"
-* #RGU #RGI #RGIPE #RGIPE002 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE002 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE002 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE002 ^property[+].code = #anatomic-focus
@@ -8932,7 +8933,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE003 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE003 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE003 ^designation[=].value = "Hammas 13"
-* #RGU #RGI #RGIPE #RGIPE003 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE003 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE003 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE003 ^property[+].code = #anatomic-focus
@@ -8967,7 +8968,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE004 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE004 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE004 ^designation[=].value = "Hammas 14"
-* #RGU #RGI #RGIPE #RGIPE004 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE004 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE004 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE004 ^property[+].code = #anatomic-focus
@@ -9002,7 +9003,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE005 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE005 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE005 ^designation[=].value = "Hammas 15"
-* #RGU #RGI #RGIPE #RGIPE005 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE005 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE005 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE005 ^property[+].code = #anatomic-focus
@@ -9037,7 +9038,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE006 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE006 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE006 ^designation[=].value = "Hammas 16"
-* #RGU #RGI #RGIPE #RGIPE006 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE006 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE006 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE006 ^property[+].code = #anatomic-focus
@@ -9072,7 +9073,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE007 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE007 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE007 ^designation[=].value = "Hammas 17"
-* #RGU #RGI #RGIPE #RGIPE007 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE007 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE007 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE007 ^property[+].code = #anatomic-focus
@@ -9107,7 +9108,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE008 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE008 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE008 ^designation[=].value = "Hammas 18"
-* #RGU #RGI #RGIPE #RGIPE008 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE008 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE008 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE008 ^property[+].code = #anatomic-focus
@@ -9142,7 +9143,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE009 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE009 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE009 ^designation[=].value = "Hammas 21"
-* #RGU #RGI #RGIPE #RGIPE009 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE009 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE009 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE009 ^property[+].code = #anatomic-focus
@@ -9177,7 +9178,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE010 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE010 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE010 ^designation[=].value = "Hammas 22"
-* #RGU #RGI #RGIPE #RGIPE010 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE010 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE010 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE010 ^property[+].code = #anatomic-focus
@@ -9212,7 +9213,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE011 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE011 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE011 ^designation[=].value = "Hammas 23"
-* #RGU #RGI #RGIPE #RGIPE011 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE011 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE011 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE011 ^property[+].code = #anatomic-focus
@@ -9247,7 +9248,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE012 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE012 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE012 ^designation[=].value = "Hammas 24"
-* #RGU #RGI #RGIPE #RGIPE012 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE012 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE012 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE012 ^property[+].code = #anatomic-focus
@@ -9282,7 +9283,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE013 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE013 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE013 ^designation[=].value = "Hammas 25"
-* #RGU #RGI #RGIPE #RGIPE013 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE013 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE013 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE013 ^property[+].code = #anatomic-focus
@@ -9317,7 +9318,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE014 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE014 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE014 ^designation[=].value = "Hammas 26"
-* #RGU #RGI #RGIPE #RGIPE014 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE014 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE014 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE014 ^property[+].code = #anatomic-focus
@@ -9352,7 +9353,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE015 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE015 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE015 ^designation[=].value = "Hammas 27"
-* #RGU #RGI #RGIPE #RGIPE015 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE015 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE015 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE015 ^property[+].code = #anatomic-focus
@@ -9387,7 +9388,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE016 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE016 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE016 ^designation[=].value = "Hammas 28"
-* #RGU #RGI #RGIPE #RGIPE016 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE016 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE016 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE016 ^property[+].code = #anatomic-focus
@@ -9422,7 +9423,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE017 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE017 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE017 ^designation[=].value = "Hammas 31"
-* #RGU #RGI #RGIPE #RGIPE017 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE017 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE017 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE017 ^property[+].code = #anatomic-focus
@@ -9457,7 +9458,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE018 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE018 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE018 ^designation[=].value = "Hammas 32"
-* #RGU #RGI #RGIPE #RGIPE018 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE018 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE018 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE018 ^property[+].code = #anatomic-focus
@@ -9492,7 +9493,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE019 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE019 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE019 ^designation[=].value = "Hammas 33"
-* #RGU #RGI #RGIPE #RGIPE019 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE019 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE019 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE019 ^property[+].code = #anatomic-focus
@@ -9527,7 +9528,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE020 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE020 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE020 ^designation[=].value = "Hammas 34"
-* #RGU #RGI #RGIPE #RGIPE020 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE020 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE020 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE020 ^property[+].code = #anatomic-focus
@@ -9562,7 +9563,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE021 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE021 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE021 ^designation[=].value = "Hammas 35"
-* #RGU #RGI #RGIPE #RGIPE021 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE021 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE021 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE021 ^property[+].code = #anatomic-focus
@@ -9597,7 +9598,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE022 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE022 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE022 ^designation[=].value = "Hammas 36"
-* #RGU #RGI #RGIPE #RGIPE022 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE022 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE022 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE022 ^property[+].code = #anatomic-focus
@@ -9632,7 +9633,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE023 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE023 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE023 ^designation[=].value = "Hammas 37"
-* #RGU #RGI #RGIPE #RGIPE023 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE023 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE023 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE023 ^property[+].code = #anatomic-focus
@@ -9667,7 +9668,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE024 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE024 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE024 ^designation[=].value = "Hammas 38"
-* #RGU #RGI #RGIPE #RGIPE024 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE024 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE024 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE024 ^property[+].code = #anatomic-focus
@@ -9702,7 +9703,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE025 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE025 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE025 ^designation[=].value = "Hammas 41"
-* #RGU #RGI #RGIPE #RGIPE025 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE025 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE025 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE025 ^property[+].code = #anatomic-focus
@@ -9737,7 +9738,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE026 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE026 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE026 ^designation[=].value = "Hammas 42"
-* #RGU #RGI #RGIPE #RGIPE026 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE026 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE026 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE026 ^property[+].code = #anatomic-focus
@@ -9772,7 +9773,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE027 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE027 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE027 ^designation[=].value = "Hammas 43"
-* #RGU #RGI #RGIPE #RGIPE027 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE027 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE027 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE027 ^property[+].code = #anatomic-focus
@@ -9807,7 +9808,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE028 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE028 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE028 ^designation[=].value = "Hammas 44"
-* #RGU #RGI #RGIPE #RGIPE028 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE028 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE028 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE028 ^property[+].code = #anatomic-focus
@@ -9842,7 +9843,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE029 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE029 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE029 ^designation[=].value = "Hammas 45"
-* #RGU #RGI #RGIPE #RGIPE029 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE029 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE029 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE029 ^property[+].code = #anatomic-focus
@@ -9877,7 +9878,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE030 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE030 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE030 ^designation[=].value = "Hammas 46"
-* #RGU #RGI #RGIPE #RGIPE030 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE030 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE030 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE030 ^property[+].code = #anatomic-focus
@@ -9912,7 +9913,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE031 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE031 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE031 ^designation[=].value = "Hammas 47"
-* #RGU #RGI #RGIPE #RGIPE031 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE031 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE031 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE031 ^property[+].code = #anatomic-focus
@@ -9947,7 +9948,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE032 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE032 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE032 ^designation[=].value = "Hammas 48"
-* #RGU #RGI #RGIPE #RGIPE032 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE032 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE032 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE032 ^property[+].code = #anatomic-focus
@@ -9982,7 +9983,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE033 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE033 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE033 ^designation[=].value = "Hammas 51"
-* #RGU #RGI #RGIPE #RGIPE033 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE033 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE033 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE033 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE033 ^property[+].code = #anatomic-focus
@@ -10017,7 +10018,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE034 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE034 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE034 ^designation[=].value = "Hammas 52"
-* #RGU #RGI #RGIPE #RGIPE034 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE034 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE034 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE034 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE034 ^property[+].code = #anatomic-focus
@@ -10052,7 +10053,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE035 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE035 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE035 ^designation[=].value = "Hammas 53"
-* #RGU #RGI #RGIPE #RGIPE035 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE035 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE035 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE035 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE035 ^property[+].code = #anatomic-focus
@@ -10087,7 +10088,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE036 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE036 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE036 ^designation[=].value = "Hammas 54"
-* #RGU #RGI #RGIPE #RGIPE036 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE036 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE036 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE036 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE036 ^property[+].code = #anatomic-focus
@@ -10122,7 +10123,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE037 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE037 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE037 ^designation[=].value = "Hammas 55"
-* #RGU #RGI #RGIPE #RGIPE037 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE037 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE037 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE037 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE037 ^property[+].code = #anatomic-focus
@@ -10157,7 +10158,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE038 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE038 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE038 ^designation[=].value = "Hammas 61"
-* #RGU #RGI #RGIPE #RGIPE038 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE038 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE038 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE038 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE038 ^property[+].code = #anatomic-focus
@@ -10192,7 +10193,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE039 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE039 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE039 ^designation[=].value = "Hammas 62"
-* #RGU #RGI #RGIPE #RGIPE039 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE039 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE039 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE039 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE039 ^property[+].code = #anatomic-focus
@@ -10227,7 +10228,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE040 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE040 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE040 ^designation[=].value = "Hammas 63"
-* #RGU #RGI #RGIPE #RGIPE040 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE040 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE040 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE040 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE040 ^property[+].code = #anatomic-focus
@@ -10262,7 +10263,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE041 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE041 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE041 ^designation[=].value = "Hammas 64"
-* #RGU #RGI #RGIPE #RGIPE041 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE041 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE041 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE041 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE041 ^property[+].code = #anatomic-focus
@@ -10297,7 +10298,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE042 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE042 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE042 ^designation[=].value = "Hammas 65"
-* #RGU #RGI #RGIPE #RGIPE042 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE042 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE042 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE042 ^property[+].code = #anatomic-focus
@@ -10332,7 +10333,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE043 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE043 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE043 ^designation[=].value = "Hammas 71"
-* #RGU #RGI #RGIPE #RGIPE043 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE043 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE043 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE043 ^property[+].code = #anatomic-focus
@@ -10367,7 +10368,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE044 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE044 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE044 ^designation[=].value = "Hammas 72"
-* #RGU #RGI #RGIPE #RGIPE044 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE044 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE044 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE044 ^property[+].code = #anatomic-focus
@@ -10402,7 +10403,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE045 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE045 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE045 ^designation[=].value = "Hammas 73"
-* #RGU #RGI #RGIPE #RGIPE045 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE045 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE045 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE045 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE045 ^property[+].code = #anatomic-focus
@@ -10437,7 +10438,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE046 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE046 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE046 ^designation[=].value = "Hammas 74"
-* #RGU #RGI #RGIPE #RGIPE046 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE046 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE046 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE046 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE046 ^property[+].code = #anatomic-focus
@@ -10472,7 +10473,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE047 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE047 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE047 ^designation[=].value = "Hammas 75"
-* #RGU #RGI #RGIPE #RGIPE047 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE047 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE047 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE047 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE047 ^property[+].code = #anatomic-focus
@@ -10507,7 +10508,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE048 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE048 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE048 ^designation[=].value = "Hammas 81"
-* #RGU #RGI #RGIPE #RGIPE048 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE048 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE048 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE048 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE048 ^property[+].code = #anatomic-focus
@@ -10542,7 +10543,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE049 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE049 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE049 ^designation[=].value = "Hammas 82"
-* #RGU #RGI #RGIPE #RGIPE049 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE049 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE049 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE049 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE049 ^property[+].code = #anatomic-focus
@@ -10577,7 +10578,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE050 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE050 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE050 ^designation[=].value = "Hammas 83"
-* #RGU #RGI #RGIPE #RGIPE050 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE050 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE050 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE050 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE050 ^property[+].code = #anatomic-focus
@@ -10612,7 +10613,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE051 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE051 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE051 ^designation[=].value = "Hammas 84"
-* #RGU #RGI #RGIPE #RGIPE051 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE051 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE051 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE051 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE051 ^property[+].code = #anatomic-focus
@@ -10647,7 +10648,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGI #RGIPE #RGIPE052 ^designation[=].language = #et
 * #RGU #RGI #RGIPE #RGIPE052 ^designation[=].use.code = #alias
 * #RGU #RGI #RGIPE #RGIPE052 ^designation[=].value = "Hammas 85"
-* #RGU #RGI #RGIPE #RGIPE052 ^property[0].code = #Interpreter
+* #RGU #RGI #RGIPE #RGIPE052 ^property[0].code = #evaluator
 * #RGU #RGI #RGIPE #RGIPE052 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGI #RGIPE #RGIPE052 ^property[=].valueCoding = snomed-ct#106289002
 * #RGU #RGI #RGIPE #RGIPE052 ^property[+].code = #anatomic-focus
@@ -10690,7 +10691,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ001 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ001 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ001 ^designation[=].value = "Puus AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ001 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ001 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ001 ^property[+].code = #anatomic-focus
@@ -10724,7 +10725,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ002 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ002 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ002 ^designation[=].value = "Puus AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ002 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ002 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ002 ^property[+].code = #anatomic-focus
@@ -10758,7 +10759,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ003 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ003 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ003 ^designation[=].value = "Puus Lauenstein parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ003 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ003 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ003 ^property[+].code = #anatomic-focus
@@ -10798,7 +10799,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ004 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ004 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ004 ^designation[=].value = "Puus Lauenstein vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ004 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ004 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ004 ^property[+].code = #anatomic-focus
@@ -10838,7 +10839,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ005 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ005 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ005 ^designation[=].value = "Reieluu põlvega AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ005 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ005 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ005 ^property[+].code = #anatomic-focus
@@ -10875,7 +10876,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ006 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ006 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ006 ^designation[=].value = "Reieluu põlvega AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ006 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ006 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ006 ^property[+].code = #anatomic-focus
@@ -10912,7 +10913,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ007 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ007 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ007 ^designation[=].value = "Reieluu põlvega LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ007 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ007 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ007 ^property[+].code = #anatomic-focus
@@ -10949,7 +10950,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ008 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ008 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ008 ^designation[=].value = "Reieluu põlvega LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ008 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ008 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ008 ^property[+].code = #anatomic-focus
@@ -10986,7 +10987,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ009 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ009 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ009 ^designation[=].value = "Reieluu puusaga AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ009 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ009 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ009 ^property[+].code = #anatomic-focus
@@ -11023,7 +11024,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ010 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ010 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ010 ^designation[=].value = "Reieluu puusaga AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ010 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ010 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ010 ^property[+].code = #anatomic-focus
@@ -11060,7 +11061,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ011 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ011 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ011 ^designation[=].value = "Reieluu puusaga LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ011 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ011 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ011 ^property[+].code = #anatomic-focus
@@ -11097,7 +11098,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ012 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ012 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ012 ^designation[=].value = "Reieluu puusaga LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ012 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ012 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ012 ^property[+].code = #anatomic-focus
@@ -11134,7 +11135,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ013 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ013 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ013 ^designation[=].value = "Põlv AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ013 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ013 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ013 ^property[+].code = #anatomic-focus
@@ -11168,7 +11169,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ014 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ014 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ014 ^designation[=].value = "Põlv AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ014 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ014 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ014 ^property[+].code = #anatomic-focus
@@ -11202,7 +11203,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ015 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ015 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ015 ^designation[=].value = "Põlv LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ015 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ015 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ015 ^property[+].code = #anatomic-focus
@@ -11236,7 +11237,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ016 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ016 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ016 ^designation[=].value = "Põlv LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ016 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ016 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ016 ^property[+].code = #anatomic-focus
@@ -11270,7 +11271,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ017 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ017 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ017 ^designation[=].value = "Säär AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ017 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ017 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ017 ^property[+].code = #anatomic-focus
@@ -11304,7 +11305,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ018 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ018 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ018 ^designation[=].value = "Säär AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ018 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ018 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ018 ^property[+].code = #anatomic-focus
@@ -11341,7 +11342,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ019 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ019 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ019 ^designation[=].value = "Säär LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ019 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ019 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ019 ^property[+].code = #anatomic-focus
@@ -11378,7 +11379,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ020 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ020 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ020 ^designation[=].value = "Säär LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ020 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ020 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ020 ^property[+].code = #anatomic-focus
@@ -11415,7 +11416,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ021 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ021 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ021 ^designation[=].value = "Hüppeliiges LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ021 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ021 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ021 ^property[+].code = #anatomic-focus
@@ -11452,7 +11453,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ022 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ022 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ022 ^designation[=].value = "Hüppeliiges LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ022 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ022 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ022 ^property[+].code = #anatomic-focus
@@ -11489,7 +11490,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ023 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ023 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ023 ^designation[=].value = "Hüppeliiges  Mortise parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ023 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ023 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ023 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ023 ^property[+].code = #anatomic-focus
@@ -11529,7 +11530,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ024 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ024 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ024 ^designation[=].value = "Hüppeliiges  Mortise vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ024 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ024 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ024 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ024 ^property[+].code = #anatomic-focus
@@ -11569,7 +11570,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ025 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ025 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ025 ^designation[=].value = "Labajalg poolpõiki parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ025 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ025 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ025 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ025 ^property[+].code = #anatomic-focus
@@ -11606,7 +11607,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ026 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ026 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ026 ^designation[=].value = "Labajalg poolpõiki vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ026 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ026 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ026 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ026 ^property[+].code = #anatomic-focus
@@ -11643,7 +11644,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ027 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ027 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ027 ^designation[=].value = "Labajalg AP parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ027 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ027 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ027 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ027 ^property[+].code = #anatomic-focus
@@ -11680,7 +11681,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ028 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ028 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ028 ^designation[=].value = "Labajalg AP vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ028 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ028 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ028 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ028 ^property[+].code = #anatomic-focus
@@ -11717,7 +11718,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ029 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ029 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ029 ^designation[=].value = "Kandluu aksiaalne parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ029 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ029 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ029 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ029 ^property[+].code = #anatomic-focus
@@ -11754,7 +11755,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ030 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ030 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ030 ^designation[=].value = "Kandluu aksiaalne vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ030 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ030 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ030 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ030 ^property[+].code = #anatomic-focus
@@ -11791,7 +11792,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ031 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ031 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ031 ^designation[=].value = "Kandluu LAT parem palatis"
-* #RGU #RGP #RGPAJ #RGPAJ031 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ031 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ031 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ031 ^property[+].code = #anatomic-focus
@@ -11828,7 +11829,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPAJ #RGPAJ032 ^designation[=].language = #et
 * #RGU #RGP #RGPAJ #RGPAJ032 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPAJ #RGPAJ032 ^designation[=].value = "Kandluu LAT vasak palatis"
-* #RGU #RGP #RGPAJ #RGPAJ032 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPAJ #RGPAJ032 ^property[0].code = #evaluator
 * #RGU #RGP #RGPAJ #RGPAJ032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPAJ #RGPAJ032 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPAJ #RGPAJ032 ^property[+].code = #anatomic-focus
@@ -11869,7 +11870,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV001 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV001 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV001 ^designation[=].value = "Kõht AP lamades palatis"
-* #RGU #RGP #RGPKV #RGPKV001 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV001 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV001 ^property[+].code = #anatomic-focus
@@ -11906,7 +11907,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV002 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV002 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV002 ^designation[=].value = "Kõht laterogramm palatis"
-* #RGU #RGP #RGPKV #RGPKV002 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV002 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV002 ^property[+].code = #anatomic-focus
@@ -11943,7 +11944,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV003 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV003 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV003 ^designation[=].value = "Kõht laterogramm palatis"
-* #RGU #RGP #RGPKV #RGPKV003 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV003 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV003 ^property[+].code = #anatomic-focus
@@ -11980,7 +11981,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV004 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV004 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV004 ^designation[=].value = "Kõht laterogramm palatis"
-* #RGU #RGP #RGPKV #RGPKV004 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV004 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV004 ^property[+].code = #anatomic-focus
@@ -12017,10 +12018,10 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV005 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV005 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV005 ^designation[=].value = "Seedetrakti passaaž kontrastainega palatis"
-* #RGU #RGP #RGPKV #RGPKV005 ^property[0].code = #Contrast
+* #RGU #RGP #RGPKV #RGPKV005 ^property[0].code = #contrast
 * #RGU #RGP #RGPKV #RGPKV005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV005 ^property[=].valueCoding = snomed-ct#349359008
-* #RGU #RGP #RGPKV #RGPKV005 ^property[+].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV005 ^property[+].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV005 ^property[+].code = #anatomic-focus
@@ -12051,10 +12052,10 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV006 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV006 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV006 ^designation[=].value = "Jämesoole passaaž kontrastainega palatis"
-* #RGU #RGP #RGPKV #RGPKV006 ^property[0].code = #Contrast
+* #RGU #RGP #RGPKV #RGPKV006 ^property[0].code = #contrast
 * #RGU #RGP #RGPKV #RGPKV006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV006 ^property[=].valueCoding = snomed-ct#349359008
-* #RGU #RGP #RGPKV #RGPKV006 ^property[+].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV006 ^property[+].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV006 ^property[+].code = #anatomic-focus
@@ -12085,7 +12086,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV007 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV007 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV007 ^designation[=].value = "Tsüstograafia palatis"
-* #RGU #RGP #RGPKV #RGPKV007 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV007 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV007 ^property[+].code = #anatomic-focus
@@ -12116,7 +12117,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPKV #RGPKV008 ^designation[=].language = #et
 * #RGU #RGP #RGPKV #RGPKV008 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPKV #RGPKV008 ^designation[=].value = "Vaagen AP palatis"
-* #RGU #RGP #RGPKV #RGPKV008 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPKV #RGPKV008 ^property[0].code = #evaluator
 * #RGU #RGP #RGPKV #RGPKV008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPKV #RGPKV008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPKV #RGPKV008 ^property[+].code = #anatomic-focus
@@ -12154,7 +12155,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPMT #RGPMT001 ^designation[=].language = #et
 * #RGU #RGP #RGPMT #RGPMT001 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPMT #RGPMT001 ^designation[=].value = "Muu eriprojektsioon palatis"
-* #RGU #RGP #RGPMT #RGPMT001 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPMT #RGPMT001 ^property[0].code = #evaluator
 * #RGU #RGP #RGPMT #RGPMT001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPMT #RGPMT001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPMT #RGPMT001 ^property[+].code = #anatomic-focus
@@ -12192,7 +12193,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK001 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK001 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK001 ^designation[=].value = "Rindkere AP lamades palatis"
-* #RGU #RGP #RGPRK #RGPRK001 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK001 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK001 ^property[+].code = #anatomic-focus
@@ -12229,7 +12230,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK002 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK002 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK002 ^designation[=].value = "Rindkere PA istudes palatis"
-* #RGU #RGP #RGPRK #RGPRK002 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK002 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK002 ^property[+].code = #anatomic-focus
@@ -12266,7 +12267,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK003 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK003 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK003 ^designation[=].value = "Rindkere AP istudes palatis"
-* #RGU #RGP #RGPRK #RGPRK003 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK003 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK003 ^property[+].code = #anatomic-focus
@@ -12303,7 +12304,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK004 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK004 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK004 ^designation[=].value = "Rangluu AP parem palatis"
-* #RGU #RGP #RGPRK #RGPRK004 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK004 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK004 ^property[+].code = #anatomic-focus
@@ -12340,7 +12341,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK005 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK005 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK005 ^designation[=].value = "Rangluu AP vasak palatis"
-* #RGU #RGP #RGPRK #RGPRK005 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK005 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK005 ^property[+].code = #anatomic-focus
@@ -12377,7 +12378,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK006 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK006 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK006 ^designation[=].value = "Rangluu aksiaalne parem palatis"
-* #RGU #RGP #RGPRK #RGPRK006 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK006 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK006 ^property[+].code = #anatomic-focus
@@ -12414,7 +12415,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK007 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK007 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK007 ^designation[=].value = "Rindkere AP vastsündinu lamades palatis"
-* #RGU #RGP #RGPRK #RGPRK007 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK007 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK007 ^property[+].code = #anatomic-focus
@@ -12454,7 +12455,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK008 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK008 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK008 ^designation[=].value = "Rindkere kõht vaagen AP vastsündinu lamades palatis"
-* #RGU #RGP #RGPRK #RGPRK008 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK008 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK008 ^property[+].code = #anatomic-focus
@@ -12497,7 +12498,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPRK #RGPRK009 ^designation[=].language = #et
 * #RGU #RGP #RGPRK #RGPRK009 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPRK #RGPRK009 ^designation[=].value = "Rangluu aksiaalne vasak palatis"
-* #RGU #RGP #RGPRK #RGPRK009 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPRK #RGPRK009 ^property[0].code = #evaluator
 * #RGU #RGP #RGPRK #RGPRK009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPRK #RGPRK009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPRK #RGPRK009 ^property[+].code = #anatomic-focus
@@ -12538,7 +12539,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ001 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ001 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ001 ^designation[=].value = "Õlg AP parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ001 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ001 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ001 ^property[+].code = #anatomic-focus
@@ -12575,7 +12576,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ002 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ002 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ002 ^designation[=].value = "Õlg AP vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ002 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ002 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ002 ^property[+].code = #anatomic-focus
@@ -12612,7 +12613,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ003 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ003 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ003 ^designation[=].value = "Õlavarreluu AP parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ003 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ003 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ003 ^property[+].code = #anatomic-focus
@@ -12649,7 +12650,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ004 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ004 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ004 ^designation[=].value = "Õlavarreluu AP vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ004 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ004 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ004 ^property[+].code = #anatomic-focus
@@ -12686,7 +12687,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ005 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ005 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ005 ^designation[=].value = "Õlavarreluu LAT parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ005 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ005 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ005 ^property[+].code = #anatomic-focus
@@ -12723,7 +12724,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ006 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ006 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ006 ^designation[=].value = "Õlavarreluu LAT vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ006 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ006 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ006 ^property[+].code = #anatomic-focus
@@ -12760,7 +12761,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ007 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ007 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ007 ^designation[=].value = "Küünarliiges AP parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ007 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ007 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ007 ^property[+].code = #anatomic-focus
@@ -12797,7 +12798,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ008 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ008 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ008 ^designation[=].value = "Küünarliiges AP vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ008 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ008 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ008 ^property[+].code = #anatomic-focus
@@ -12834,7 +12835,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ009 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ009 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ009 ^designation[=].value = "Küünarliiges LAT parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ009 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ009 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ009 ^property[+].code = #anatomic-focus
@@ -12871,7 +12872,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ010 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ010 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ010 ^designation[=].value = "Küünarliiges LAT vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ010 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ010 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ010 ^property[+].code = #anatomic-focus
@@ -12908,7 +12909,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ011 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ011 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ011 ^designation[=].value = "Küünarvarreluud AP parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ011 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ011 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ011 ^property[+].code = #anatomic-focus
@@ -12945,7 +12946,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ012 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ012 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ012 ^designation[=].value = "Küünarvarreluud AP vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ012 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ012 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ012 ^property[+].code = #anatomic-focus
@@ -12982,7 +12983,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ013 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ013 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ013 ^designation[=].value = "Küünarvarreluud LAT parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ013 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ013 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ013 ^property[+].code = #anatomic-focus
@@ -13019,7 +13020,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ014 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ014 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ014 ^designation[=].value = "Küünarvarreluud LAT vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ014 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ014 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ014 ^property[+].code = #anatomic-focus
@@ -13056,7 +13057,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ015 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ015 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ015 ^designation[=].value = "Ranne PA parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ015 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ015 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ015 ^property[+].code = #anatomic-focus
@@ -13093,7 +13094,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ016 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ016 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ016 ^designation[=].value = "Ranne PA vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ016 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ016 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ016 ^property[+].code = #anatomic-focus
@@ -13130,7 +13131,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ017 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ017 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ017 ^designation[=].value = "Ranne LAT parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ017 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ017 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ017 ^property[+].code = #anatomic-focus
@@ -13167,7 +13168,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ018 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ018 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ018 ^designation[=].value = "Ranne LAT vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ018 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ018 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ018 ^property[+].code = #anatomic-focus
@@ -13204,7 +13205,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ019 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ019 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ019 ^designation[=].value = "Labakäsi PA parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ019 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ019 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ019 ^property[+].code = #anatomic-focus
@@ -13241,7 +13242,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ020 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ020 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ020 ^designation[=].value = "Labakäsi PA vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ020 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ020 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ020 ^property[+].code = #anatomic-focus
@@ -13278,7 +13279,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ021 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ021 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ021 ^designation[=].value = "Labakäsi poolpõiki parem palatis"
-* #RGU #RGP #RGPUJ #RGPUJ021 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ021 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ021 ^property[+].code = #anatomic-focus
@@ -13315,7 +13316,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGP #RGPUJ #RGPUJ022 ^designation[=].language = #et
 * #RGU #RGP #RGPUJ #RGPUJ022 ^designation[=].use.code = #alias
 * #RGU #RGP #RGPUJ #RGPUJ022 ^designation[=].value = "Labakäsi poolpõiki vasak palatis"
-* #RGU #RGP #RGPUJ #RGPUJ022 ^property[0].code = #Interpreter
+* #RGU #RGP #RGPUJ #RGPUJ022 ^property[0].code = #evaluator
 * #RGU #RGP #RGPUJ #RGPUJ022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGP #RGPUJ #RGPUJ022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGP #RGPUJ #RGPUJ022 ^property[+].code = #anatomic-focus
@@ -13356,7 +13357,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ001 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ001 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ001 ^designation[=].value = "Puus AP parem"
-* #RGU #RGUAJ #RGUAJ001 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ001 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ001 ^property[+].code = #anatomic-focus
@@ -13387,7 +13388,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ002 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ002 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ002 ^designation[=].value = "Puus AP vasak"
-* #RGU #RGUAJ #RGUAJ002 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ002 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ002 ^property[+].code = #anatomic-focus
@@ -13418,7 +13419,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ003 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ003 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ003 ^designation[=].value = "Puus Lauenstein parem"
-* #RGU #RGUAJ #RGUAJ003 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ003 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ003 ^property[+].code = #anatomic-focus
@@ -13455,7 +13456,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ004 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ004 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ004 ^designation[=].value = "Puus Lauenstein vasak"
-* #RGU #RGUAJ #RGUAJ004 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ004 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ004 ^property[+].code = #anatomic-focus
@@ -13492,7 +13493,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ005 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ005 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ005 ^designation[=].value = "Puus LAT parem"
-* #RGU #RGUAJ #RGUAJ005 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ005 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ005 ^property[+].code = #anatomic-focus
@@ -13523,7 +13524,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ006 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ006 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ006 ^designation[=].value = "Puus LAT vasak"
-* #RGU #RGUAJ #RGUAJ006 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ006 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ006 ^property[+].code = #anatomic-focus
@@ -13554,7 +13555,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ007 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ007 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ007 ^designation[=].value = "Puus Danelius-Miller parem"
-* #RGU #RGUAJ #RGUAJ007 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ007 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ007 ^property[+].code = #anatomic-focus
@@ -13591,7 +13592,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ008 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ008 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ008 ^designation[=].value = "Puus Danelius-Miller vasak"
-* #RGU #RGUAJ #RGUAJ008 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ008 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ008 ^property[+].code = #anatomic-focus
@@ -13628,7 +13629,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ009 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ009 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ009 ^designation[=].value = "Puus AP LAT parem"
-* #RGU #RGUAJ #RGUAJ009 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ009 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ009 ^property[+].code = #anatomic-focus
@@ -13662,7 +13663,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ010 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ010 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ010 ^designation[=].value = "Puus AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ010 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ010 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ010 ^property[+].code = #anatomic-focus
@@ -13696,7 +13697,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ011 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ011 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ011 ^designation[=].value = "Puus eriprojektsioon parem"
-* #RGU #RGUAJ #RGUAJ011 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ011 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ011 ^property[+].code = #anatomic-focus
@@ -13727,7 +13728,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ012 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ012 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ012 ^designation[=].value = "Puus eriprojektsioon vasak"
-* #RGU #RGUAJ #RGUAJ012 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ012 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ012 ^property[+].code = #anatomic-focus
@@ -13758,7 +13759,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ013 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ013 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ013 ^designation[=].value = "Puusad AP"
-* #RGU #RGUAJ #RGUAJ013 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ013 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ013 ^property[+].code = #anatomic-focus
@@ -13789,7 +13790,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ014 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ014 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ014 ^designation[=].value = "Puusad AP Frog Leg"
-* #RGU #RGUAJ #RGUAJ014 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ014 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ014 ^property[+].code = #anatomic-focus
@@ -13826,7 +13827,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ015 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ015 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ015 ^designation[=].value = "Puusad AP seistes"
-* #RGU #RGUAJ #RGUAJ015 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ015 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ015 ^property[+].code = #anatomic-focus
@@ -13860,7 +13861,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ016 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ016 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ016 ^designation[=].value = "Puusad AP Lauenstein"
-* #RGU #RGUAJ #RGUAJ016 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ016 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ016 ^property[+].code = #anatomic-focus
@@ -13900,7 +13901,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ017 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ017 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ017 ^designation[=].value = "Puus AP protees parem"
-* #RGU #RGUAJ #RGUAJ017 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ017 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ017 ^property[+].code = #anatomic-focus
@@ -13937,7 +13938,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ018 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ018 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ018 ^designation[=].value = "Puus AP protees vasak"
-* #RGU #RGUAJ #RGUAJ018 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ018 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ018 ^property[+].code = #anatomic-focus
@@ -13974,7 +13975,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ019 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ019 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ019 ^designation[=].value = "Puus Lauenstein protees parem"
-* #RGU #RGUAJ #RGUAJ019 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ019 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ019 ^property[+].code = #anatomic-focus
@@ -14014,7 +14015,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ020 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ020 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ020 ^designation[=].value = "Puus Lauenstein protees vasak"
-* #RGU #RGUAJ #RGUAJ020 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ020 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ020 ^property[+].code = #anatomic-focus
@@ -14054,7 +14055,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ021 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ021 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ021 ^designation[=].value = "Puusad AP proteesid"
-* #RGU #RGUAJ #RGUAJ021 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ021 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ021 ^property[+].code = #anatomic-focus
@@ -14091,7 +14092,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ022 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ022 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ022 ^designation[=].value = "Puus Danelius-Miller protees parem"
-* #RGU #RGUAJ #RGUAJ022 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ022 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ022 ^property[+].code = #anatomic-focus
@@ -14131,7 +14132,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ023 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ023 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ023 ^designation[=].value = "Puus Danelius-Miller protees vasak"
-* #RGU #RGUAJ #RGUAJ023 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ023 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ023 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ023 ^property[+].code = #anatomic-focus
@@ -14171,7 +14172,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ024 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ024 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ024 ^designation[=].value = "Puus eriprojektsioon protees parem"
-* #RGU #RGUAJ #RGUAJ024 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ024 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ024 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ024 ^property[+].code = #anatomic-focus
@@ -14208,7 +14209,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ025 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ025 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ025 ^designation[=].value = "Puus eriprojektsioon protees vasak"
-* #RGU #RGUAJ #RGUAJ025 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ025 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ025 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ025 ^property[+].code = #anatomic-focus
@@ -14245,7 +14246,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ026 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ026 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ026 ^designation[=].value = "Reieluu põlvega AP parem"
-* #RGU #RGUAJ #RGUAJ026 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ026 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ026 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ026 ^property[+].code = #anatomic-focus
@@ -14279,7 +14280,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ027 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ027 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ027 ^designation[=].value = "Reieluu põlvega AP vasak"
-* #RGU #RGUAJ #RGUAJ027 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ027 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ027 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ027 ^property[+].code = #anatomic-focus
@@ -14313,7 +14314,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ028 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ028 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ028 ^designation[=].value = "Reieluu põlvega LAT parem"
-* #RGU #RGUAJ #RGUAJ028 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ028 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ028 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ028 ^property[+].code = #anatomic-focus
@@ -14347,7 +14348,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ029 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ029 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ029 ^designation[=].value = "Reieluu põlvega LAT vasak"
-* #RGU #RGUAJ #RGUAJ029 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ029 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ029 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ029 ^property[+].code = #anatomic-focus
@@ -14381,7 +14382,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ030 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ030 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ030 ^designation[=].value = "Reieluu põlvega AP LAT parem"
-* #RGU #RGUAJ #RGUAJ030 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ030 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ030 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ030 ^property[+].code = #anatomic-focus
@@ -14415,7 +14416,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ031 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ031 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ031 ^designation[=].value = "Reieluu põlvega AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ031 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ031 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ031 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ031 ^property[+].code = #anatomic-focus
@@ -14452,7 +14453,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ032 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ032 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ032 ^designation[=].value = "Reieluu puusaga AP parem"
-* #RGU #RGUAJ #RGUAJ032 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ032 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ032 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ032 ^property[+].code = #anatomic-focus
@@ -14486,7 +14487,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ033 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ033 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ033 ^designation[=].value = "Reieluu puusaga AP vasak"
-* #RGU #RGUAJ #RGUAJ033 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ033 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ033 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ033 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ033 ^property[+].code = #anatomic-focus
@@ -14520,7 +14521,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ034 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ034 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ034 ^designation[=].value = "Reieluu puusaga LAT parem"
-* #RGU #RGUAJ #RGUAJ034 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ034 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ034 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ034 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ034 ^property[+].code = #anatomic-focus
@@ -14554,7 +14555,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ035 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ035 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ035 ^designation[=].value = "Reieluu puusaga LAT vasak"
-* #RGU #RGUAJ #RGUAJ035 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ035 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ035 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ035 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ035 ^property[+].code = #anatomic-focus
@@ -14588,7 +14589,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ036 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ036 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ036 ^designation[=].value = "Reieluu puusaga AP LAT parem"
-* #RGU #RGUAJ #RGUAJ036 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ036 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ036 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ036 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ036 ^property[+].code = #anatomic-focus
@@ -14625,7 +14626,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ037 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ037 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ037 ^designation[=].value = "Reieluu puusaga AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ037 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ037 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ037 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ037 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ037 ^property[+].code = #anatomic-focus
@@ -14662,7 +14663,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ038 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ038 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ038 ^designation[=].value = "Reieluu puusaga põlvega AP parem"
-* #RGU #RGUAJ #RGUAJ038 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ038 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ038 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ038 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ038 ^property[+].code = #anatomic-focus
@@ -14699,7 +14700,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ039 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ039 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ039 ^designation[=].value = "Reieluu puusaga põlvega AP vasak"
-* #RGU #RGUAJ #RGUAJ039 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ039 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ039 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ039 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ039 ^property[+].code = #anatomic-focus
@@ -14736,7 +14737,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ040 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ040 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ040 ^designation[=].value = "Reieluu puusaga põlvega LAT parem"
-* #RGU #RGUAJ #RGUAJ040 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ040 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ040 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ040 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ040 ^property[+].code = #anatomic-focus
@@ -14773,7 +14774,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ041 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ041 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ041 ^designation[=].value = "Reieluu puusaga põlvega LAT vasak"
-* #RGU #RGUAJ #RGUAJ041 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ041 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ041 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ041 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ041 ^property[+].code = #anatomic-focus
@@ -14810,7 +14811,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ042 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ042 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ042 ^designation[=].value = "Reieluu puusaga põlvega AP LAT parem"
-* #RGU #RGUAJ #RGUAJ042 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ042 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ042 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ042 ^property[+].code = #anatomic-focus
@@ -14847,7 +14848,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ043 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ043 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ043 ^designation[=].value = "Reieluu puusaga põlvega AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ043 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ043 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ043 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ043 ^property[+].code = #anatomic-focus
@@ -14887,7 +14888,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ044 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ044 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ044 ^designation[=].value = "Põlv AP parem"
-* #RGU #RGUAJ #RGUAJ044 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ044 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ044 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ044 ^property[+].code = #anatomic-focus
@@ -14918,7 +14919,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ045 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ045 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ045 ^designation[=].value = "Põlv AP vasak"
-* #RGU #RGUAJ #RGUAJ045 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ045 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ045 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ045 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ045 ^property[+].code = #anatomic-focus
@@ -14949,7 +14950,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ046 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ046 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ046 ^designation[=].value = "Põlv LAT parem"
-* #RGU #RGUAJ #RGUAJ046 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ046 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ046 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ046 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ046 ^property[+].code = #anatomic-focus
@@ -14980,7 +14981,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ047 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ047 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ047 ^designation[=].value = "Põlv LAT vasak"
-* #RGU #RGUAJ #RGUAJ047 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ047 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ047 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ047 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ047 ^property[+].code = #anatomic-focus
@@ -15011,7 +15012,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ048 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ048 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ048 ^designation[=].value = "Põlv LAT seistes parem"
-* #RGU #RGUAJ #RGUAJ048 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ048 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ048 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ048 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ048 ^property[+].code = #anatomic-focus
@@ -15045,7 +15046,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ049 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ049 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ049 ^designation[=].value = "Põlv LAT seistes vasak"
-* #RGU #RGUAJ #RGUAJ049 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ049 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ049 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ049 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ049 ^property[+].code = #anatomic-focus
@@ -15079,7 +15080,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ050 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ050 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ050 ^designation[=].value = "Põlv AP seistes parem"
-* #RGU #RGUAJ #RGUAJ050 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ050 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ050 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ050 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ050 ^property[+].code = #anatomic-focus
@@ -15113,7 +15114,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ051 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ051 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ051 ^designation[=].value = "Põlv AP seistes vasak"
-* #RGU #RGUAJ #RGUAJ051 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ051 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ051 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ051 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ051 ^property[+].code = #anatomic-focus
@@ -15147,7 +15148,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ052 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ052 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ052 ^designation[=].value = "Põlv Bėclėre parem"
-* #RGU #RGUAJ #RGUAJ052 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ052 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ052 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ052 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ052 ^property[+].code = #anatomic-focus
@@ -15184,7 +15185,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ053 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ053 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ053 ^designation[=].value = "Põlv Bėclėre vasak"
-* #RGU #RGUAJ #RGUAJ053 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ053 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ053 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ053 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ053 ^property[+].code = #anatomic-focus
@@ -15221,7 +15222,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ054 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ054 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ054 ^designation[=].value = "Põlv AP LAT parem"
-* #RGU #RGUAJ #RGUAJ054 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ054 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ054 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ054 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ054 ^property[+].code = #anatomic-focus
@@ -15252,7 +15253,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ055 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ055 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ055 ^designation[=].value = "Põlv AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ055 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ055 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ055 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ055 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ055 ^property[+].code = #anatomic-focus
@@ -15286,7 +15287,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ056 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ056 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ056 ^designation[=].value = "Põlv AP LAT seistes parem"
-* #RGU #RGUAJ #RGUAJ056 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ056 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ056 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ056 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ056 ^property[+].code = #anatomic-focus
@@ -15320,7 +15321,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ057 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ057 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ057 ^designation[=].value = "Põlv AP LAT seistes vasak"
-* #RGU #RGUAJ #RGUAJ057 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ057 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ057 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ057 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ057 ^property[+].code = #anatomic-focus
@@ -15357,7 +15358,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ058 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ058 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ058 ^designation[=].value = "Põlved AP seistes"
-* #RGU #RGUAJ #RGUAJ058 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ058 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ058 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ058 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ058 ^property[+].code = #anatomic-focus
@@ -15391,7 +15392,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ059 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ059 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ059 ^designation[=].value = "Põlved LAT seistes"
-* #RGU #RGUAJ #RGUAJ059 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ059 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ059 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ059 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ059 ^property[+].code = #anatomic-focus
@@ -15425,7 +15426,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ060 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ060 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ060 ^designation[=].value = "Põlv AP protees parem"
-* #RGU #RGUAJ #RGUAJ060 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ060 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ060 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ060 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ060 ^property[+].code = #anatomic-focus
@@ -15462,7 +15463,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ061 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ061 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ061 ^designation[=].value = "Põlv AP protees vasak"
-* #RGU #RGUAJ #RGUAJ061 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ061 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ061 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ061 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ061 ^property[+].code = #anatomic-focus
@@ -15499,7 +15500,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ062 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ062 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ062 ^designation[=].value = "Põlv LAT protees parem"
-* #RGU #RGUAJ #RGUAJ062 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ062 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ062 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ062 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ062 ^property[+].code = #anatomic-focus
@@ -15536,7 +15537,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ063 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ063 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ063 ^designation[=].value = "Põlv LAT protees vasak"
-* #RGU #RGUAJ #RGUAJ063 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ063 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ063 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ063 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ063 ^property[+].code = #anatomic-focus
@@ -15573,7 +15574,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ064 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ064 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ064 ^designation[=].value = "Põlv AP seistes protees parem"
-* #RGU #RGUAJ #RGUAJ064 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ064 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ064 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ064 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ064 ^property[+].code = #anatomic-focus
@@ -15613,7 +15614,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ065 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ065 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ065 ^designation[=].value = "Põlv AP seistes protees vasak"
-* #RGU #RGUAJ #RGUAJ065 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ065 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ065 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ065 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ065 ^property[+].code = #anatomic-focus
@@ -15653,7 +15654,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ066 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ066 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ066 ^designation[=].value = "Põlv LAT seistes protees parem"
-* #RGU #RGUAJ #RGUAJ066 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ066 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ066 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ066 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ066 ^property[+].code = #anatomic-focus
@@ -15693,7 +15694,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ067 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ067 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ067 ^designation[=].value = "Põlv LAT seistes protees vasak"
-* #RGU #RGUAJ #RGUAJ067 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ067 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ067 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ067 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ067 ^property[+].code = #anatomic-focus
@@ -15733,7 +15734,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ068 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ068 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ068 ^designation[=].value = "Põlved AP proteesid"
-* #RGU #RGUAJ #RGUAJ068 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ068 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ068 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ068 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ068 ^property[+].code = #anatomic-focus
@@ -15770,7 +15771,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ069 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ069 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ069 ^designation[=].value = "Põlved AP seistes proteesid"
-* #RGU #RGUAJ #RGUAJ069 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ069 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ069 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ069 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ069 ^property[+].code = #anatomic-focus
@@ -15810,7 +15811,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ070 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ070 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ070 ^designation[=].value = "Patella aksiaalne parem"
-* #RGU #RGUAJ #RGUAJ070 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ070 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ070 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ070 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ070 ^property[+].code = #anatomic-focus
@@ -15841,7 +15842,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ071 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ071 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ071 ^designation[=].value = "Patella aksiaalne vasak"
-* #RGU #RGUAJ #RGUAJ071 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ071 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ071 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ071 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ071 ^property[+].code = #anatomic-focus
@@ -15872,7 +15873,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ072 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ072 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ072 ^designation[=].value = "Patella AP parem"
-* #RGU #RGUAJ #RGUAJ072 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ072 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ072 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ072 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ072 ^property[+].code = #anatomic-focus
@@ -15903,7 +15904,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ073 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ073 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ073 ^designation[=].value = "Patella AP vasak"
-* #RGU #RGUAJ #RGUAJ073 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ073 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ073 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ073 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ073 ^property[+].code = #anatomic-focus
@@ -15934,7 +15935,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ074 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ074 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ074 ^designation[=].value = "Patella PA parem"
-* #RGU #RGUAJ #RGUAJ074 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ074 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ074 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ074 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ074 ^property[+].code = #anatomic-focus
@@ -15965,7 +15966,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ075 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ075 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ075 ^designation[=].value = "Patella PA vasak"
-* #RGU #RGUAJ #RGUAJ075 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ075 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ075 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ075 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ075 ^property[+].code = #anatomic-focus
@@ -15996,7 +15997,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ076 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ076 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ076 ^designation[=].value = "Patella LAT parem"
-* #RGU #RGUAJ #RGUAJ076 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ076 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ076 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ076 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ076 ^property[+].code = #anatomic-focus
@@ -16027,7 +16028,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ077 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ077 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ077 ^designation[=].value = "Patella LAT vasak"
-* #RGU #RGUAJ #RGUAJ077 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ077 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ077 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ077 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ077 ^property[+].code = #anatomic-focus
@@ -16058,7 +16059,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ078 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ078 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ078 ^designation[=].value = "Patella Settegast parem"
-* #RGU #RGUAJ #RGUAJ078 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ078 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ078 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ078 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ078 ^property[+].code = #anatomic-focus
@@ -16095,7 +16096,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ079 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ079 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ079 ^designation[=].value = "Patella Settegast vasak"
-* #RGU #RGUAJ #RGUAJ079 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ079 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ079 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ079 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ079 ^property[+].code = #anatomic-focus
@@ -16132,7 +16133,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ080 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ080 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ080 ^designation[=].value = "Säär AP parem"
-* #RGU #RGUAJ #RGUAJ080 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ080 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ080 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ080 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ080 ^property[+].code = #anatomic-focus
@@ -16163,7 +16164,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ081 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ081 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ081 ^designation[=].value = "Säär AP vasak"
-* #RGU #RGUAJ #RGUAJ081 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ081 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ081 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ081 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ081 ^property[+].code = #anatomic-focus
@@ -16194,7 +16195,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ082 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ082 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ082 ^designation[=].value = "Säär LAT parem"
-* #RGU #RGUAJ #RGUAJ082 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ082 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ082 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ082 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ082 ^property[+].code = #anatomic-focus
@@ -16225,7 +16226,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ083 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ083 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ083 ^designation[=].value = "Säär LAT vasak"
-* #RGU #RGUAJ #RGUAJ083 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ083 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ083 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ083 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ083 ^property[+].code = #anatomic-focus
@@ -16256,7 +16257,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ084 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ084 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ084 ^designation[=].value = "Säär AP LAT parem"
-* #RGU #RGUAJ #RGUAJ084 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ084 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ084 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ084 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ084 ^property[+].code = #anatomic-focus
@@ -16290,7 +16291,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ085 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ085 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ085 ^designation[=].value = "Säär AP LAT vasak"
-* #RGU #RGUAJ #RGUAJ085 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ085 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ085 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ085 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ085 ^property[+].code = #anatomic-focus
@@ -16324,7 +16325,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ086 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ086 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ086 ^designation[=].value = "Hüppeliiges AP parem"
-* #RGU #RGUAJ #RGUAJ086 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ086 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ086 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ086 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ086 ^property[+].code = #anatomic-focus
@@ -16355,7 +16356,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ087 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ087 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ087 ^designation[=].value = "Hüppeliiges AP vasak"
-* #RGU #RGUAJ #RGUAJ087 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ087 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ087 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ087 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ087 ^property[+].code = #anatomic-focus
@@ -16386,7 +16387,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ088 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ088 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ088 ^designation[=].value = "Hüppeliiges LAT parem"
-* #RGU #RGUAJ #RGUAJ088 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ088 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ088 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ088 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ088 ^property[+].code = #anatomic-focus
@@ -16417,7 +16418,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ089 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ089 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ089 ^designation[=].value = "Hüppeliiges LAT vasak"
-* #RGU #RGUAJ #RGUAJ089 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ089 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ089 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ089 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ089 ^property[+].code = #anatomic-focus
@@ -16448,7 +16449,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ090 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ090 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ090 ^designation[=].value = "Hüppeliiges  Mortise parem"
-* #RGU #RGUAJ #RGUAJ090 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ090 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ090 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ090 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ090 ^property[+].code = #anatomic-focus
@@ -16485,7 +16486,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ091 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ091 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ091 ^designation[=].value = "Hüppeliiges  Mortise vasak"
-* #RGU #RGUAJ #RGUAJ091 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ091 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ091 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ091 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ091 ^property[+].code = #anatomic-focus
@@ -16519,7 +16520,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ092 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ092 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ092 ^designation[=].value = "Hüppeliiges eriprojektsioon parem"
-* #RGU #RGUAJ #RGUAJ092 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ092 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ092 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ092 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ092 ^property[+].code = #anatomic-focus
@@ -16550,7 +16551,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ093 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ093 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ093 ^designation[=].value = "Hüppeliiges eriprojektsioon vasak"
-* #RGU #RGUAJ #RGUAJ093 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ093 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ093 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ093 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ093 ^property[+].code = #anatomic-focus
@@ -16581,7 +16582,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ094 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ094 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ094 ^designation[=].value = "Hüppeliiges  LAT Mortise parem"
-* #RGU #RGUAJ #RGUAJ094 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ094 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ094 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ094 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ094 ^property[+].code = #anatomic-focus
@@ -16621,7 +16622,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ095 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ095 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ095 ^designation[=].value = "Hüppeliiges  LAT Mortise vasak"
-* #RGU #RGUAJ #RGUAJ095 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ095 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ095 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ095 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ095 ^property[+].code = #anatomic-focus
@@ -16661,7 +16662,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ096 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ096 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ096 ^designation[=].value = "Labajalg AP parem"
-* #RGU #RGUAJ #RGUAJ096 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ096 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ096 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ096 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ096 ^property[+].code = #anatomic-focus
@@ -16692,7 +16693,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ097 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ097 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ097 ^designation[=].value = "Labajalg AP vasak"
-* #RGU #RGUAJ #RGUAJ097 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ097 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ097 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ097 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ097 ^property[+].code = #anatomic-focus
@@ -16723,7 +16724,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ098 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ098 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ098 ^designation[=].value = "Labajalg poolpõiki parem"
-* #RGU #RGUAJ #RGUAJ098 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ098 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ098 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ098 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ098 ^property[+].code = #anatomic-focus
@@ -16754,7 +16755,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ099 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ099 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ099 ^designation[=].value = "Labajalg poolpõiki vasak"
-* #RGU #RGUAJ #RGUAJ099 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ099 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ099 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ099 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ099 ^property[+].code = #anatomic-focus
@@ -16785,7 +16786,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ100 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ100 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ100 ^designation[=].value = "Labajalg LAT parem"
-* #RGU #RGUAJ #RGUAJ100 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ100 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ100 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ100 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ100 ^property[+].code = #anatomic-focus
@@ -16816,7 +16817,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ101 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ101 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ101 ^designation[=].value = "Labajalg LAT vasak"
-* #RGU #RGUAJ #RGUAJ101 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ101 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ101 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ101 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ101 ^property[+].code = #anatomic-focus
@@ -16847,7 +16848,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ102 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ102 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ102 ^designation[=].value = "Labajalg LAT seistes parem"
-* #RGU #RGUAJ #RGUAJ102 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ102 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ102 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ102 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ102 ^property[+].code = #anatomic-focus
@@ -16881,7 +16882,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ103 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ103 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ103 ^designation[=].value = "Labajalg LAT seistes vasak"
-* #RGU #RGUAJ #RGUAJ103 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ103 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ103 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ103 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ103 ^property[+].code = #anatomic-focus
@@ -16915,7 +16916,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ104 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ104 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ104 ^designation[=].value = "Labajalg aksiaalne seistes parem"
-* #RGU #RGUAJ #RGUAJ104 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ104 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ104 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ104 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ104 ^property[+].code = #anatomic-focus
@@ -16949,7 +16950,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ105 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ105 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ105 ^designation[=].value = "Labajalg aksiaalne seistes vasak"
-* #RGU #RGUAJ #RGUAJ105 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ105 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ105 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ105 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ105 ^property[+].code = #anatomic-focus
@@ -16983,7 +16984,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ106 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ106 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ106 ^designation[=].value = "Labajalg AP poolpõiki parem"
-* #RGU #RGUAJ #RGUAJ106 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ106 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ106 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ106 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ106 ^property[+].code = #anatomic-focus
@@ -17017,7 +17018,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ107 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ107 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ107 ^designation[=].value = "Labajalg AP poolpõiki vasak"
-* #RGU #RGUAJ #RGUAJ107 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ107 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ107 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ107 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ107 ^property[+].code = #anatomic-focus
@@ -17051,7 +17052,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ108 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ108 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ108 ^designation[=].value = "Labajalad AP"
-* #RGU #RGUAJ #RGUAJ108 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ108 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ108 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ108 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ108 ^property[+].code = #anatomic-focus
@@ -17082,7 +17083,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ109 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ109 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ109 ^designation[=].value = "Kandluu LAT parem"
-* #RGU #RGUAJ #RGUAJ109 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ109 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ109 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ109 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ109 ^property[+].code = #anatomic-focus
@@ -17113,7 +17114,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ110 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ110 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ110 ^designation[=].value = "Kandluu LAT vasak"
-* #RGU #RGUAJ #RGUAJ110 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ110 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ110 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ110 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ110 ^property[+].code = #anatomic-focus
@@ -17144,7 +17145,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ111 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ111 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ111 ^designation[=].value = "Kandluu aksiaalne parem"
-* #RGU #RGUAJ #RGUAJ111 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ111 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ111 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ111 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ111 ^property[+].code = #anatomic-focus
@@ -17175,7 +17176,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ112 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ112 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ112 ^designation[=].value = "Kandluu aksiaalne vasak"
-* #RGU #RGUAJ #RGUAJ112 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ112 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ112 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ112 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ112 ^property[+].code = #anatomic-focus
@@ -17206,7 +17207,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ113 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ113 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ113 ^designation[=].value = "Kandluu aksiaalne seistes parem"
-* #RGU #RGUAJ #RGUAJ113 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ113 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ113 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ113 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ113 ^property[+].code = #anatomic-focus
@@ -17240,7 +17241,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ114 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ114 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ114 ^designation[=].value = "Kandluu aksiaalne seistes vasak"
-* #RGU #RGUAJ #RGUAJ114 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ114 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ114 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ114 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ114 ^property[+].code = #anatomic-focus
@@ -17274,7 +17275,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ115 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ115 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ115 ^designation[=].value = "Kandluu LAT aksiaalne parem"
-* #RGU #RGUAJ #RGUAJ115 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ115 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ115 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ115 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ115 ^property[+].code = #anatomic-focus
@@ -17308,7 +17309,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ116 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ116 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ116 ^designation[=].value = "Kandluu LAT aksiaalne vasak"
-* #RGU #RGUAJ #RGUAJ116 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ116 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ116 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ116 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ116 ^property[+].code = #anatomic-focus
@@ -17342,7 +17343,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ117 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ117 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ117 ^designation[=].value = "Kandluud  LAT"
-* #RGU #RGUAJ #RGUAJ117 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ117 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ117 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ117 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ117 ^property[+].code = #anatomic-focus
@@ -17373,7 +17374,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ118 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ118 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ118 ^designation[=].value = "Kandluud aksiaalne"
-* #RGU #RGUAJ #RGUAJ118 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ118 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ118 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ118 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ118 ^property[+].code = #anatomic-focus
@@ -17404,7 +17405,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ119 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ119 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ119 ^designation[=].value = "Varbaluud AP parem"
-* #RGU #RGUAJ #RGUAJ119 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ119 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ119 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ119 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ119 ^property[+].code = #anatomic-focus
@@ -17435,7 +17436,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ120 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ120 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ120 ^designation[=].value = "Varbaluud AP vasak"
-* #RGU #RGUAJ #RGUAJ120 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ120 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ120 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ120 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ120 ^property[+].code = #anatomic-focus
@@ -17466,7 +17467,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ121 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ121 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ121 ^designation[=].value = "Varbaluud poolpõiki parem"
-* #RGU #RGUAJ #RGUAJ121 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ121 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ121 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ121 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ121 ^property[+].code = #anatomic-focus
@@ -17497,7 +17498,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ122 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ122 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ122 ^designation[=].value = "Varbaluud poolpõiki vasak"
-* #RGU #RGUAJ #RGUAJ122 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ122 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ122 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ122 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ122 ^property[+].code = #anatomic-focus
@@ -17528,7 +17529,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ123 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ123 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ123 ^designation[=].value = "Varbaluud AP poolpõiki parem"
-* #RGU #RGUAJ #RGUAJ123 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ123 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ123 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ123 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ123 ^property[+].code = #anatomic-focus
@@ -17562,7 +17563,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ124 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ124 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ124 ^designation[=].value = "Varbaluud AP poolpõiki vasak"
-* #RGU #RGUAJ #RGUAJ124 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ124 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ124 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ124 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ124 ^property[+].code = #anatomic-focus
@@ -17596,7 +17597,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ125 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ125 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ125 ^designation[=].value = "Alajäse eriprojektsioon parem"
-* #RGU #RGUAJ #RGUAJ125 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ125 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ125 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ125 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ125 ^property[+].code = #anatomic-focus
@@ -17627,7 +17628,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ126 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ126 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ126 ^designation[=].value = "Alajäse eriprojektsioon vasak"
-* #RGU #RGUAJ #RGUAJ126 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ126 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ126 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ126 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ126 ^property[+].code = #anatomic-focus
@@ -17658,7 +17659,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ127 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ127 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ127 ^designation[=].value = "Pikk jalg AP seistes mõlemad"
-* #RGU #RGUAJ #RGUAJ127 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ127 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ127 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ127 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ127 ^property[+].code = #anatomic-focus
@@ -17692,7 +17693,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ128 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ128 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ128 ^designation[=].value = "Pikk jalg AP seistes parem"
-* #RGU #RGUAJ #RGUAJ128 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ128 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ128 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ128 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ128 ^property[+].code = #anatomic-focus
@@ -17726,7 +17727,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ129 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ129 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ129 ^designation[=].value = "Pikk jalg AP seistes vasak"
-* #RGU #RGUAJ #RGUAJ129 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ129 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ129 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ129 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ129 ^property[+].code = #anatomic-focus
@@ -17760,7 +17761,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ130 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ130 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ130 ^designation[=].value = "Pikk jalg LAT seistes parem"
-* #RGU #RGUAJ #RGUAJ130 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ130 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ130 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ130 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ130 ^property[+].code = #anatomic-focus
@@ -17794,7 +17795,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ131 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ131 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ131 ^designation[=].value = "Pikk jalg LAT seistes vasak"
-* #RGU #RGUAJ #RGUAJ131 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ131 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ131 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ131 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ131 ^property[+].code = #anatomic-focus
@@ -17828,7 +17829,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ132 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ132 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ132 ^designation[=].value = "Pikk jalg parem"
-* #RGU #RGUAJ #RGUAJ132 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ132 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ132 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ132 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ132 ^property[+].code = #anatomic-focus
@@ -17859,7 +17860,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUAJ #RGUAJ133 ^designation[=].language = #et
 * #RGU #RGUAJ #RGUAJ133 ^designation[=].use.code = #alias
 * #RGU #RGUAJ #RGUAJ133 ^designation[=].value = "Pikk jalg vasak"
-* #RGU #RGUAJ #RGUAJ133 ^property[0].code = #Interpreter
+* #RGU #RGUAJ #RGUAJ133 ^property[0].code = #evaluator
 * #RGU #RGUAJ #RGUAJ133 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUAJ #RGUAJ133 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUAJ #RGUAJ133 ^property[+].code = #anatomic-focus
@@ -17894,7 +17895,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV001 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV001 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV001 ^designation[=].value = "Kõht PA seistes"
-* #RGU #RGUKV #RGUKV001 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV001 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV001 ^property[+].code = #anatomic-focus
@@ -17925,7 +17926,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV002 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV002 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV002 ^designation[=].value = "Kõht laterogramm"
-* #RGU #RGUKV #RGUKV002 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV002 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV002 ^property[+].code = #anatomic-focus
@@ -17956,7 +17957,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV003 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV003 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV003 ^designation[=].value = "Kõht laterogramm"
-* #RGU #RGUKV #RGUKV003 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV003 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV003 ^property[+].code = #anatomic-focus
@@ -17987,7 +17988,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV004 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV004 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV004 ^designation[=].value = "Kõht laterogramm"
-* #RGU #RGUKV #RGUKV004 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV004 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV004 ^property[+].code = #anatomic-focus
@@ -18018,7 +18019,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV005 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV005 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV005 ^designation[=].value = "Kõht AP lamades"
-* #RGU #RGUKV #RGUKV005 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV005 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV005 ^property[+].code = #anatomic-focus
@@ -18049,7 +18050,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV006 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV006 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV006 ^designation[=].value = "Kõht AP seistes"
-* #RGU #RGUKV #RGUKV006 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV006 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV006 ^property[+].code = #anatomic-focus
@@ -18080,7 +18081,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV007 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV007 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV007 ^designation[=].value = "Kõht vaagen vastsündinu"
-* #RGU #RGUKV #RGUKV007 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV007 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV007 ^property[+].code = #anatomic-focus
@@ -18111,7 +18112,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV008 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV008 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV008 ^designation[=].value = "Vaagen AP"
-* #RGU #RGUKV #RGUKV008 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV008 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV008 ^property[+].code = #anatomic-focus
@@ -18139,7 +18140,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV009 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV009 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV009 ^designation[=].value = "Vaagen outlet"
-* #RGU #RGUKV #RGUKV009 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV009 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV009 ^property[+].code = #anatomic-focus
@@ -18170,7 +18171,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV010 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV010 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV010 ^designation[=].value = "Vaagen inlet"
-* #RGU #RGUKV #RGUKV010 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV010 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV010 ^property[+].code = #anatomic-focus
@@ -18201,7 +18202,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV011 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV011 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV011 ^designation[=].value = "Vaagen outlet inlet"
-* #RGU #RGUKV #RGUKV011 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV011 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV011 ^property[+].code = #anatomic-focus
@@ -18235,7 +18236,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV012 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV012 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV012 ^designation[=].value = "Niudeluutiib AP eesmine Judet parem"
-* #RGU #RGUKV #RGUKV012 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV012 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV012 ^property[+].code = #anatomic-focus
@@ -18275,7 +18276,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV013 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV013 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV013 ^designation[=].value = "Niudeluutiib AP eesmine Judet vasak"
-* #RGU #RGUKV #RGUKV013 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV013 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV013 ^property[+].code = #anatomic-focus
@@ -18315,7 +18316,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV014 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV014 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV014 ^designation[=].value = "Niudeluutiib AP tagumine Judet parem"
-* #RGU #RGUKV #RGUKV014 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV014 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV014 ^property[+].code = #anatomic-focus
@@ -18355,7 +18356,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV015 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV015 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV015 ^designation[=].value = "Niudeluutiib AP tagumine Judet vasak"
-* #RGU #RGUKV #RGUKV015 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV015 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV015 ^property[+].code = #anatomic-focus
@@ -18395,7 +18396,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV016 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV016 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV016 ^designation[=].value = "Sümfüüs AP"
-* #RGU #RGUKV #RGUKV016 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV016 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV016 ^property[+].code = #anatomic-focus
@@ -18423,7 +18424,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUKV #RGUKV017 ^designation[=].language = #et
 * #RGU #RGUKV #RGUKV017 ^designation[=].use.code = #alias
 * #RGU #RGUKV #RGUKV017 ^designation[=].value = "Vaagen eriprojektsioon"
-* #RGU #RGUKV #RGUKV017 ^property[0].code = #Interpreter
+* #RGU #RGUKV #RGUKV017 ^property[0].code = #evaluator
 * #RGU #RGUKV #RGUKV017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUKV #RGUKV017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUKV #RGUKV017 ^property[+].code = #anatomic-focus
@@ -18455,7 +18456,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS001 ^designation[=].language = #et
 * #RGU #RGULS #RGULS001 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS001 ^designation[=].value = "Kaelalülid AP seistes"
-* #RGU #RGULS #RGULS001 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS001 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS001 ^property[+].code = #anatomic-focus
@@ -18486,7 +18487,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS002 ^designation[=].language = #et
 * #RGU #RGULS #RGULS002 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS002 ^designation[=].value = "Kaelalülid LAT seistes"
-* #RGU #RGULS #RGULS002 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS002 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS002 ^property[+].code = #anatomic-focus
@@ -18517,7 +18518,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS003 ^designation[=].language = #et
 * #RGU #RGULS #RGULS003 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS003 ^designation[=].value = "Kaelalülid AP"
-* #RGU #RGULS #RGULS003 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS003 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS003 ^property[+].code = #anatomic-focus
@@ -18548,7 +18549,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS004 ^designation[=].language = #et
 * #RGU #RGULS #RGULS004 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS004 ^designation[=].value = "Kaelalülid LAT"
-* #RGU #RGULS #RGULS004 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS004 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS004 ^property[+].code = #anatomic-focus
@@ -18579,7 +18580,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS005 ^designation[=].language = #et
 * #RGU #RGULS #RGULS005 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS005 ^designation[=].value = "Kaelalülid AP LAT seistes"
-* #RGU #RGULS #RGULS005 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS005 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS005 ^property[+].code = #anatomic-focus
@@ -18613,7 +18614,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS006 ^designation[=].language = #et
 * #RGU #RGULS #RGULS006 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS006 ^designation[=].value = "Kaelalülid AP LAT lamades"
-* #RGU #RGULS #RGULS006 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS006 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS006 ^property[+].code = #anatomic-focus
@@ -18647,7 +18648,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS007 ^designation[=].language = #et
 * #RGU #RGULS #RGULS007 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS007 ^designation[=].value = "Kaelalülid ettepainutus LAT"
-* #RGU #RGULS #RGULS007 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS007 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS007 ^property[+].code = #anatomic-focus
@@ -18681,7 +18682,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS008 ^designation[=].language = #et
 * #RGU #RGULS #RGULS008 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS008 ^designation[=].value = "Kaelalülid tahapainutus LAT"
-* #RGU #RGULS #RGULS008 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS008 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS008 ^property[+].code = #anatomic-focus
@@ -18715,7 +18716,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS009 ^designation[=].language = #et
 * #RGU #RGULS #RGULS009 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS009 ^designation[=].value = "Kaelalülid ettepainutus tahapainutus LAT"
-* #RGU #RGULS #RGULS009 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS009 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS009 ^property[+].code = #anatomic-focus
@@ -18749,7 +18750,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS010 ^designation[=].language = #et
 * #RGU #RGULS #RGULS010 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS010 ^designation[=].value = "Kaelalülid poolpõiki"
-* #RGU #RGULS #RGULS010 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS010 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS010 ^property[+].code = #anatomic-focus
@@ -18777,7 +18778,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS011 ^designation[=].language = #et
 * #RGU #RGULS #RGULS011 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS011 ^designation[=].value = "Kaelalülid poolpõiki"
-* #RGU #RGULS #RGULS011 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS011 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS011 ^property[+].code = #anatomic-focus
@@ -18808,7 +18809,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS012 ^designation[=].language = #et
 * #RGU #RGULS #RGULS012 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS012 ^designation[=].value = "Kaelalülid C1-C2 AP"
-* #RGU #RGULS #RGULS012 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS012 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS012 ^property[+].code = #anatomic-focus
@@ -18842,7 +18843,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS013 ^designation[=].language = #et
 * #RGU #RGULS #RGULS013 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS013 ^designation[=].value = "Kaelalülid rinnalülid AP"
-* #RGU #RGULS #RGULS013 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS013 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS013 ^property[+].code = #anatomic-focus
@@ -18870,7 +18871,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS014 ^designation[=].language = #et
 * #RGU #RGULS #RGULS014 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS014 ^designation[=].value = "Kaelalülid rinnalülid LAT"
-* #RGU #RGULS #RGULS014 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS014 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS014 ^property[+].code = #anatomic-focus
@@ -18898,7 +18899,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS015 ^designation[=].language = #et
 * #RGU #RGULS #RGULS015 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS015 ^designation[=].value = "Rinnalülid AP seistes"
-* #RGU #RGULS #RGULS015 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS015 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS015 ^property[+].code = #anatomic-focus
@@ -18929,7 +18930,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS016 ^designation[=].language = #et
 * #RGU #RGULS #RGULS016 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS016 ^designation[=].value = "Rinnalülid LAT seistes"
-* #RGU #RGULS #RGULS016 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS016 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS016 ^property[+].code = #anatomic-focus
@@ -18960,7 +18961,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS017 ^designation[=].language = #et
 * #RGU #RGULS #RGULS017 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS017 ^designation[=].value = "Rinnalülid AP lamades"
-* #RGU #RGULS #RGULS017 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS017 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS017 ^property[+].code = #anatomic-focus
@@ -18991,7 +18992,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS018 ^designation[=].language = #et
 * #RGU #RGULS #RGULS018 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS018 ^designation[=].value = "Rinnalülid LAT lamades"
-* #RGU #RGULS #RGULS018 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS018 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS018 ^property[+].code = #anatomic-focus
@@ -19022,7 +19023,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS019 ^designation[=].language = #et
 * #RGU #RGULS #RGULS019 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS019 ^designation[=].value = "Rinnalülid ettepainutus LAT"
-* #RGU #RGULS #RGULS019 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS019 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS019 ^property[+].code = #anatomic-focus
@@ -19056,7 +19057,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS020 ^designation[=].language = #et
 * #RGU #RGULS #RGULS020 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS020 ^designation[=].value = "Rinnalülid tahapainutus LAT"
-* #RGU #RGULS #RGULS020 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS020 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS020 ^property[+].code = #anatomic-focus
@@ -19090,7 +19091,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS021 ^designation[=].language = #et
 * #RGU #RGULS #RGULS021 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS021 ^designation[=].value = "Rinnalülid ettepainutus tahapainutus LAT"
-* #RGU #RGULS #RGULS021 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS021 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS021 ^property[+].code = #anatomic-focus
@@ -19124,7 +19125,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS022 ^designation[=].language = #et
 * #RGU #RGULS #RGULS022 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS022 ^designation[=].value = "Rinnalülid AP LAT seistes"
-* #RGU #RGULS #RGULS022 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS022 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS022 ^property[+].code = #anatomic-focus
@@ -19158,7 +19159,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS023 ^designation[=].language = #et
 * #RGU #RGULS #RGULS023 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS023 ^designation[=].value = "Rinnalülid AP LAT lamades"
-* #RGU #RGULS #RGULS023 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS023 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS023 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS023 ^property[+].code = #anatomic-focus
@@ -19192,7 +19193,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS024 ^designation[=].language = #et
 * #RGU #RGULS #RGULS024 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS024 ^designation[=].value = "Rinnalülid poolpõiki"
-* #RGU #RGULS #RGULS024 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS024 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS024 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS024 ^property[+].code = #anatomic-focus
@@ -19220,7 +19221,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS025 ^designation[=].language = #et
 * #RGU #RGULS #RGULS025 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS025 ^designation[=].value = "Rinnalülid poolpõiki"
-* #RGU #RGULS #RGULS025 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS025 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS025 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS025 ^property[+].code = #anatomic-focus
@@ -19251,7 +19252,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS026 ^designation[=].language = #et
 * #RGU #RGULS #RGULS026 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS026 ^designation[=].value = "Rinnalülid nimmelülid üleminek AP"
-* #RGU #RGULS #RGULS026 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS026 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS026 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS026 ^property[+].code = #anatomic-focus
@@ -19279,7 +19280,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS027 ^designation[=].language = #et
 * #RGU #RGULS #RGULS027 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS027 ^designation[=].value = "Rinnalülid nimmelülid üleminek LAT"
-* #RGU #RGULS #RGULS027 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS027 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS027 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS027 ^property[+].code = #anatomic-focus
@@ -19307,7 +19308,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS028 ^designation[=].language = #et
 * #RGU #RGULS #RGULS028 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS028 ^designation[=].value = "Rinnalülid nimmelülid üleminek AP LAT"
-* #RGU #RGULS #RGULS028 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS028 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS028 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS028 ^property[+].code = #anatomic-focus
@@ -19338,7 +19339,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS029 ^designation[=].language = #et
 * #RGU #RGULS #RGULS029 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS029 ^designation[=].value = "Nimmelülid AP seistes"
-* #RGU #RGULS #RGULS029 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS029 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS029 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS029 ^property[+].code = #anatomic-focus
@@ -19369,7 +19370,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS030 ^designation[=].language = #et
 * #RGU #RGULS #RGULS030 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS030 ^designation[=].value = "Nimmelülid LAT seistes"
-* #RGU #RGULS #RGULS030 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS030 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS030 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS030 ^property[+].code = #anatomic-focus
@@ -19400,7 +19401,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS031 ^designation[=].language = #et
 * #RGU #RGULS #RGULS031 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS031 ^designation[=].value = "Nimmelülid AP LAT seistes"
-* #RGU #RGULS #RGULS031 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS031 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS031 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS031 ^property[+].code = #anatomic-focus
@@ -19434,7 +19435,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS032 ^designation[=].language = #et
 * #RGU #RGULS #RGULS032 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS032 ^designation[=].value = "Nimmelülid AP lamades"
-* #RGU #RGULS #RGULS032 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS032 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS032 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS032 ^property[+].code = #anatomic-focus
@@ -19465,7 +19466,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS033 ^designation[=].language = #et
 * #RGU #RGULS #RGULS033 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS033 ^designation[=].value = "Nimmelülid LAT lamades"
-* #RGU #RGULS #RGULS033 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS033 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS033 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS033 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS033 ^property[+].code = #anatomic-focus
@@ -19496,7 +19497,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS034 ^designation[=].language = #et
 * #RGU #RGULS #RGULS034 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS034 ^designation[=].value = "Nimmelülid AP LAT lamades"
-* #RGU #RGULS #RGULS034 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS034 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS034 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS034 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS034 ^property[+].code = #anatomic-focus
@@ -19530,7 +19531,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS035 ^designation[=].language = #et
 * #RGU #RGULS #RGULS035 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS035 ^designation[=].value = "Nimmelülid ettepainutus LAT"
-* #RGU #RGULS #RGULS035 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS035 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS035 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS035 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS035 ^property[+].code = #anatomic-focus
@@ -19564,7 +19565,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS036 ^designation[=].language = #et
 * #RGU #RGULS #RGULS036 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS036 ^designation[=].value = "Nimmelülid tahapainutus LAT"
-* #RGU #RGULS #RGULS036 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS036 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS036 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS036 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS036 ^property[+].code = #anatomic-focus
@@ -19598,7 +19599,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS037 ^designation[=].language = #et
 * #RGU #RGULS #RGULS037 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS037 ^designation[=].value = "Nimmelülid ettepainutus tahapainutus LAT"
-* #RGU #RGULS #RGULS037 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS037 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS037 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS037 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS037 ^property[+].code = #anatomic-focus
@@ -19632,7 +19633,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS038 ^designation[=].language = #et
 * #RGU #RGULS #RGULS038 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS038 ^designation[=].value = "Nimmelülid poolpõiki"
-* #RGU #RGULS #RGULS038 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS038 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS038 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS038 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS038 ^property[+].code = #anatomic-focus
@@ -19660,7 +19661,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS039 ^designation[=].language = #et
 * #RGU #RGULS #RGULS039 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS039 ^designation[=].value = "Nimmelülid poolpõiki"
-* #RGU #RGULS #RGULS039 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS039 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS039 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS039 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS039 ^property[+].code = #anatomic-focus
@@ -19691,7 +19692,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS040 ^designation[=].language = #et
 * #RGU #RGULS #RGULS040 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS040 ^designation[=].value = "Nimmelülid puusaliigesed seistes AP"
-* #RGU #RGULS #RGULS040 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS040 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS040 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS040 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS040 ^property[+].code = #anatomic-focus
@@ -19725,7 +19726,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS041 ^designation[=].language = #et
 * #RGU #RGULS #RGULS041 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS041 ^designation[=].value = "Sakroiliakaalliigesed AP"
-* #RGU #RGULS #RGULS041 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS041 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS041 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS041 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS041 ^property[+].code = #anatomic-focus
@@ -19753,7 +19754,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS042 ^designation[=].language = #et
 * #RGU #RGULS #RGULS042 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS042 ^designation[=].value = "Sakroiliakaalliigesed poolpõiki parem"
-* #RGU #RGULS #RGULS042 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS042 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS042 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS042 ^property[+].code = #anatomic-focus
@@ -19784,7 +19785,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS043 ^designation[=].language = #et
 * #RGU #RGULS #RGULS043 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS043 ^designation[=].value = "Sakroiliakaalliigesed poolpõiki vasak"
-* #RGU #RGULS #RGULS043 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS043 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS043 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS043 ^property[+].code = #anatomic-focus
@@ -19815,7 +19816,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS044 ^designation[=].language = #et
 * #RGU #RGULS #RGULS044 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS044 ^designation[=].value = "Sakroiliakaalliigesed poolpõiki"
-* #RGU #RGULS #RGULS044 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS044 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS044 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS044 ^property[+].code = #anatomic-focus
@@ -19846,7 +19847,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS045 ^designation[=].language = #et
 * #RGU #RGULS #RGULS045 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS045 ^designation[=].value = "Sakroiliakaalliigesed aksiaalne"
-* #RGU #RGULS #RGULS045 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS045 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS045 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS045 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS045 ^property[+].code = #anatomic-focus
@@ -19874,7 +19875,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS046 ^designation[=].language = #et
 * #RGU #RGULS #RGULS046 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS046 ^designation[=].value = "Nimme-ristluu üleminek AP"
-* #RGU #RGULS #RGULS046 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS046 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS046 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS046 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS046 ^property[+].code = #anatomic-focus
@@ -19902,7 +19903,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS047 ^designation[=].language = #et
 * #RGU #RGULS #RGULS047 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS047 ^designation[=].value = "Nimme-ristluu üleminek LAT"
-* #RGU #RGULS #RGULS047 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS047 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS047 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS047 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS047 ^property[+].code = #anatomic-focus
@@ -19930,7 +19931,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS048 ^designation[=].language = #et
 * #RGU #RGULS #RGULS048 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS048 ^designation[=].value = "Nimme-ristluu üleminek AP LAT"
-* #RGU #RGULS #RGULS048 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS048 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS048 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS048 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS048 ^property[+].code = #anatomic-focus
@@ -19961,7 +19962,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS049 ^designation[=].language = #et
 * #RGU #RGULS #RGULS049 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS049 ^designation[=].value = "Nimme-ristluu üleminek ja sakroiliakaalliigesed AP"
-* #RGU #RGULS #RGULS049 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS049 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS049 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS049 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS049 ^property[+].code = #anatomic-focus
@@ -19992,7 +19993,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS050 ^designation[=].language = #et
 * #RGU #RGULS #RGULS050 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS050 ^designation[=].value = "Nimme-ristluu üleminek ja sakroiliakaalliigesed PA"
-* #RGU #RGULS #RGULS050 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS050 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS050 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS050 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS050 ^property[+].code = #anatomic-focus
@@ -20023,7 +20024,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS051 ^designation[=].language = #et
 * #RGU #RGULS #RGULS051 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS051 ^designation[=].value = "Ristluu AP"
-* #RGU #RGULS #RGULS051 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS051 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS051 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS051 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS051 ^property[+].code = #anatomic-focus
@@ -20051,7 +20052,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS052 ^designation[=].language = #et
 * #RGU #RGULS #RGULS052 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS052 ^designation[=].value = "Ristluu LAT"
-* #RGU #RGULS #RGULS052 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS052 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS052 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS052 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS052 ^property[+].code = #anatomic-focus
@@ -20079,7 +20080,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS053 ^designation[=].language = #et
 * #RGU #RGULS #RGULS053 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS053 ^designation[=].value = "Ristluu AP LAT"
-* #RGU #RGULS #RGULS053 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS053 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS053 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS053 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS053 ^property[+].code = #anatomic-focus
@@ -20110,7 +20111,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS054 ^designation[=].language = #et
 * #RGU #RGULS #RGULS054 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS054 ^designation[=].value = "Õndralülid AP"
-* #RGU #RGULS #RGULS054 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS054 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS054 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS054 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS054 ^property[+].code = #anatomic-focus
@@ -20138,7 +20139,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS055 ^designation[=].language = #et
 * #RGU #RGULS #RGULS055 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS055 ^designation[=].value = "Õndralülid LAT"
-* #RGU #RGULS #RGULS055 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS055 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS055 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS055 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS055 ^property[+].code = #anatomic-focus
@@ -20166,7 +20167,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS056 ^designation[=].language = #et
 * #RGU #RGULS #RGULS056 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS056 ^designation[=].value = "Õndralülid LAT istudes"
-* #RGU #RGULS #RGULS056 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS056 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS056 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS056 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS056 ^property[+].code = #anatomic-focus
@@ -20197,7 +20198,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS057 ^designation[=].language = #et
 * #RGU #RGULS #RGULS057 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS057 ^designation[=].value = "Õndralülid AP LAT"
-* #RGU #RGULS #RGULS057 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS057 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS057 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS057 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS057 ^property[+].code = #anatomic-focus
@@ -20228,7 +20229,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS058 ^designation[=].language = #et
 * #RGU #RGULS #RGULS058 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS058 ^designation[=].value = "Ristluu õndralülid AP"
-* #RGU #RGULS #RGULS058 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS058 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS058 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS058 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS058 ^property[+].code = #anatomic-focus
@@ -20259,7 +20260,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS059 ^designation[=].language = #et
 * #RGU #RGULS #RGULS059 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS059 ^designation[=].value = "Ristluu õndralülid LAT"
-* #RGU #RGULS #RGULS059 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS059 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS059 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS059 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS059 ^property[+].code = #anatomic-focus
@@ -20290,7 +20291,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS060 ^designation[=].language = #et
 * #RGU #RGULS #RGULS060 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS060 ^designation[=].value = "Ristluu õndralülid AP LAT"
-* #RGU #RGULS #RGULS060 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS060 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS060 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS060 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS060 ^property[+].code = #anatomic-focus
@@ -20324,7 +20325,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS061 ^designation[=].language = #et
 * #RGU #RGULS #RGULS061 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS061 ^designation[=].value = "Kogu lülisammas AP seistes"
-* #RGU #RGULS #RGULS061 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS061 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS061 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS061 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS061 ^property[+].code = #anatomic-focus
@@ -20355,7 +20356,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS062 ^designation[=].language = #et
 * #RGU #RGULS #RGULS062 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS062 ^designation[=].value = "Kogu lülisammas LAT seistes"
-* #RGU #RGULS #RGULS062 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS062 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS062 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS062 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS062 ^property[+].code = #anatomic-focus
@@ -20386,7 +20387,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGULS #RGULS063 ^designation[=].language = #et
 * #RGU #RGULS #RGULS063 ^designation[=].use.code = #alias
 * #RGU #RGULS #RGULS063 ^designation[=].value = "Kogu lülisammas AP LAT seistes"
-* #RGU #RGULS #RGULS063 ^property[0].code = #Interpreter
+* #RGU #RGULS #RGULS063 ^property[0].code = #evaluator
 * #RGU #RGULS #RGULS063 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGULS #RGULS063 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGULS #RGULS063 ^property[+].code = #anatomic-focus
@@ -20424,7 +20425,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUMT #RGUMT001 ^designation[=].language = #et
 * #RGU #RGUMT #RGUMT001 ^designation[=].use.code = #alias
 * #RGU #RGUMT #RGUMT001 ^designation[=].value = "Muu piirkond"
-* #RGU #RGUMT #RGUMT001 ^property[0].code = #Interpreter
+* #RGU #RGUMT #RGUMT001 ^property[0].code = #evaluator
 * #RGU #RGUMT #RGUMT001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUMT #RGUMT001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUMT #RGUMT001 ^property[+].code = #anatomic-focus
@@ -20450,7 +20451,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE001 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE001 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE001 ^designation[=].value = "Ninakõrvalkoopad PA"
-* #RGU #RGUPE #RGUPE001 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE001 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE001 ^property[+].code = #anatomic-focus
@@ -20488,7 +20489,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE002 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE002 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE002 ^designation[=].value = "Ninaluud LAT"
-* #RGU #RGUPE #RGUPE002 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE002 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE002 ^property[+].code = #anatomic-focus
@@ -20523,7 +20524,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE003 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE003 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE003 ^designation[=].value = "Kolju PA"
-* #RGU #RGUPE #RGUPE003 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE003 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE003 ^property[+].code = #anatomic-focus
@@ -20558,7 +20559,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE004 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE004 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE004 ^designation[=].value = "Kolju LAT"
-* #RGU #RGUPE #RGUPE004 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE004 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE004 ^property[+].code = #anatomic-focus
@@ -20593,7 +20594,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE005 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE005 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE005 ^designation[=].value = "Kolju aksiaalne"
-* #RGU #RGUPE #RGUPE005 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE005 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE005 ^property[+].code = #anatomic-focus
@@ -20631,7 +20632,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE006 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE006 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE006 ^designation[=].value = "Kolju AP"
-* #RGU #RGUPE #RGUPE006 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE006 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE006 ^property[+].code = #anatomic-focus
@@ -20666,7 +20667,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE007 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE007 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE007 ^designation[=].value = "Kolju AP LAT"
-* #RGU #RGUPE #RGUPE007 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE007 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE007 ^property[+].code = #anatomic-focus
@@ -20697,7 +20698,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE008 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE008 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE008 ^designation[=].value = "Kolju eriprojektsioon"
-* #RGU #RGUPE #RGUPE008 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE008 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE008 ^property[+].code = #anatomic-focus
@@ -20732,7 +20733,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE009 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE009 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE009 ^designation[=].value = "Sarnaluud"
-* #RGU #RGUPE #RGUPE009 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE009 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE009 ^property[+].code = #anatomic-focus
@@ -20767,7 +20768,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE010 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE010 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE010 ^designation[=].value = "Silmakoopad"
-* #RGU #RGUPE #RGUPE010 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE010 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE010 ^property[+].code = #anatomic-focus
@@ -20799,7 +20800,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE011 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE011 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE011 ^designation[=].value = "Ninakõrvalkoopad LAT"
-* #RGU #RGUPE #RGUPE011 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE011 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE011 ^property[+].code = #anatomic-focus
@@ -20834,7 +20835,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE012 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE012 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE012 ^designation[=].value = "Alalõualuu PA"
-* #RGU #RGUPE #RGUPE012 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE012 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE012 ^property[+].code = #anatomic-focus
@@ -20862,7 +20863,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE013 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE013 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE013 ^designation[=].value = "Alalõualuu põiki"
-* #RGU #RGUPE #RGUPE013 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE013 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE013 ^property[+].code = #anatomic-focus
@@ -20890,7 +20891,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE014 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE014 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE014 ^designation[=].value = "Alalõualuu aksiaalne"
-* #RGU #RGUPE #RGUPE014 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE014 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE014 ^property[+].code = #anatomic-focus
@@ -20921,7 +20922,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUPE #RGUPE015 ^designation[=].language = #et
 * #RGU #RGUPE #RGUPE015 ^designation[=].use.code = #alias
 * #RGU #RGUPE #RGUPE015 ^designation[=].value = "Ninaneel LAT"
-* #RGU #RGUPE #RGUPE015 ^property[0].code = #Interpreter
+* #RGU #RGUPE #RGUPE015 ^property[0].code = #evaluator
 * #RGU #RGUPE #RGUPE015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUPE #RGUPE015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUPE #RGUPE015 ^property[+].code = #anatomic-focus
@@ -20953,7 +20954,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK001 ^designation[=].language = #et
 * #RGU #RGURK #RGURK001 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK001 ^designation[=].value = "Rindkere PA seistes"
-* #RGU #RGURK #RGURK001 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK001 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK001 ^property[+].code = #anatomic-focus
@@ -20984,7 +20985,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK002 ^designation[=].language = #et
 * #RGU #RGURK #RGURK002 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK002 ^designation[=].value = "Rindkere AP lamades"
-* #RGU #RGURK #RGURK002 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK002 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK002 ^property[+].code = #anatomic-focus
@@ -21015,7 +21016,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK003 ^designation[=].language = #et
 * #RGU #RGURK #RGURK003 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK003 ^designation[=].value = "Rindkere PA istudes"
-* #RGU #RGURK #RGURK003 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK003 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK003 ^property[+].code = #anatomic-focus
@@ -21046,7 +21047,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK004 ^designation[=].language = #et
 * #RGU #RGURK #RGURK004 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK004 ^designation[=].value = "Rindkere LAT vasak"
-* #RGU #RGURK #RGURK004 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK004 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK004 ^property[+].code = #anatomic-focus
@@ -21077,7 +21078,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK005 ^designation[=].language = #et
 * #RGU #RGURK #RGURK005 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK005 ^designation[=].value = "Rindkere AP seistes"
-* #RGU #RGURK #RGURK005 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK005 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK005 ^property[+].code = #anatomic-focus
@@ -21108,7 +21109,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK006 ^designation[=].language = #et
 * #RGU #RGURK #RGURK006 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK006 ^designation[=].value = "Rindkere AP istudes"
-* #RGU #RGURK #RGURK006 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK006 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK006 ^property[+].code = #anatomic-focus
@@ -21142,7 +21143,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK007 ^designation[+].language = #en
 * #RGU #RGURK #RGURK007 ^designation[=].use.code = #display
 * #RGU #RGURK #RGURK007 ^designation[=].value = "Chest X-Ray (lateral), right"
-* #RGU #RGURK #RGURK007 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK007 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK007 ^property[+].code = #anatomic-focus
@@ -21176,7 +21177,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK008 ^designation[0].language = #et
 * #RGU #RGURK #RGURK008 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK008 ^designation[=].value = "Rindkere PA LAT vasak seistes"
-* #RGU #RGURK #RGURK008 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK008 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK008 ^property[+].code = #anatomic-focus
@@ -21213,7 +21214,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK009 ^designation[=].language = #et
 * #RGU #RGURK #RGURK009 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK009 ^designation[=].value = "Rindkere PA LAT parem seistes"
-* #RGU #RGURK #RGURK009 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK009 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK009 ^property[+].code = #anatomic-focus
@@ -21250,7 +21251,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK010 ^designation[=].language = #et
 * #RGU #RGURK #RGURK010 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK010 ^designation[=].value = "Rindkere eriprojektsioon"
-* #RGU #RGURK #RGURK010 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK010 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK010 ^property[+].code = #anatomic-focus
@@ -21278,7 +21279,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK011 ^designation[=].language = #et
 * #RGU #RGURK #RGURK011 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK011 ^designation[=].value = "Rindkere vastsündinu"
-* #RGU #RGURK #RGURK011 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK011 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK011 ^property[+].code = #anatomic-focus
@@ -21306,7 +21307,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK012 ^designation[=].language = #et
 * #RGU #RGURK #RGURK012 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK012 ^designation[=].value = "Rindkere kõht vaagen vastsündinu"
-* #RGU #RGURK #RGURK012 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK012 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK012 ^property[+].code = #anatomic-focus
@@ -21340,7 +21341,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK013 ^designation[=].language = #et
 * #RGU #RGURK #RGURK013 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK013 ^designation[=].value = "Roided AP parem"
-* #RGU #RGURK #RGURK013 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK013 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK013 ^property[+].code = #anatomic-focus
@@ -21371,7 +21372,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK014 ^designation[=].language = #et
 * #RGU #RGURK #RGURK014 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK014 ^designation[=].value = "Roided AP vasak"
-* #RGU #RGURK #RGURK014 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK014 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK014 ^property[+].code = #anatomic-focus
@@ -21402,7 +21403,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK015 ^designation[=].language = #et
 * #RGU #RGURK #RGURK015 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK015 ^designation[=].value = "Roided AP parem vasak"
-* #RGU #RGURK #RGURK015 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK015 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK015 ^property[+].code = #anatomic-focus
@@ -21433,7 +21434,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK016 ^designation[=].language = #et
 * #RGU #RGURK #RGURK016 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK016 ^designation[=].value = "Roided PA parem"
-* #RGU #RGURK #RGURK016 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK016 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK016 ^property[+].code = #anatomic-focus
@@ -21464,7 +21465,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK017 ^designation[=].language = #et
 * #RGU #RGURK #RGURK017 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK017 ^designation[=].value = "Roided PA vasak"
-* #RGU #RGURK #RGURK017 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK017 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK017 ^property[+].code = #anatomic-focus
@@ -21495,7 +21496,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK018 ^designation[=].language = #et
 * #RGU #RGURK #RGURK018 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK018 ^designation[=].value = "Roided PA parem vasak"
-* #RGU #RGURK #RGURK018 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK018 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK018 ^property[+].code = #anatomic-focus
@@ -21526,7 +21527,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK019 ^designation[=].language = #et
 * #RGU #RGURK #RGURK019 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK019 ^designation[=].value = "Roided poolpõiki parem"
-* #RGU #RGURK #RGURK019 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK019 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK019 ^property[+].code = #anatomic-focus
@@ -21557,7 +21558,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK020 ^designation[=].language = #et
 * #RGU #RGURK #RGURK020 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK020 ^designation[=].value = "Roided poolpõiki vasak"
-* #RGU #RGURK #RGURK020 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK020 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK020 ^property[+].code = #anatomic-focus
@@ -21588,7 +21589,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK021 ^designation[=].language = #et
 * #RGU #RGURK #RGURK021 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK021 ^designation[=].value = "Roided poolpõiki parem vasak"
-* #RGU #RGURK #RGURK021 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK021 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK021 ^property[+].code = #anatomic-focus
@@ -21619,7 +21620,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK022 ^designation[=].language = #et
 * #RGU #RGURK #RGURK022 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK022 ^designation[=].value = "Rinnak PA"
-* #RGU #RGURK #RGURK022 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK022 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK022 ^property[+].code = #anatomic-focus
@@ -21647,7 +21648,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK023 ^designation[=].language = #et
 * #RGU #RGURK #RGURK023 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK023 ^designation[=].value = "Rinnak LAT"
-* #RGU #RGURK #RGURK023 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK023 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK023 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK023 ^property[+].code = #anatomic-focus
@@ -21675,7 +21676,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK024 ^designation[=].language = #et
 * #RGU #RGURK #RGURK024 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK024 ^designation[=].value = "Rangluu AP parem"
-* #RGU #RGURK #RGURK024 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK024 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK024 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK024 ^property[+].code = #anatomic-focus
@@ -21706,7 +21707,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK025 ^designation[=].language = #et
 * #RGU #RGURK #RGURK025 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK025 ^designation[=].value = "Rangluu AP vasak"
-* #RGU #RGURK #RGURK025 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK025 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK025 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK025 ^property[+].code = #anatomic-focus
@@ -21737,7 +21738,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK026 ^designation[=].language = #et
 * #RGU #RGURK #RGURK026 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK026 ^designation[=].value = "Rangluu aksiaalne parem"
-* #RGU #RGURK #RGURK026 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK026 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK026 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK026 ^property[+].code = #anatomic-focus
@@ -21768,7 +21769,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK027 ^designation[=].language = #et
 * #RGU #RGURK #RGURK027 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK027 ^designation[=].value = "Rangluu aksiaalne vasak"
-* #RGU #RGURK #RGURK027 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK027 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK027 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK027 ^property[+].code = #anatomic-focus
@@ -21799,7 +21800,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK028 ^designation[=].language = #et
 * #RGU #RGURK #RGURK028 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK028 ^designation[=].value = "Rangluu AP aksiaalne parem"
-* #RGU #RGURK #RGURK028 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK028 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK028 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK028 ^property[+].code = #anatomic-focus
@@ -21833,7 +21834,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK029 ^designation[=].language = #et
 * #RGU #RGURK #RGURK029 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK029 ^designation[=].value = "Rangluu AP aksiaalne vasak"
-* #RGU #RGURK #RGURK029 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK029 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK029 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK029 ^property[+].code = #anatomic-focus
@@ -21867,7 +21868,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK030 ^designation[=].language = #et
 * #RGU #RGURK #RGURK030 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK030 ^designation[=].value = "Rangluud AP"
-* #RGU #RGURK #RGURK030 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK030 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK030 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK030 ^property[+].code = #anatomic-focus
@@ -21898,7 +21899,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK031 ^designation[=].language = #et
 * #RGU #RGURK #RGURK031 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK031 ^designation[=].value = "Akromioklavikulaarliiges AP parem"
-* #RGU #RGURK #RGURK031 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK031 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK031 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK031 ^property[+].code = #anatomic-focus
@@ -21929,7 +21930,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK032 ^designation[=].language = #et
 * #RGU #RGURK #RGURK032 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK032 ^designation[=].value = "Akromioklavikulaarliiges AP vasak"
-* #RGU #RGURK #RGURK032 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK032 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK032 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK032 ^property[+].code = #anatomic-focus
@@ -21960,7 +21961,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK033 ^designation[=].language = #et
 * #RGU #RGURK #RGURK033 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK033 ^designation[=].value = "Akromioklavikulaarliiges aksiaalne parem"
-* #RGU #RGURK #RGURK033 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK033 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK033 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK033 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK033 ^property[+].code = #anatomic-focus
@@ -21994,7 +21995,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK034 ^designation[=].language = #et
 * #RGU #RGURK #RGURK034 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK034 ^designation[=].value = "Akromioklavikulaarliiges aksiaalne vasak"
-* #RGU #RGURK #RGURK034 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK034 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK034 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK034 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK034 ^property[+].code = #anatomic-focus
@@ -22028,7 +22029,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK035 ^designation[=].language = #et
 * #RGU #RGURK #RGURK035 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK035 ^designation[=].value = "Abaluu AP parem"
-* #RGU #RGURK #RGURK035 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK035 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK035 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK035 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK035 ^property[+].code = #anatomic-focus
@@ -22059,7 +22060,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK036 ^designation[=].language = #et
 * #RGU #RGURK #RGURK036 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK036 ^designation[=].value = "Abaluu AP vasak"
-* #RGU #RGURK #RGURK036 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK036 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK036 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK036 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK036 ^property[+].code = #anatomic-focus
@@ -22090,7 +22091,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK037 ^designation[=].language = #et
 * #RGU #RGURK #RGURK037 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK037 ^designation[=].value = "Abaluu Y parem"
-* #RGU #RGURK #RGURK037 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK037 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK037 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK037 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK037 ^property[+].code = #anatomic-focus
@@ -22121,7 +22122,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK038 ^designation[=].language = #et
 * #RGU #RGURK #RGURK038 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK038 ^designation[=].value = "Abaluu Y vasak"
-* #RGU #RGURK #RGURK038 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK038 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK038 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK038 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK038 ^property[+].code = #anatomic-focus
@@ -22152,7 +22153,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK039 ^designation[=].language = #et
 * #RGU #RGURK #RGURK039 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK039 ^designation[=].value = "Abaluu AP Y parem"
-* #RGU #RGURK #RGURK039 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK039 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK039 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK039 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK039 ^property[+].code = #anatomic-focus
@@ -22186,7 +22187,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK040 ^designation[=].language = #et
 * #RGU #RGURK #RGURK040 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK040 ^designation[=].value = "Abaluu AP Y vasak"
-* #RGU #RGURK #RGURK040 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK040 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK040 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK040 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK040 ^property[+].code = #anatomic-focus
@@ -22220,7 +22221,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK041 ^designation[=].language = #et
 * #RGU #RGURK #RGURK041 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK041 ^designation[=].value = "Sternoklavikulaarliigesed PA"
-* #RGU #RGURK #RGURK041 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK041 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK041 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK041 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK041 ^property[+].code = #anatomic-focus
@@ -22248,10 +22249,10 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK042 ^designation[=].language = #et
 * #RGU #RGURK #RGURK042 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK042 ^designation[=].value = "Söögitoru kontrastainega (jood) AP"
-* #RGU #RGURK #RGURK042 ^property[0].code = #Contrast
+* #RGU #RGURK #RGURK042 ^property[0].code = #contrast
 * #RGU #RGURK #RGURK042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK042 ^property[=].valueCoding = snomed-ct#1144611009
-* #RGU #RGURK #RGURK042 ^property[+].code = #Interpreter
+* #RGU #RGURK #RGURK042 ^property[+].code = #evaluator
 * #RGU #RGURK #RGURK042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK042 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK042 ^property[+].code = #anatomic-focus
@@ -22279,10 +22280,10 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK043 ^designation[=].language = #et
 * #RGU #RGURK #RGURK043 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK043 ^designation[=].value = "Söögitoru kontrastainega (jood) LAT"
-* #RGU #RGURK #RGURK043 ^property[0].code = #Contrast
+* #RGU #RGURK #RGURK043 ^property[0].code = #contrast
 * #RGU #RGURK #RGURK043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK043 ^property[=].valueCoding = snomed-ct#1144611009
-* #RGU #RGURK #RGURK043 ^property[+].code = #Interpreter
+* #RGU #RGURK #RGURK043 ^property[+].code = #evaluator
 * #RGU #RGURK #RGURK043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK043 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK043 ^property[+].code = #anatomic-focus
@@ -22310,10 +22311,10 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK044 ^designation[=].language = #et
 * #RGU #RGURK #RGURK044 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK044 ^designation[=].value = "Söögitoru kontrastainega (jood) AP LAT"
-* #RGU #RGURK #RGURK044 ^property[0].code = #Contrast
+* #RGU #RGURK #RGURK044 ^property[0].code = #contrast
 * #RGU #RGURK #RGURK044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK044 ^property[=].valueCoding = snomed-ct#1144611009
-* #RGU #RGURK #RGURK044 ^property[+].code = #Interpreter
+* #RGU #RGURK #RGURK044 ^property[+].code = #evaluator
 * #RGU #RGURK #RGURK044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK044 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK044 ^property[+].code = #anatomic-focus
@@ -22344,7 +22345,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK045 ^designation[=].language = #et
 * #RGU #RGURK #RGURK045 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK045 ^designation[=].value = "Söögitoru kontrastainega (baarium) AP"
-* #RGU #RGURK #RGURK045 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK045 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK045 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK045 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK045 ^property[+].code = #anatomic-focus
@@ -22375,7 +22376,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK046 ^designation[=].language = #et
 * #RGU #RGURK #RGURK046 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK046 ^designation[=].value = "Söögitoru kontrastainega (baarium) LAT"
-* #RGU #RGURK #RGURK046 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK046 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK046 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK046 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK046 ^property[+].code = #anatomic-focus
@@ -22403,7 +22404,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGURK #RGURK047 ^designation[=].language = #et
 * #RGU #RGURK #RGURK047 ^designation[=].use.code = #alias
 * #RGU #RGURK #RGURK047 ^designation[=].value = "Söögitoru kontrastainega (baarium) AP LAT"
-* #RGU #RGURK #RGURK047 ^property[0].code = #Interpreter
+* #RGU #RGURK #RGURK047 ^property[0].code = #evaluator
 * #RGU #RGURK #RGURK047 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGURK #RGURK047 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGURK #RGURK047 ^property[+].code = #anatomic-focus
@@ -22438,7 +22439,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ001 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ001 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ001 ^designation[=].value = "Õlg AP parem"
-* #RGU #RGUUJ #RGUUJ001 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ001 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ001 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ001 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ001 ^property[+].code = #anatomic-focus
@@ -22472,7 +22473,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ002 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ002 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ002 ^designation[=].value = "Õlg AP vasak"
-* #RGU #RGUUJ #RGUUJ002 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ002 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ002 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ002 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ002 ^property[+].code = #anatomic-focus
@@ -22506,7 +22507,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ003 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ003 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ003 ^designation[=].value = "Õlg Y parem"
-* #RGU #RGUUJ #RGUUJ003 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ003 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ003 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ003 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ003 ^property[+].code = #anatomic-focus
@@ -22537,7 +22538,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ004 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ004 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ004 ^designation[=].value = "Õlg Y vasak"
-* #RGU #RGUUJ #RGUUJ004 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ004 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ004 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ004 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ004 ^property[+].code = #anatomic-focus
@@ -22568,7 +22569,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ005 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ005 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ005 ^designation[=].value = "Õlg aksiaalne parem"
-* #RGU #RGUUJ #RGUUJ005 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ005 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ005 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ005 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ005 ^property[+].code = #anatomic-focus
@@ -22599,7 +22600,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ006 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ006 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ006 ^designation[=].value = "Õlg aksiaalne vasak"
-* #RGU #RGUUJ #RGUUJ006 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ006 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ006 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ006 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ006 ^property[+].code = #anatomic-focus
@@ -22630,7 +22631,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ007 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ007 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ007 ^designation[=].value = "Õlg Grashey parem"
-* #RGU #RGUUJ #RGUUJ007 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ007 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ007 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ007 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ007 ^property[+].code = #anatomic-focus
@@ -22670,7 +22671,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ008 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ008 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ008 ^designation[=].value = "Õlg Grashey vasak"
-* #RGU #RGUUJ #RGUUJ008 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ008 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ008 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ008 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ008 ^property[+].code = #anatomic-focus
@@ -22710,7 +22711,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ009 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ009 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ009 ^designation[=].value = "Õlg AP siserotatsioonis parem"
-* #RGU #RGUUJ #RGUUJ009 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ009 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ009 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ009 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ009 ^property[+].code = #anatomic-focus
@@ -22747,7 +22748,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ010 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ010 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ010 ^designation[=].value = "Õlg AP siserotatsioonis vasak"
-* #RGU #RGUUJ #RGUUJ010 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ010 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ010 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ010 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ010 ^property[+].code = #anatomic-focus
@@ -22784,7 +22785,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ011 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ011 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ011 ^designation[=].value = "Õlg AP välisrotatsioonis parem"
-* #RGU #RGUUJ #RGUUJ011 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ011 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ011 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ011 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ011 ^property[+].code = #anatomic-focus
@@ -22821,7 +22822,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ012 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ012 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ012 ^designation[=].value = "Õlg AP välisrotatsioonis vasak"
-* #RGU #RGUUJ #RGUUJ012 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ012 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ012 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ012 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ012 ^property[+].code = #anatomic-focus
@@ -22858,7 +22859,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ013 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ013 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ013 ^designation[=].value = "Õlg transtorakaalne LAT parem"
-* #RGU #RGUUJ #RGUUJ013 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ013 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ013 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ013 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ013 ^property[+].code = #anatomic-focus
@@ -22892,7 +22893,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ014 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ014 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ014 ^designation[=].value = "Õlg transtorakaalne LAT vasak"
-* #RGU #RGUUJ #RGUUJ014 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ014 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ014 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ014 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ014 ^property[+].code = #anatomic-focus
@@ -22926,7 +22927,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ015 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ015 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ015 ^designation[=].value = "Õlg AP Grashey parem"
-* #RGU #RGUUJ #RGUUJ015 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ015 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ015 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ015 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ015 ^property[+].code = #anatomic-focus
@@ -22972,7 +22973,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ016 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ016 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ016 ^designation[=].value = "Õlg AP Grashey vasak"
-* #RGU #RGUUJ #RGUUJ016 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ016 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ016 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ016 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ016 ^property[+].code = #anatomic-focus
@@ -23016,7 +23017,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ017 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ017 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ017 ^designation[=].value = "Õlg protees parem"
-* #RGU #RGUUJ #RGUUJ017 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ017 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ017 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ017 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ017 ^property[+].code = #anatomic-focus
@@ -23053,7 +23054,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ018 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ018 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ018 ^designation[=].value = "Õlg protees vasak"
-* #RGU #RGUUJ #RGUUJ018 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ018 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ018 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ018 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ018 ^property[+].code = #anatomic-focus
@@ -23090,7 +23091,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ019 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ019 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ019 ^designation[=].value = "Õlavarreluu AP parem"
-* #RGU #RGUUJ #RGUUJ019 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ019 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ019 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ019 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ019 ^property[+].code = #anatomic-focus
@@ -23121,7 +23122,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ020 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ020 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ020 ^designation[=].value = "Õlavarreluu AP vasak"
-* #RGU #RGUUJ #RGUUJ020 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ020 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ020 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ020 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ020 ^property[+].code = #anatomic-focus
@@ -23152,7 +23153,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ021 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ021 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ021 ^designation[=].value = "Õlavarreluu LAT parem"
-* #RGU #RGUUJ #RGUUJ021 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ021 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ021 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ021 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ021 ^property[+].code = #anatomic-focus
@@ -23183,7 +23184,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ022 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ022 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ022 ^designation[=].value = "Õlavarreluu LAT vasak"
-* #RGU #RGUUJ #RGUUJ022 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ022 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ022 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ022 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ022 ^property[+].code = #anatomic-focus
@@ -23214,7 +23215,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ023 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ023 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ023 ^designation[=].value = "Õlavarreluu transtorakaalne parem"
-* #RGU #RGUUJ #RGUUJ023 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ023 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ023 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ023 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ023 ^property[+].code = #anatomic-focus
@@ -23248,7 +23249,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ024 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ024 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ024 ^designation[=].value = "Õlavarreluu transtorakaalne vasak"
-* #RGU #RGUUJ #RGUUJ024 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ024 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ024 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ024 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ024 ^property[+].code = #anatomic-focus
@@ -23282,7 +23283,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ025 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ025 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ025 ^designation[=].value = "Õlavarreluu AP LAT parem"
-* #RGU #RGUUJ #RGUUJ025 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ025 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ025 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ025 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ025 ^property[+].code = #anatomic-focus
@@ -23316,7 +23317,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ026 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ026 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ026 ^designation[=].value = "Õlavarreluu AP LAT vasak"
-* #RGU #RGUUJ #RGUUJ026 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ026 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ026 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ026 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ026 ^property[+].code = #anatomic-focus
@@ -23350,7 +23351,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ027 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ027 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ027 ^designation[=].value = "Küünarliiges AP parem"
-* #RGU #RGUUJ #RGUUJ027 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ027 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ027 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ027 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ027 ^property[+].code = #anatomic-focus
@@ -23381,7 +23382,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ028 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ028 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ028 ^designation[=].value = "Küünarliiges AP vasak"
-* #RGU #RGUUJ #RGUUJ028 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ028 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ028 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ028 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ028 ^property[+].code = #anatomic-focus
@@ -23412,7 +23413,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ029 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ029 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ029 ^designation[=].value = "Küünarliiges LAT parem"
-* #RGU #RGUUJ #RGUUJ029 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ029 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ029 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ029 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ029 ^property[+].code = #anatomic-focus
@@ -23443,7 +23444,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ030 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ030 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ030 ^designation[=].value = "Küünarliiges LAT vasak"
-* #RGU #RGUUJ #RGUUJ030 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ030 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ030 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ030 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ030 ^property[+].code = #anatomic-focus
@@ -23474,7 +23475,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ031 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ031 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ031 ^designation[=].value = "Küünarliiges AP LAT parem"
-* #RGU #RGUUJ #RGUUJ031 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ031 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ031 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ031 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ031 ^property[+].code = #anatomic-focus
@@ -23508,7 +23509,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ032 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ032 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ032 ^designation[=].value = "Küünarliiges AP LAT vasak"
-* #RGU #RGUUJ #RGUUJ032 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ032 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ032 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ032 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ032 ^property[+].code = #anatomic-focus
@@ -23542,7 +23543,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ033 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ033 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ033 ^designation[=].value = "Küünarnukk aksiaalne parem"
-* #RGU #RGUUJ #RGUUJ033 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ033 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ033 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ033 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ033 ^property[+].code = #anatomic-focus
@@ -23576,7 +23577,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ034 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ034 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ034 ^designation[=].value = "Küünarnukk aksiaalne vasak"
-* #RGU #RGUUJ #RGUUJ034 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ034 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ034 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ034 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ034 ^property[+].code = #anatomic-focus
@@ -23610,7 +23611,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ035 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ035 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ035 ^designation[=].value = "Küünarvarreluud AP parem"
-* #RGU #RGUUJ #RGUUJ035 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ035 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ035 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ035 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ035 ^property[+].code = #anatomic-focus
@@ -23641,7 +23642,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ036 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ036 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ036 ^designation[=].value = "Küünarvarreluud AP vasak"
-* #RGU #RGUUJ #RGUUJ036 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ036 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ036 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ036 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ036 ^property[+].code = #anatomic-focus
@@ -23672,7 +23673,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ037 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ037 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ037 ^designation[=].value = "Küünarvarreluud LAT parem"
-* #RGU #RGUUJ #RGUUJ037 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ037 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ037 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ037 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ037 ^property[+].code = #anatomic-focus
@@ -23703,7 +23704,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ038 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ038 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ038 ^designation[=].value = "Küünarvarreluud LAT vasak"
-* #RGU #RGUUJ #RGUUJ038 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ038 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ038 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ038 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ038 ^property[+].code = #anatomic-focus
@@ -23734,7 +23735,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ039 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ039 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ039 ^designation[=].value = "Küünarvarreluud AP LAT parem"
-* #RGU #RGUUJ #RGUUJ039 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ039 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ039 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ039 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ039 ^property[+].code = #anatomic-focus
@@ -23768,7 +23769,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ040 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ040 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ040 ^designation[=].value = "Küünarvarreluud AP LAT vasak"
-* #RGU #RGUUJ #RGUUJ040 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ040 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ040 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ040 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ040 ^property[+].code = #anatomic-focus
@@ -23802,7 +23803,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ041 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ041 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ041 ^designation[=].value = "Ranne PA parem"
-* #RGU #RGUUJ #RGUUJ041 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ041 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ041 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ041 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ041 ^property[+].code = #anatomic-focus
@@ -23833,7 +23834,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ042 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ042 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ042 ^designation[=].value = "Ranne PA vasak"
-* #RGU #RGUUJ #RGUUJ042 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ042 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ042 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ042 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ042 ^property[+].code = #anatomic-focus
@@ -23864,7 +23865,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ043 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ043 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ043 ^designation[=].value = "Ranne LAT parem"
-* #RGU #RGUUJ #RGUUJ043 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ043 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ043 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ043 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ043 ^property[+].code = #anatomic-focus
@@ -23895,7 +23896,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ044 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ044 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ044 ^designation[=].value = "Ranne LAT vasak"
-* #RGU #RGUUJ #RGUUJ044 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ044 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ044 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ044 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ044 ^property[+].code = #anatomic-focus
@@ -23926,7 +23927,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ045 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ045 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ045 ^designation[=].value = "Ranne lodiluu poolpõiki parem"
-* #RGU #RGUUJ #RGUUJ045 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ045 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ045 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ045 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ045 ^property[+].code = #anatomic-focus
@@ -23960,7 +23961,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ046 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ046 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ046 ^designation[=].value = "Ranne lodiluu poolpõiki vasak"
-* #RGU #RGUUJ #RGUUJ046 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ046 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ046 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ046 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ046 ^property[+].code = #anatomic-focus
@@ -23994,7 +23995,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ047 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ047 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ047 ^designation[=].value = "Ranne lodiluu ulnaardeviatsioonis parem"
-* #RGU #RGUUJ #RGUUJ047 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ047 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ047 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ047 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ047 ^property[+].code = #anatomic-focus
@@ -24034,7 +24035,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ048 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ048 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ048 ^designation[=].value = "Ranne lodiluu ulnaardeviatsioonis vasak"
-* #RGU #RGUUJ #RGUUJ048 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ048 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ048 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ048 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ048 ^property[+].code = #anatomic-focus
@@ -24073,7 +24074,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ049 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ049 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ049 ^designation[=].value = "Ranne eriprojektsioon parem"
-* #RGU #RGUUJ #RGUUJ049 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ049 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ049 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ049 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ049 ^property[+].code = #anatomic-focus
@@ -24104,7 +24105,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ050 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ050 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ050 ^designation[=].value = "Ranne eriprojektsioon vasak"
-* #RGU #RGUUJ #RGUUJ050 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ050 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ050 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ050 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ050 ^property[+].code = #anatomic-focus
@@ -24135,7 +24136,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ051 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ051 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ051 ^designation[=].value = "Ranne PA LAT parem"
-* #RGU #RGUUJ #RGUUJ051 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ051 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ051 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ051 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ051 ^property[+].code = #anatomic-focus
@@ -24169,7 +24170,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ052 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ052 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ052 ^designation[=].value = "Ranne PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ052 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ052 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ052 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ052 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ052 ^property[+].code = #anatomic-focus
@@ -24203,7 +24204,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ053 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ053 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ053 ^designation[=].value = "Labakäsi PA parem"
-* #RGU #RGUUJ #RGUUJ053 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ053 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ053 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ053 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ053 ^property[+].code = #anatomic-focus
@@ -24234,7 +24235,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ054 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ054 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ054 ^designation[=].value = "Labakäsi PA vasak"
-* #RGU #RGUUJ #RGUUJ054 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ054 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ054 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ054 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ054 ^property[+].code = #anatomic-focus
@@ -24265,7 +24266,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ055 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ055 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ055 ^designation[=].value = "Labakäsi poolpõiki parem"
-* #RGU #RGUUJ #RGUUJ055 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ055 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ055 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ055 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ055 ^property[+].code = #anatomic-focus
@@ -24296,7 +24297,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ056 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ056 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ056 ^designation[=].value = "Labakäsi poolpõiki vasak"
-* #RGU #RGUUJ #RGUUJ056 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ056 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ056 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ056 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ056 ^property[+].code = #anatomic-focus
@@ -24327,7 +24328,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ057 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ057 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ057 ^designation[=].value = "Labakäsi LAT parem"
-* #RGU #RGUUJ #RGUUJ057 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ057 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ057 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ057 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ057 ^property[+].code = #anatomic-focus
@@ -24358,7 +24359,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ058 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ058 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ058 ^designation[=].value = "Labakäsi LAT vasak"
-* #RGU #RGUUJ #RGUUJ058 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ058 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ058 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ058 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ058 ^property[+].code = #anatomic-focus
@@ -24389,7 +24390,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ059 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ059 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ059 ^designation[=].value = "Labakäsi PA poolpõiki parem"
-* #RGU #RGUUJ #RGUUJ059 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ059 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ059 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ059 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ059 ^property[+].code = #anatomic-focus
@@ -24423,7 +24424,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ060 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ060 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ060 ^designation[=].value = "Labakäsi PA poolpõiki vasak"
-* #RGU #RGUUJ #RGUUJ060 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ060 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ060 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ060 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ060 ^property[+].code = #anatomic-focus
@@ -24457,7 +24458,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ061 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ061 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ061 ^designation[=].value = "Labakäed PA"
-* #RGU #RGUUJ #RGUUJ061 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ061 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ061 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ061 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ061 ^property[+].code = #anatomic-focus
@@ -24488,7 +24489,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ062 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ062 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ062 ^designation[=].value = "Labakäsi luuline vanus"
-* #RGU #RGUUJ #RGUUJ062 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ062 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ062 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ062 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ062 ^property[+].code = #anatomic-focus
@@ -24513,7 +24514,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ063 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ063 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ063 ^designation[=].value = "I sõrm PA parem"
-* #RGU #RGUUJ #RGUUJ063 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ063 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ063 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ063 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ063 ^property[+].code = #anatomic-focus
@@ -24544,7 +24545,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ064 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ064 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ064 ^designation[=].value = "I sõrm PA vasak"
-* #RGU #RGUUJ #RGUUJ064 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ064 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ064 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ064 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ064 ^property[+].code = #anatomic-focus
@@ -24575,7 +24576,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ065 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ065 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ065 ^designation[=].value = "I sõrm LAT parem"
-* #RGU #RGUUJ #RGUUJ065 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ065 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ065 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ065 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ065 ^property[+].code = #anatomic-focus
@@ -24606,7 +24607,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ066 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ066 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ066 ^designation[=].value = "I sõrm LAT vasak"
-* #RGU #RGUUJ #RGUUJ066 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ066 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ066 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ066 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ066 ^property[+].code = #anatomic-focus
@@ -24637,7 +24638,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ067 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ067 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ067 ^designation[=].value = "I sõrm PA LAT parem"
-* #RGU #RGUUJ #RGUUJ067 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ067 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ067 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ067 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ067 ^property[+].code = #anatomic-focus
@@ -24671,7 +24672,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ068 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ068 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ068 ^designation[=].value = "I sõrm PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ068 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ068 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ068 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ068 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ068 ^property[+].code = #anatomic-focus
@@ -24705,7 +24706,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ069 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ069 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ069 ^designation[=].value = "II sõrm PA parem"
-* #RGU #RGUUJ #RGUUJ069 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ069 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ069 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ069 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ069 ^property[+].code = #anatomic-focus
@@ -24736,7 +24737,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ070 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ070 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ070 ^designation[=].value = "II sõrm PA vasak"
-* #RGU #RGUUJ #RGUUJ070 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ070 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ070 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ070 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ070 ^property[+].code = #anatomic-focus
@@ -24767,7 +24768,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ071 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ071 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ071 ^designation[=].value = "II sõrm LAT parem"
-* #RGU #RGUUJ #RGUUJ071 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ071 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ071 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ071 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ071 ^property[+].code = #anatomic-focus
@@ -24798,7 +24799,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ072 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ072 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ072 ^designation[=].value = "II sõrm LAT vasak"
-* #RGU #RGUUJ #RGUUJ072 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ072 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ072 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ072 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ072 ^property[+].code = #anatomic-focus
@@ -24829,7 +24830,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ073 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ073 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ073 ^designation[=].value = "II sõrm PA LAT parem"
-* #RGU #RGUUJ #RGUUJ073 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ073 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ073 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ073 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ073 ^property[+].code = #anatomic-focus
@@ -24863,7 +24864,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ074 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ074 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ074 ^designation[=].value = "II sõrm PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ074 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ074 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ074 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ074 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ074 ^property[+].code = #anatomic-focus
@@ -24897,7 +24898,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ075 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ075 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ075 ^designation[=].value = "III sõrm PA parem"
-* #RGU #RGUUJ #RGUUJ075 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ075 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ075 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ075 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ075 ^property[+].code = #anatomic-focus
@@ -24928,7 +24929,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ076 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ076 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ076 ^designation[=].value = "III sõrm PA vasak"
-* #RGU #RGUUJ #RGUUJ076 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ076 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ076 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ076 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ076 ^property[+].code = #anatomic-focus
@@ -24959,7 +24960,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ077 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ077 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ077 ^designation[=].value = "III sõrm LAT parem"
-* #RGU #RGUUJ #RGUUJ077 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ077 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ077 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ077 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ077 ^property[+].code = #anatomic-focus
@@ -24990,7 +24991,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ078 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ078 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ078 ^designation[=].value = "III sõrm LAT vasak"
-* #RGU #RGUUJ #RGUUJ078 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ078 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ078 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ078 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ078 ^property[+].code = #anatomic-focus
@@ -25021,7 +25022,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ079 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ079 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ079 ^designation[=].value = "III sõrm PA LAT parem"
-* #RGU #RGUUJ #RGUUJ079 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ079 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ079 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ079 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ079 ^property[+].code = #anatomic-focus
@@ -25055,7 +25056,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ080 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ080 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ080 ^designation[=].value = "III sõrm PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ080 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ080 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ080 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ080 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ080 ^property[+].code = #anatomic-focus
@@ -25089,7 +25090,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ081 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ081 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ081 ^designation[=].value = "IV sõrm PA parem"
-* #RGU #RGUUJ #RGUUJ081 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ081 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ081 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ081 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ081 ^property[+].code = #anatomic-focus
@@ -25120,7 +25121,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ082 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ082 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ082 ^designation[=].value = "IV sõrm PA vasak"
-* #RGU #RGUUJ #RGUUJ082 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ082 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ082 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ082 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ082 ^property[+].code = #anatomic-focus
@@ -25151,7 +25152,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ083 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ083 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ083 ^designation[=].value = "IV sõrm LAT parem"
-* #RGU #RGUUJ #RGUUJ083 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ083 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ083 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ083 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ083 ^property[+].code = #anatomic-focus
@@ -25182,7 +25183,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ084 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ084 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ084 ^designation[=].value = "IV sõrm LAT vasak"
-* #RGU #RGUUJ #RGUUJ084 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ084 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ084 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ084 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ084 ^property[+].code = #anatomic-focus
@@ -25213,7 +25214,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ085 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ085 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ085 ^designation[=].value = "IV sõrm PA LAT parem"
-* #RGU #RGUUJ #RGUUJ085 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ085 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ085 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ085 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ085 ^property[+].code = #anatomic-focus
@@ -25247,7 +25248,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ086 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ086 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ086 ^designation[=].value = "IV sõrm PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ086 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ086 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ086 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ086 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ086 ^property[+].code = #anatomic-focus
@@ -25281,7 +25282,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ087 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ087 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ087 ^designation[=].value = "V sõrm PA parem"
-* #RGU #RGUUJ #RGUUJ087 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ087 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ087 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ087 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ087 ^property[+].code = #anatomic-focus
@@ -25312,7 +25313,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ088 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ088 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ088 ^designation[=].value = "V sõrm PA vasak"
-* #RGU #RGUUJ #RGUUJ088 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ088 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ088 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ088 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ088 ^property[+].code = #anatomic-focus
@@ -25343,7 +25344,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ089 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ089 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ089 ^designation[=].value = "V sõrm LAT parem"
-* #RGU #RGUUJ #RGUUJ089 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ089 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ089 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ089 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ089 ^property[+].code = #anatomic-focus
@@ -25374,7 +25375,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ090 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ090 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ090 ^designation[=].value = "V sõrm LAT vasak"
-* #RGU #RGUUJ #RGUUJ090 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ090 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ090 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ090 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ090 ^property[+].code = #anatomic-focus
@@ -25405,7 +25406,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ091 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ091 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ091 ^designation[=].value = "V sõrm PA LAT parem"
-* #RGU #RGUUJ #RGUUJ091 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ091 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ091 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ091 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ091 ^property[+].code = #anatomic-focus
@@ -25439,7 +25440,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ092 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ092 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ092 ^designation[=].value = "V sõrm PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ092 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ092 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ092 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ092 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ092 ^property[+].code = #anatomic-focus
@@ -25473,7 +25474,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ093 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ093 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ093 ^designation[=].value = "Sõrmed PA parem"
-* #RGU #RGUUJ #RGUUJ093 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ093 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ093 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ093 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ093 ^property[+].code = #anatomic-focus
@@ -25507,7 +25508,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ094 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ094 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ094 ^designation[=].value = "Sõrmed PA vasak"
-* #RGU #RGUUJ #RGUUJ094 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ094 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ094 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ094 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ094 ^property[+].code = #anatomic-focus
@@ -25541,7 +25542,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ095 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ095 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ095 ^designation[=].value = "Sõrmed LAT parem"
-* #RGU #RGUUJ #RGUUJ095 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ095 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ095 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ095 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ095 ^property[+].code = #anatomic-focus
@@ -25575,7 +25576,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ096 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ096 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ096 ^designation[=].value = "Sõrmed LAT vasak"
-* #RGU #RGUUJ #RGUUJ096 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ096 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ096 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ096 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ096 ^property[+].code = #anatomic-focus
@@ -25609,7 +25610,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ097 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ097 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ097 ^designation[=].value = "Sõrmed PA LAT parem"
-* #RGU #RGUUJ #RGUUJ097 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ097 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ097 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ097 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ097 ^property[+].code = #anatomic-focus
@@ -25646,7 +25647,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ098 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ098 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ098 ^designation[=].value = "Sõrmed PA LAT vasak"
-* #RGU #RGUUJ #RGUUJ098 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ098 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ098 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ098 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ098 ^property[+].code = #anatomic-focus
@@ -25681,7 +25682,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ099 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ099 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ099 ^designation[=].value = "Ülajäse parem"
-* #RGU #RGUUJ #RGUUJ099 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ099 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ099 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ099 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ099 ^property[+].code = #anatomic-focus
@@ -25709,7 +25710,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ100 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ100 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ100 ^designation[=].value = "Ülajäse vasak"
-* #RGU #RGUUJ #RGUUJ100 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ100 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ100 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ100 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ100 ^property[+].code = #anatomic-focus
@@ -25737,7 +25738,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ101 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ101 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ101 ^designation[=].value = "Ülajäsemed"
-* #RGU #RGUUJ #RGUUJ101 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ101 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ101 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ101 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ101 ^property[+].code = #anatomic-focus
@@ -25765,7 +25766,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ102 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ102 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ102 ^designation[=].value = "Ülajäse eriprojektsioon parem"
-* #RGU #RGUUJ #RGUUJ102 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ102 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ102 ^property[=].valueCoding.system = "snomed-ct"
 * #RGU #RGUUJ #RGUUJ102 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ102 ^property[+].code = #anatomic-focus
@@ -25796,7 +25797,7 @@ Title: "Radioloogiline uuring"
 * #RGU #RGUUJ #RGUUJ103 ^designation[=].language = #et
 * #RGU #RGUUJ #RGUUJ103 ^designation[=].use.code = #alias
 * #RGU #RGUUJ #RGUUJ103 ^designation[=].value = "Ülajäse eriprojektsioon vasak"
-* #RGU #RGUUJ #RGUUJ103 ^property[0].code = #Interpreter
+* #RGU #RGUUJ #RGUUJ103 ^property[0].code = #evaluator
 * #RGU #RGUUJ #RGUUJ103 ^property[=].valueCoding = snomed-ct#66862007
 * #RGU #RGUUJ #RGUUJ103 ^property[+].code = #anatomic-focus
 * #RGU #RGUUJ #RGUUJ103 ^property[=].valueCoding = snomed-ct#182245002
